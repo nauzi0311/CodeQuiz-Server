@@ -1,0 +1,10 @@
+{
+    "id": 2023,
+    "title": "ソート2",
+    "question": "#include <stdio.h>\n\nvoid sort(int* data,int len){\n  int i, j, min_index;\n  for (i = 0; i < len-1; i++) {\n\tmin_index = i;\n\tfor (j = i + 1; j < len; j++) {\n\t  if (data[j] < data[min_index]) { ???; }\n\t}\n\tint tmp = data[i];\n\tdata[i] = data[min_index];\n\tdata[min_index] = tmp;\n  }\n}\n\nint main(){\n\tint i,data[5] = {81,4,62,95,21};\n\tsort(data,5);\n\tfor(i = 0;i < 5;i++) printf(\"%d \",data[i]);\n\treturn 0;\n}",
+    "output": "4 21 62 81 95 ",
+    "answer": "min_index = j",
+    "exp":80,
+    "point":2,
+    "restrict":15
+}

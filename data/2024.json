@@ -1,0 +1,10 @@
+{
+    "id": 2024,
+    "title": "ソート3",
+    "question": "#include <stdio.h>\n\nvoid sort(int* data,int len){\n  int i, j;\n  for (i = 1; i < len; i++) {\n\t???;\n\twhile ((j > 0) && (data[j-1] > data[j])) {\n\t  int tmp = data[j-1];\n\t  data[j-1] = data[j];\n\t  data[j] = tmp;\n\t  j--;\n\t}\n  }\n}\n\nint main(){\n\tint i,data[5] = {81,4,62,95,21};\n\tsort(data,5);\n\tfor(i = 0;i < 5;i++) printf(\"%d \",data[i]);\n\treturn 0;\n}",
+    "output": "4 21 62 81 95 ",
+    "answer": "j = i",
+    "exp":80,
+    "point":2,
+    "restrict":10
+}

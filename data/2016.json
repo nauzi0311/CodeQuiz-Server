@@ -1,0 +1,10 @@
+{
+    "id": 2016,
+    "title": "構造体4",
+    "question": "#include <stdio.h>\n\n#define VALUE_LEN 64\n\ntypedef struct data{\n\tint index; \n\tchar value[VALUE_LEN];\n}DATA;\n\nint main(){\n\tDATA a = {100,\"Aquatan\"},b;\n\t???;\n\tprintf(\"%s\",b.value);\n\treturn 0;\n}",
+    "output": "Aquatan",
+    "answer": "b = a",
+    "exp":60,
+    "point":2,
+    "restrict":10
+}

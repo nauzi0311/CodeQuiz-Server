@@ -1,0 +1,10 @@
+{
+    "id": 2018,
+    "title": "ビット演算2",
+    "question": "#include <stdio.h>\n\nint main(){\n\tshort a = 1;\n\ta = a << 1;\n\tprintf(\"%d\",a);\n\treturn 0;\n}",
+    "output": "???",
+    "answer": "2",
+    "exp":70,
+    "point":2,
+    "restrict":3
+}

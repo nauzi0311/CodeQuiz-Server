@@ -1,0 +1,10 @@
+{
+    "id": 2004,
+    "title": "ポインタ4",
+    "question": "#include <stdio.h>\n\nint main(){\n\tchar a[10] = \"ABCDEFGH\";\n\tchar* p;\n\tp = a;\n\tp = p+2;\n\tp[0] = 'A';\n\tp[1] = 'B';\n\tp[2] = 'C';\n\tprintf(\"%s\",a);\n\treturn 0;\n}",
+    "output": "???",
+    "answer": "ABABCFGH",
+    "exp":50,
+    "point":2,
+    "restrict":8
+}

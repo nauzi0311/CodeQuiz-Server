@@ -1,0 +1,104 @@
+'use strict'
+var express = require('express');
+const { json, type } = require('express/lib/response');
+require('date-utils');
+var router = express.Router();
+const fs = require('fs');
+const { ReadJSONFile, GenerateTimestamp, WriteAddFile, WriteNewTXTFile, WriteNewJSONFile, GetSchoolNum } = require('./library');
+
+/* POST home page. */
+router.post('/', function(req, res, next) {
+  console.log(req.body);
+  const device = req.body.device;
+  const user_file = './data/user/' + device + '.json';
+
+  if(fs.existsSync(user_file)){
+    //exist user
+    //read file
+    const config_data = ReadJSONFile('./data/config.json');
+    var user_data = GetUserFile(device);
+    user_data.config = config_data;
+
+    //write log
+    const log_data = GenerateTimestamp() +" access index " + "{" +user_data.school_num + "}" + "\n";
+    WriteAddFile("./log/log.txt",log_data);
+    WriteAddFile("./log/" + GetSchoolNum(device) + ".txt",log_data);
+
+    //response
+    res.json(user_data);
+    console.log("index complete");
+    
+  }else{
+    //no exist
+    //write log
+    const log_data = GenerateTimestamp() + " access index!nofile " + "{" + device + "}" + "\n";
+    WriteAddFile("./log/log.txt",log_data);
+
+    //response
+    res.send("new");
+    console.log("new user complete");
+  }
+  /*
+  data format
+  {
+    device : "id"
+  }
+  */
+});
+
+router.post('/signup', function(req, res, next) {
+  console.log(req.body);
+  const [device,username,id,school_num] = UserData(req.body);
+  const config_data = ReadJSONFile('./data/config.json');
+  const response = config_data;
+
+  //create New User
+  AddUserData(req.body);
+
+  //write log
+  const log_data = GenerateTimestamp() + " signup process | " + school_num + " signup as "+ username + " using id:" + id + "\n";
+  WriteAddFile("./log/log.txt",log_data);
+
+  //write user_log
+  const new_log_file = "./log/" + school_num + ".txt";
+  WriteNewTXTFile(new_log_file,log_data);
+
+  console.log('sign up complete');
+  res.json(response);
+  /*
+  data format
+  {
+    "device" : "id"
+    "username" : "uname"
+    "id" : "id"
+    "school_num" : 11111111
+  }
+  */
+});
+
+function UserData(body){
+  return [body.device,body.username,body.id,body.school_num];
+}
+
+function AddUserData(body){
+  WriteUserFile(body);
+  WriteNewUserFile(body);
+}
+
+function WriteUserFile(body){
+  const [device,username,id,school_num] = UserData(body);  
+  const add_date = {"device":device,"id":id,"username":username,"school_num":school_num};
+  var user_file = ReadJSONFile('./data/user.json');
+  user_file.push(add_date);
+  WriteNewJSONFile('./data/user.json',user_file);
+}
+
+function WriteNewUserFile(body){
+  const device = body.device;
+  const school_num = body.school_num;
+  const new_user_file = './data/user/' + device + '.json';
+  const new_user_data = {"school_num":school_num,"level":1,"point":0,"correct_id":[],correct_count:0,"badge": [false,false,false,false,false,false,false,false,false,false,false],"date":[]};
+  WriteNewJSONFile(new_user_file,new_user_data);
+}
+
+module.exports = router;

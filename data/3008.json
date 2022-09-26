@@ -1,0 +1,10 @@
+{
+    "id": 3008,
+    "title": "二分木2",
+    "question": "#include <stdio.h>\n#include <stdlib.h>\n\ntypedef struct node{\n\tint num;\n\tstruct node* left;\n\tstruct node* right;\n}NODE;\n\nvoid insert(NODE**,int);\n\nNODE* search(NODE* root,int number){\n  NODE* node;\n  node = root;\n  if(number < node->num) {\n\tnode = node->left;\n  }else if(number > node->num){\n\tnode = ???;\n  }else{\n\treturn node;\n  }\n\n}\n\nint main(){\n  int i,data[10] = {81,4,62,95,21,16,84,3,40,91};\n  NODE* root = NULL;\n  for(i = 0;i < 10;i++){\n\tinsert(&root,data[i]);\n  }\n  if(search(root,16) == NULL){\n\tprintf(\"not exist\");\n  }else{\n\tprintf(\"exist\");\n  }\n  return 0;\n}\n\nvoid insert(NODE** p,int data){\n  if(*p == NULL){\n  *p = (NODE*)malloc(sizeof(NODE));\n  (*p)->num = data;\n  (*p)->left = NULL;\n  (*p)->right = NULL;\n  return;\n  }else{\n\tif((*p)->num > data){\n\t  insert(&((*p)->left),data);\n\t}else{\n\t  insert(&((*p)->right),data);\n\t}  \n  }\n}",
+    "output": "exist",
+    "answer": "node->right",
+    "exp": 80,
+    "point": 4,
+    "restrict": 15
+}

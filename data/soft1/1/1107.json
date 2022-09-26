@@ -1,0 +1,15 @@
+{
+    "id": 1107,
+    "title": "入力3",
+    "question":"#include <stdio.h>\n\nint main(){\n\tchar[20] a;\n\tscanf(\"%s\",???);\n\tprintf(\"%d\",a)\n\treturn 0;\n}",
+    "output": "",
+    "answer": [
+        "a",
+        "&a",
+        "*a",
+        "int a",
+        1
+    ],
+    "exp":10,
+    "point":1
+}

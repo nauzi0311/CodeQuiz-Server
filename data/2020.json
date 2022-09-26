@@ -1,0 +1,10 @@
+{
+    "id": 2020,
+    "title": "ビット演算4",
+    "question": "#include <stdio.h>\n\nint main(){\n\tshort a = -1;\n\tshort b = ???;\n\ta = a & b;\n\tprintf(\"%d\",a);\n\treturn 0;\n}",
+    "output": "32767",
+    "answer": "0x7FFF",
+    "exp":70,
+    "point":2,
+    "restrict":10
+}
