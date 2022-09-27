@@ -1,0 +1,10 @@
+{
+    "id": 2011,
+    "title": "二次元配列4",
+    "question": "#include <stdio.h>\n\nint main(){\n\t???clist[4] = {\"Aqu\",\"tan\",\"!!!\"};\n\tprintf(\"%s\",clist[1]);\n\treturn 0;\n}",
+    "output": "tan",
+    "answer": "char*",
+    "exp":60,
+    "point":2,
+    "restrict":10
+}

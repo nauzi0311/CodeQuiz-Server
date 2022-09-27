@@ -1,0 +1,10 @@
+{
+    "id": 3006,
+    "title": "ソート5",
+    "question": "#include <stdio.h>\nint tmp[10];\n\nvoid sort(int* data,int left,int right){\n  int i,j,pivot,k;\n  i = left;j = right;\n  pivot = data[(left + right)/2];\n  while(1){\n\tfor(;data[i] < pivot;i++);\n\tfor(;data[j] > pivot;j--);\n\tif(???)break;\n\tint tmp = data[i];\n\tdata[i] = data[j];\n\tdata[j] = tmp;\n\ti++;j--;\n  }\n  if(left < i-1)sort(data,left,i-1);\n  if(j+1 < right)sort(data,j+1,right);\n}\n\nint main(){\n\tint i,data[10] = {81,4,62,95,21,16,84,3,40,91};\n\tsort(data,0,9);\n\tfor(i = 0;i < 10;i++) printf(\"%d \",data[i]);\n\treturn 0;\n}",
+    "output": "3 4 16 21 40 62 81 84 91 95 ",
+    "answer": "i >= j",
+    "exp": 70,
+    "point": 4,
+    "restrict": 10
+}

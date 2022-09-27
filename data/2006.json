@@ -1,0 +1,10 @@
+{
+    "id": 2006,
+    "title": "マクロ2",
+    "question": "#include <stdio.h>\n\n#define sqr(x) ((x)*(x))\n\nint main(){\n\tint i = 1;\n\tprintf(\"%d\",sqr(++i));\n\treturn 0;\n}",
+    "output": "???",
+    "answer": "9",
+    "exp":50,
+    "point":2,
+    "restrict":2
+}

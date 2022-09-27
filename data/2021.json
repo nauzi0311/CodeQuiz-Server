@@ -1,0 +1,10 @@
+{
+    "id": 2021,
+    "title": "ビット演算5",
+    "question": "#include <stdio.h>\n\nint main(){\n\tshort a = 1;\n\ta = (a >> 1) << 1;\n\tprintf(\"%d\",a);\n\treturn 0;\n}",
+    "output": "???",
+    "answer": "0",
+    "exp":70,
+    "point":2,
+    "restrict":3
+}

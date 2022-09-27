@@ -1,0 +1,16 @@
+[2022年09月26日 22時35分00秒] signup process | 11111111 signup as TestUser using id:kLSeoeF*=
+[2022年09月26日 22時35分28秒] access calender {11111111}2022-09-26
+[2022年09月26日 22時36分10秒] request question "ソフトウェア演習Ⅰ 第1回" 1003,1101,1005,1006,1007,1002,1004
+[2022年09月26日 22時36分33秒] update result 
+ソフトウェア演習Ⅰ 第1回
+id: 1103,1106,1105,1102,1104,1101,1107
+second_list: 10,10,10,10,10,10,61
+user_answer: 1,1,1,1,1,1,5
+correct: true,true,true,true,true,true,false
+level: 2
+point: 0
+correct_id: 1101,1102,1103,1104,1105,1106
+correct_count: 6
+badge: false,false,false,false,false,false,false,false,false,false,false
+date: 2022-09-26
+[2022年09月26日 22時43分02秒] access detail 11111111 id:1103

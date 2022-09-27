@@ -1,0 +1,10 @@
+{
+    "id": 3007,
+    "title": "二分木1",
+    "question": "#include <stdio.h>\n#include <stdlib.h>\n\ntypedef struct node{\n  int num;\n  struct node* left;\n  struct node* right;\n}NODE;\n\nvoid insert(NODE** p,int data){\n  if(*p == NULL){\n\t*p = (NODE*)malloc(sizeof(NODE));\n\t(*p)->num = data;\n\t(*p)->left = NULL;\n\t(*p)->right = NULL;\n\treturn;\n  }else{\n\tif((*p)->num > data){\n\t  insert(&((*p)->left),data);\n\t}else{\n\t  insert(&((*p)->right),data);\n\t}\n  }\n}\n\nint main(){\n\tint i,data[10] = {81,4,62,95,21,16,84,3,40,91};\n  NODE* root = NULL,*check;\n  for(i = 0;i < 10;i++){\n\tinsert(&root,data[i]);\n  }\n  check = root;\n  while(check->left != NULL){\n\tcheck = check->left;\n  }\n  printf(\"%d\",check->num);\n\treturn 0;\n}",
+    "output": "???",
+    "answer": "3",
+    "exp": 70,
+    "point": 4,
+    "restrict": 3
+}

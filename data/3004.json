@@ -1,0 +1,10 @@
+{
+    "id": 3004,
+    "title": "再帰関数2",
+    "question": "#include <stdio.h>\n\nlong long GCD(long long a,long long b){\n\treturn b == 0 ? a : GCD(b,a % b);\n}\n\nint main(){\n\tprintf(\"%d\",GCD(3315,169));\n\treturn 0;\n}",
+    "output": "???",
+    "answer": "13",
+    "exp": 70,
+    "point": 4,
+    "restrict": 5
+}

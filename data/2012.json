@@ -1,0 +1,10 @@
+{
+    "id": 2012,
+    "title": "二次元配列5",
+    "question": "#include <stdio.h>\n\nvoid print_string(???,int num){\n\tint i = 0;\n\tfor(i = 0; i < num;i++){\n\t\tprintf(\"%s\",list[i]);\n\t}\n}\n\nint main(){\n\tchar *clist[4] = {\"Aqu\",\"tan\",\"!!!\"};\n\tprint_string(clist,3);\n\treturn 0;\n}",
+    "output": "Aqutan!!!",
+    "answer": "char* list[]",
+    "exp":60,
+    "point":2,
+    "restrict":15
+}
