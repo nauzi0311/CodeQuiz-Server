@@ -4,7 +4,7 @@ const { json, type } = require('express/lib/response');
 require('date-utils');
 var router = express.Router();
 const fs = require('fs');
-const { ReadJSONFile, GenerateTimestamp, WriteAddFile, WriteNewTXTFile, WriteNewJSONFile, GetSchoolNum } = require('./library');
+const { ReadJSONFile, GenerateTimestamp, WriteAddFile, WriteNewTXTFile, WriteNewJSONFile, GetSchoolNum,GetUserData } = require('./library');
 
 /* POST home page. */
 router.post('/', function(req, res, next) {
@@ -16,9 +16,10 @@ router.post('/', function(req, res, next) {
     //exist user
     //read file
     const config_data = ReadJSONFile('./data/config.json');
-    var user_data = GetUserFile(device);
+    console.log(config_data);
+    var user_data = GetUserData(device);
+    console.log(user_data);
     user_data.config = config_data;
-
     //write log
     const log_data = GenerateTimestamp() +" access index " + "{" +user_data.school_num + "}" + "\n";
     WriteAddFile("./log/log.txt",log_data);
@@ -83,6 +84,7 @@ function UserData(body){
 function AddUserData(body){
   WriteUserFile(body);
   WriteNewUserFile(body);
+  WriteRankingFile(body);
 }
 
 function WriteUserFile(body){
@@ -99,6 +101,14 @@ function WriteNewUserFile(body){
   const new_user_file = './data/user/' + device + '.json';
   const new_user_data = {"school_num":school_num,"level":1,"point":0,"correct_id":[],correct_count:0,"badge": [false,false,false,false,false,false,false,false,false,false,false],"date":[]};
   WriteNewJSONFile(new_user_file,new_user_data);
+}
+
+function WriteRankingFile(body){
+  console.log(body.device);
+  var ranking_data = ReadJSONFile('./data/ranking.json');
+  const add_data = {"username":body.username,"level":1,"point":0};
+  ranking_data.push(add_data);
+  WriteNewJSONFile('./data/ranking.json',ranking_data);
 }
 
 module.exports = router;

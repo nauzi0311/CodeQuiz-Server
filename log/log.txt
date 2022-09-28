@@ -4,3 +4,17 @@
 [2022年09月26日 22時36分10秒] request question "ソフトウェア演習Ⅰ 第1回" 1003,1101,1005,1006,1007,1002,1004
 [2022年09月26日 22時36分33秒] update result 11111111 level:2 point:0
 [2022年09月26日 22時43分02秒] access detail 11111111 id:1103
+[2022年09月28日 16時50分22秒] access index {11111111}
+[2022年09月28日 16時53分25秒] signup process | 11111111 signup as TestUser using id:qwertyuiop
+[2022年09月28日 16時54分03秒] signup process | 11111111 signup as TestUser using id:qwertyuiop
+[2022年09月28日 16時54分11秒] signup process | 11111111 signup as TestUser using id:qwertyuiop
+[2022年09月28日 16時54分17秒] signup process | 11111111 signup as TestUser using id:qwertyuiop
+[2022年09月28日 16時54分18秒] signup process | 11111111 signup as TestUser using id:qwertyuiop
+[2022年09月28日 16時54分18秒] signup process | 11111111 signup as TestUser using id:qwertyuiop
+[2022年09月28日 16時57分28秒] signup process | 11111111 signup as TestUser using id:qwertyuiop
+[2022年09月28日 16時58分34秒] request question "ソフトウェア演習Ⅰ 第1回" 1102,1104,1106,1105,1101,1107,1103
+[2022年09月28日 17時06分32秒] request question "ソフトウェア演習Ⅰ 第1回" 1102,1107,1106,1103,1101,1104,1105
+[2022年09月28日 17時19分49秒] update result 11111111 level:2 point:0
+[2022年09月28日 17時21分40秒] update result 11111111 level:2 point:0
+[2022年09月28日 17時22分32秒] update result 11111111 level:2 point:0
+[2022年09月28日 17時26分44秒] update result 11111111 level:2 point:0

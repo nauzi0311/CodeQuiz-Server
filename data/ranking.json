@@ -1,0 +1,17 @@
+[
+    {
+        "username": "UserUser",
+        "level": 1,
+        "point": 0
+    },
+    {
+        "username": "TestUser",
+        "level": 2,
+        "point": 0
+    },
+    {
+        "username": "TestTest",
+        "level": 10,
+        "point": 0
+    }
+]
