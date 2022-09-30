@@ -13,7 +13,7 @@ const { log } = require('console');
   when get the json like above, send each json file.
 */
 router.post('/', function (req, res, next) {
-  const [device, level, point, id_list, correct_list, second_list, user_answer] = ResultData(req.body);
+  const [device, level, point, id, correct_list, second_list, user_answer] = ResultData(req.body);
   var user_data = GetUserData(device);
   //change level
   user_data.level = level;
