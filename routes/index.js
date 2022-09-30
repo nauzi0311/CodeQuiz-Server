@@ -99,6 +99,11 @@ function WriteNewUserFile(body){
   const device = body.device;
   const school_num = body.school_num;
   const new_user_file = './data/user/' + device + '.json';
+  var badge_list = [];
+  for(var i = 0; i < 30; i++){
+    badge_list.push(false);
+  }
+  console.log(badge_list);
   const new_user_data = {"school_num":school_num,"level":1,"point":0,"correct_id":[],correct_count:0,"badge": [false,false,false,false,false,false,false,false,false,false,false],"date":[]};
   WriteNewJSONFile(new_user_file,new_user_data);
 }

@@ -18,3 +18,12 @@
 [2022年09月28日 17時21分40秒] update result 11111111 level:2 point:0
 [2022年09月28日 17時22分32秒] update result 11111111 level:2 point:0
 [2022年09月28日 17時26分44秒] update result 11111111 level:2 point:0
+[2022年09月30日 16時03分23秒] update result 11111111 level:3 point:10
+[2022年09月30日 16時06分58秒] update result 11111111 level:3 point:10
+[2022年09月30日 16時07分39秒] update result 11111111 level:3 point:10
+[2022年09月30日 16時08分25秒] update result 11111111 level:3 point:10
+[2022年09月30日 16時09分23秒] update result 11111111 level:3 point:10
+[2022年09月30日 16時09分50秒] update result 11111111 level:3 point:10
+[2022年09月30日 16時10分18秒] update result 11111111 level:3 point:10
+[2022年09月30日 16時12分14秒] update result 11111111 level:3 point:10
+[2022年09月30日 16時12分33秒] update result 11111111 level:3 point:10

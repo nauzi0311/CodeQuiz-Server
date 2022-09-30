@@ -1,7 +1,7 @@
 {
     "school_num": 11111111,
-    "level": 2,
-    "point": 0,
+    "level": 3,
+    "point": 10,
     "correct_id": [
         1101,
         1102,
@@ -10,7 +10,7 @@
         1106,
         1107
     ],
-    "correct_count": 24,
+    "correct_count": 78,
     "badge": [
         false,
         false,
@@ -25,6 +25,7 @@
         false
     ],
     "date": [
-        "2022-09-28"
+        "2022-09-28",
+        "2022-09-30"
     ]
 }

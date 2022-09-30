@@ -1,17 +1,27 @@
 [
     {
-        "username": "UserUser",
-        "level": 1,
-        "point": 0
-    },
-    {
-        "username": "TestUser",
-        "level": 2,
-        "point": 0
+        "username": "UserPiyo",
+        "level": 10,
+        "point": 500
     },
     {
         "username": "TestTest",
         "level": 10,
+        "point": 200
+    },
+    {
+        "username": "TestUser",
+        "level": 3,
+        "point": 10
+    },
+    {
+        "username": "UserHoge",
+        "level": 3,
+        "point": 0
+    },
+    {
+        "username": "UserUser",
+        "level": 1,
         "point": 0
     }
 ]

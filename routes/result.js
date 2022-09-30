@@ -51,8 +51,6 @@ router.post('/', function (req, res, next) {
   //need
   {
     switch (badge) {
-      case 0:
-        break;
       case 1://最初の７問ききる
       case 2://レベル３になる
       case 3://レベル５になる
@@ -84,9 +82,11 @@ router.post('/', function (req, res, next) {
       //Extra Stage↓
       case 27://レベル20
       case 28://レベル25
-      case 28://レベル30
-
-
+      case 29://レベル30
+        user_data.badge[badge] = true;
+        break;
+      default:
+        break;
     }
   }
 
@@ -107,16 +107,24 @@ router.post('/', function (req, res, next) {
         ranking_file[i].point = point;
       }
     }
-
+    
     //sort
-    //need fix
     if (ranking_file.length >= 2) {
       ranking_file.sort(function (first, second) {
         if (first.level < second.level) {
-          return -1;
-        } else if (first.level > second.level) {
           return 1;
+        } else if (first.level > second.level) {
+          return -1;
         } else {
+          if(first.level == second.level) {
+            if(first.point < second.point){
+              return 1;
+            }else if(first.point > second.point){
+              return -1;
+            }else{
+              return 0;
+            }
+          }
           return 0;
         }
       })
@@ -125,12 +133,11 @@ router.post('/', function (req, res, next) {
   }
 
   WriteNewJSONFile('./data/user/' + device + '.json', user_data);
-
   var log_data = GenerateTimestamp() + " update result " + GetSchoolNum(device) + " level:" + level + " point:" + point + "\n";
   WriteAddFile("./log/log.txt", log_data);
-  console.log(GetCourseNameFromId(id) + "id_list:" + id_list);
+  console.log(GetCourseNameFromId(id_list) + "\nid_list:" + id_list);
   log_data = GenerateTimestamp() + " update result \n" +
-    GetCourseNameFromId(id) + "\n" +
+    GetCourseNameFromId(id_list) + "\n" +
     "id: " + id_list + "\n" +
     "second_list: " + second_list + "\n" +
     "user_answer: " + user_answer + "\n" +
