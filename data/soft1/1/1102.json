@@ -1,7 +1,8 @@
 {
     "id": 1102,
     "title": "型2",
-    "question":"#include <stdio.h>\n\nint main(){\n\t??? a = 'A';\n\tprintf(\"%c\",a)\n\treturn 0;\n}",
+    "question": "???に入るのはなに",
+    "source": "#include <stdio.h>\n\nint main(){\n\t??? a = 'A';\n\tprintf(\"%c\",a)\n\treturn 0;\n}",
     "output": "A",
     "answer": [
         "char",
@@ -10,6 +11,6 @@
         "struct",
         1
     ],
-    "exp":10,
-    "point":1
+    "exp": 10,
+    "point": 1
 }

@@ -1,0 +1,21 @@
+{
+    "school_num": 22222222,
+    "level": 1,
+    "point": 0,
+    "correct_id": [],
+    "correct_count": 0,
+    "badge": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+    ],
+    "date": []
+}

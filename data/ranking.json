@@ -28,5 +28,10 @@
         "username": "TestUserTest",
         "level": 1,
         "point": 0
+    },
+    {
+        "username": "UserNameUser",
+        "level": 1,
+        "point": 0
     }
 ]
