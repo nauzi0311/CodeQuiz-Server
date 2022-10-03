@@ -1,14 +1,41 @@
 {
     "school_num": 11112222,
-    "level": 1,
-    "point": 0,
-    "correct_id": [],
-    "correct_count": 0,
+    "level": 2,
+    "exp": 130,
+    "point": 20,
+    "correct_id": [
+        1101,
+        1102,
+        1103,
+        1104,
+        1105,
+        1106,
+        1107
+    ],
+    "correct_count": 48,
     "badge": [
+        true,
         false,
         false,
         false,
         false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
         false,
         false,
         false,
@@ -17,5 +44,8 @@
         false,
         false
     ],
-    "date": []
+    "date": [
+        "2022-10-02",
+        "2022-10-03"
+    ]
 }

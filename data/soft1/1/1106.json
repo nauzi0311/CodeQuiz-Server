@@ -4,13 +4,13 @@
     "question": "???に入るのはなに",
     "source": "#include <stdio.h>\n\nint main(){\n\tchar a;\n\tscanf(\"%c\",???);\n\tprintf(\"%d\",a)\n\treturn 0;\n}",
     "output": "",
-    "answer": [
+    "choice": [
         "a",
         "&a",
         "*a",
-        "int a",
-        2
+        "int a"
     ],
+    "answer" : 2,
     "exp": 10,
     "point": 1
 }

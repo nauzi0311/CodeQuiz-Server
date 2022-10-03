@@ -4,13 +4,13 @@
     "question": "???に入るのはなに",
     "source": "#include <stdio.h>\n\nint main(){\n\t??? = \"ABC\";\n\tprintf(\"%s\",a)\n\treturn 0;\n}",
     "output": "ABC",
-    "answer": [
+    "choice": [
         "char a[3]",
         "char a[4]",
         "int* a",
-        "unsighned a",
-        2
+        "unsighned a"
     ],
+    "answer" : 2,
     "exp": 10,
     "point": 1
 }

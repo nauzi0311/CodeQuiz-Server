@@ -1,6 +1,7 @@
 {
     "school_num":10000000,
     "level": 1,
+    "exp":0,
     "point": 0,
     "correct_id": [],
     "correct_count" : 0,

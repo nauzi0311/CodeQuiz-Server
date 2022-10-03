@@ -13,6 +13,7 @@ var questionRouter = require('./routes/question');
 var calenderRouter = require('./routes/calender');
 var resultRouter = require('./routes/result');
 var detailRouter = require('./routes/detail');
+var scoreRouter = require('./routes/score');
 //var addRouter = require('./routes/add');
 
 
@@ -34,6 +35,7 @@ app.use('/quest', questionRouter);
 app.use('/calender', calenderRouter);
 app.use('/result', resultRouter);
 app.use('/detail', detailRouter);
+app.use('/score', scoreRouter);
 // app.use('/add',addRouter);
 
 // catch 404 and forward to error handler

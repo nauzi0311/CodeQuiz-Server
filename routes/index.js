@@ -104,7 +104,7 @@ function WriteNewUserFile(body){
     badge_list.push(false);
   }
   console.log(badge_list);
-  const new_user_data = {"school_num":school_num,"level":1,"point":0,"correct_id":[],correct_count:0,"badge": [false,false,false,false,false,false,false,false,false,false,false],"date":[]};
+  const new_user_data = {"school_num":school_num,"level":1,"exp":0,"point":0,"correct_id":[],correct_count:0,"badge": [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false],"date":[]};
   WriteNewJSONFile(new_user_file,new_user_data);
 }
 

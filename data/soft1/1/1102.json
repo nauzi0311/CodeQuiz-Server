@@ -4,13 +4,13 @@
     "question": "???に入るのはなに",
     "source": "#include <stdio.h>\n\nint main(){\n\t??? a = 'A';\n\tprintf(\"%c\",a)\n\treturn 0;\n}",
     "output": "A",
-    "answer": [
+    "choice": [
         "char",
         "short",
         "int*",
-        "struct",
-        1
+        "struct"
     ],
+    "answer" : 1,
     "exp": 10,
     "point": 1
 }

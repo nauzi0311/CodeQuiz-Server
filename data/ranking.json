@@ -20,12 +20,12 @@
         "point": 0
     },
     {
-        "username": "UserUser",
-        "level": 1,
-        "point": 0
+        "username": "TestUserTest",
+        "level": 2,
+        "point": 20
     },
     {
-        "username": "TestUserTest",
+        "username": "UserUser",
         "level": 1,
         "point": 0
     },

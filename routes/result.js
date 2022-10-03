@@ -13,10 +13,13 @@ const { log } = require('console');
   when get the json like above, send each json file.
 */
 router.post('/', function (req, res, next) {
-  const [device, level, point, id_list, correct_list, second_list, user_answer, badge] = ResultData(req.body);
+  const [device, level, exp,point, id_list, correct_list, second_list, user_answer, badge] = ResultData(req.body);
   var user_data = GetUserData(device);
   //change level
   user_data.level = level;
+
+  //change exp
+  user_data.exp = exp;
 
   //change point
   user_data.point = point;
@@ -48,47 +51,7 @@ router.post('/', function (req, res, next) {
   }
 
   //badge process
-  //need
-  {
-    switch (badge) {
-      case 1://最初の７問ききる
-      case 2://レベル３になる
-      case 3://レベル５になる
-      case 4://レベル７になる
-      case 5://レベル９になる
-      case 6://レベル10になる
-      case 7://レベル13になる
-      case 8://レベル15になる
-      case 9://3日ログイン
-      case 10://5日ログイン
-      case 11://7日ログイン
-      case 12://10日ログイン
-      case 13://3日連続ログイン
-      case 14://5日連続ログイン
-      case 15://7日連続ログイン
-      case 16://10日連続ログイン
-      case 17://14日連続ログイン
-      case 18://17日連続ログイン
-      case 19://21日連続ログイン
-      case 20://正解数10
-      case 21://正解数20
-      case 22://正解数30
-      case 23://正解数50
-      case 24://正解数70
-      case 25://正解数100
-      case 26://1~25のバッジを全て取得する
-        user_data.badge[badge] = true;
-        break;
-      //Extra Stage↓
-      case 27://レベル20
-      case 28://レベル25
-      case 29://レベル30
-        user_data.badge[badge] = true;
-        break;
-      default:
-        break;
-    }
-  }
+  user_data.badge = badge;
 
   //write ranking file
   {
@@ -155,7 +118,7 @@ router.post('/', function (req, res, next) {
 
 
 function ResultData(body) {
-  return [body.device, body.level, body.point, body.id_list, body.correct_list, body.second_list, body.user_answer, body.badge];
+  return [body.device, body.level, body.exp,body.point, body.id_list, body.correct_list, body.second_list, body.user_answer, body.badge];
 }
 
 function GetCourseNameFromId(ids) {
