@@ -67,7 +67,7 @@ router.post('/', function (req, res, next) {
     for (i = 0; i < ranking_file.length; i++) {
       if (ranking_file[i].username == username) {
         ranking_file[i].level = level;
-        ranking_file[i].point = point;
+        ranking_file[i].exp = exp;
       }
     }
     
@@ -80,9 +80,9 @@ router.post('/', function (req, res, next) {
           return -1;
         } else {
           if(first.level == second.level) {
-            if(first.point < second.point){
+            if(first.exp < second.exp){
               return 1;
-            }else if(first.point > second.point){
+            }else if(first.exp > second.exp){
               return -1;
             }else{
               return 0;
@@ -106,6 +106,7 @@ router.post('/', function (req, res, next) {
     "user_answer: " + user_answer + "\n" +
     "correct: " + correct_list + "\n" +
     "level: " + user_data.level + "\n" +
+    "exp: " + user_data.exp + "\n" +
     "point: " + user_data.point + "\n" +
     "correct_id: " + user_data.correct_id + "\n" +
     "correct_count: " + user_data.correct_count + "\n" +

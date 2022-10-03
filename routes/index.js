@@ -4,6 +4,7 @@ const { json, type } = require('express/lib/response');
 require('date-utils');
 var router = express.Router();
 const fs = require('fs');
+const { version } = require('os');
 const { ReadJSONFile, GenerateTimestamp, WriteAddFile, WriteNewTXTFile, WriteNewJSONFile, GetSchoolNum,GetUserData } = require('./library');
 
 /* POST home page. */
@@ -66,15 +67,22 @@ router.post('/signup', function(req, res, next) {
 
   console.log('sign up complete');
   res.json(response);
-  /*
-  data format
-  {
-    "device" : "id"
-    "username" : "uname"
-    "id" : "id"
-    "school_num" : 11111111
-  }
-  */
+});
+
+router.post('/version', function(req, res, next) {
+  console.log(req.body);
+  const user_version = req.body.version;
+  console.log(user_version);
+  const version = "1.0.0";
+  const url = "https://se.is.kit.ac.jp/beakfish/";
+  const response = {"version":version,"url":url};
+
+  //write log
+  const log_data = GenerateTimestamp() + " version process | " + user_version + " latest "+ version + "\n";
+  WriteAddFile("./log/log.txt",log_data);
+
+  console.log('version complete');
+  res.json(response);
 });
 
 function UserData(body){
@@ -111,7 +119,7 @@ function WriteNewUserFile(body){
 function WriteRankingFile(body){
   console.log(body.device);
   var ranking_data = ReadJSONFile('./data/ranking.json');
-  const add_data = {"username":body.username,"level":1,"point":0};
+  const add_data = {"device":body.device,"username":body.username,"level":1,"exp":0};
   ranking_data.push(add_data);
   WriteNewJSONFile('./data/ranking.json',ranking_data);
 }

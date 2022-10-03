@@ -1,80 +1,38 @@
 [
     {
-        "device": "testtest",
-        "id": "kltg@:Fg",
-        "username": "TestUser",
-        "school_num": 11111111
-    },
-    {
-        "device": "testtest",
-        "id": "kLSeoeF*=",
-        "username": "TestUser",
-        "school_num": 11111111
-    },
-    {
-        "device": "testtest",
+        "device": "3bf8a75c-47d4-4da4-bf32-d6afe2402707",
         "id": "qwertyuiop",
-        "username": "TestUser",
-        "school_num": 11111111
-    },
-    {
-        "device": "testtest",
-        "id": "qwertyuiop",
-        "username": "TestUser",
-        "school_num": 11111111
-    },
-    {
-        "device": "testtest",
-        "id": "qwertyuiop",
-        "username": "TestUser",
-        "school_num": 11111111
-    },
-    {
-        "device": "testtest",
-        "id": "qwertyuiop",
-        "username": "TestUser",
-        "school_num": 11111111
-    },
-    {
-        "device": "testtest",
-        "id": "qwertyuiop",
-        "username": "TestUser",
-        "school_num": 11111111
-    },
-    {
-        "device": "testtest",
-        "id": "qwertyuiop",
-        "username": "TestUser",
-        "school_num": 11111111
-    },
-    {
-        "device": "testtest",
-        "id": "qwertyuiop",
-        "username": "TestUser",
-        "school_num": 11111111
-    },
-    {
-        "device": "testtest",
-        "id": "qwertyuiop",
-        "username": "TestUser",
-        "school_num": 11111111
-    },
-    {
-        "device": "testtest",
-        "id": "qwertyuiop",
-        "username": "TestUser",
-        "school_num": 11111111
-    },
-    {
-        "device": "233f5c0f-4197-4a21-90b4-637def562d4e",
-        "id": "qwertyuiop",
-        "username": "TestUserTest",
-        "school_num": 11112222
-    },
-    {
-        "device": "aea44f19-ece2-4b0b-a745-91c3acb3668b",
-        "id": "qwertyuiop",
-        "username": "UserNameUser",
+        "username": "UserName",
         "school_num": 22222222
+    },
+    {
+        "device": "testtest",
+        "id": "asdfghjkl",
+        "username": "TestUser",
+        "school_num": 11111111
+    },
+    {
+        "device": "testuser",
+        "id": "zxcvbnm",
+        "username": "HogePiyo",
+        "school_num": 11111111
+    },
+    {
+        "device": "tttttttttttt",
+        "id": "edcrfvtgb",
+        "username": "PiyoHoge",
+        "school_num": 11111111
+    },
+    {
+        "device": "UUUUUUUUUU",
+        "id": "poijnbgtrdx",
+        "username": "PiyoPiyo",
+        "school_num": 11111111
+    },
+    {
+        "device": "UUUUUUUUUU",
+        "id": "poijnbgtrdx",
+        "username": "PiyoPiyo",
+        "school_num": 11111111
     }
 ]

@@ -15,13 +15,20 @@ router.post('/', function (req, res, next) {
   console.log(req.body);
   //const [device, area] = RankingData(req.body);
   const device = req.body.device;
-
+  var rank = 0;
   var ranking_data = ReadJSONFile('./data/ranking.json');
-  var log_data = GenerateTimestamp() + " access ranking " + GetSchoolNum(device) + " level:" + level + " point:" + point + "\n";
+  for(i = 0; i < ranking_data.length; i++) {
+    if(ranking_data[i].device == device){
+      rank = i + 1;
+    }
+  }
+  var response = {"ranking" : ranking_data,"count":rank};
+  var log_data = GenerateTimestamp() + " access ranking " + GetSchoolNum(device) + "\n";
+  console.log(log_data);
   WriteAddFile("./log/log.txt", log_data);
   WriteAddFile("./log/" + GetSchoolNum(device) + ".txt", log_data);
   console.log("ranking complete");
-  res.json(ranking_data);
+  res.json(response);
 });
 
 

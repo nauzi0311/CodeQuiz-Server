@@ -36,3 +36,13 @@ exports.GetUserData = function(device){
     const file = './data/user/' + device + '.json';
     return JSON.parse(fs.readFileSync(file,'utf8'));
 }
+
+exports.GetUserName = function(device){
+    const file = './data/user.json';
+    var data =  JSON.parse(fs.readFileSync(file,'utf8'));
+    for(i = 0;i < data.length;i++){
+        if(data[i].device == device){
+            return data[i].username;
+        }
+    }
+}
