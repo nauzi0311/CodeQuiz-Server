@@ -1,0 +1,16 @@
+{
+    "id": 1109,
+    "title": "出力9",
+    "question": "???に入るのはなに",
+    "source":"#include <stdio.h>\n\nint main(){\n  printf(\"???\",100);\n  return (0);\n}",
+    "output": "00100",
+    "choice": [
+        "%5d",
+        "%d",
+        "%05d",
+        "%0d"
+    ],
+    "answer" : 3,
+    "exp":10,
+    "point":1
+}

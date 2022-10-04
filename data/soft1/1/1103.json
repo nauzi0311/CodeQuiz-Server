@@ -1,16 +1,16 @@
 {
     "id": 1103,
-    "title": "型3",
+    "title": "出力3",
     "question": "???に入るのはなに",
-    "source": "#include <stdio.h>\n\nint main(){\n\t??? a = 3;\n\tprintf(\"%lf\",a)\n\treturn 0;\n}",
-    "output": "3.0",
+    "source":"#include <stdio.h>\n\nint main(){\n  printf(\"Hello, World!\\n\");\n  return (0);\n}",
+    "output": "???",
     "choice": [
-        "char*",
-        "long long",
-        "int*",
-        "double"
+        "Hello World!\\n",
+        "Hello World!\n",
+        "Hello World!\\n\"",
+        "\"Hello World!\\n\""
     ],
-    "answer" : 4,
-    "exp": 10,
-    "point": 1
+    "answer" : 2,
+    "exp":10,
+    "point":1
 }

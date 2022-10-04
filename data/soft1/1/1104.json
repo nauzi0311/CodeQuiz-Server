@@ -1,16 +1,16 @@
 {
     "id": 1104,
-    "title": "型4",
+    "title": "出力4",
     "question": "???に入るのはなに",
-    "source": "#include <stdio.h>\n\nint main(){\n\t??? = \"ABC\";\n\tprintf(\"%s\",a)\n\treturn 0;\n}",
-    "output": "ABC",
+    "source":"#include <stdio.h>\n\nint main(){\n  printf(\"3 plus 8 is %d\",3+8);\n  return (0);\n}",
+    "output": "3 plus 8 is ???",
     "choice": [
-        "char a[3]",
-        "char a[4]",
-        "int* a",
-        "unsighned a"
+        "11",
+        "3+8",
+        "%d 3+8",
+        "%d"
     ],
-    "answer" : 2,
-    "exp": 10,
-    "point": 1
+    "answer" : 1,
+    "exp":10,
+    "point":1
 }

@@ -1,16 +1,16 @@
 {
     "id": 1107,
-    "title": "入力3",
+    "title": "出力7",
     "question": "???に入るのはなに",
-    "source": "#include <stdio.h>\n\nint main(){\n\tchar[20] a;\n\tscanf(\"%s\",???);\n\tprintf(\"%d\",a)\n\treturn 0;\n}",
-    "output": "",
+    "source":"#include <stdio.h>\n\nint main(){\n  printf(\"???\",\"abcdef\");\n  return (0);\n}",
+    "output": "abcdef",
     "choice": [
-        "a",
-        "&a",
-        "*a",
-        "int a"
+        "%s",
+        "%d",
+        "%f",
+        "%x"
     ],
     "answer" : 1,
-    "exp": 10,
-    "point": 1
+    "exp":10,
+    "point":1
 }

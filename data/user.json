@@ -1,38 +1,8 @@
 [
     {
-        "device": "3bf8a75c-47d4-4da4-bf32-d6afe2402707",
+        "device": "cb28cd1f-72b9-4a69-bb0a-e4dc04e262b0",
         "id": "qwertyuiop",
-        "username": "UserName",
-        "school_num": 22222222
-    },
-    {
-        "device": "testtest",
-        "id": "asdfghjkl",
-        "username": "TestUser",
-        "school_num": 11111111
-    },
-    {
-        "device": "testuser",
-        "id": "zxcvbnm",
-        "username": "HogePiyo",
-        "school_num": 11111111
-    },
-    {
-        "device": "tttttttttttt",
-        "id": "edcrfvtgb",
-        "username": "PiyoHoge",
-        "school_num": 11111111
-    },
-    {
-        "device": "UUUUUUUUUU",
-        "id": "poijnbgtrdx",
-        "username": "PiyoPiyo",
-        "school_num": 11111111
-    },
-    {
-        "device": "UUUUUUUUUU",
-        "id": "poijnbgtrdx",
-        "username": "PiyoPiyo",
-        "school_num": 11111111
+        "username": "Nauzi",
+        "school_num": 22622018
     }
 ]

@@ -73,7 +73,7 @@ router.post('/version', function(req, res, next) {
   console.log(req.body);
   const user_version = req.body.version;
   console.log(user_version);
-  const version = "1.0.0";
+  const version = "1-0-0";
   const url = "https://se.is.kit.ac.jp/beakfish/";
   const response = {"version":version,"url":url};
 

@@ -1,0 +1,16 @@
+{
+    "id": 1206,
+    "title": "演算子3",
+    "question": "???に入るのはなに",
+    "source":"#include <stdio.h>\n\nint main(){\n  int x;\n  x = 10;\n  x ??? 3;\n  printf(\"%d\",x);\n  return (0);\n}",
+    "output": "3",
+    "choice": [
+        "+=",
+        "*=",
+        "/=",
+        "%="
+    ],
+    "answer" : 3,
+    "exp":20,
+    "point":1
+}

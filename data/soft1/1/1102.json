@@ -1,16 +1,16 @@
 {
     "id": 1102,
-    "title": "型2",
+    "title": "出力2",
     "question": "???に入るのはなに",
-    "source": "#include <stdio.h>\n\nint main(){\n\t??? a = 'A';\n\tprintf(\"%c\",a)\n\treturn 0;\n}",
-    "output": "A",
+    "source":"#include <stdio.h>\n\nint main(){\n  printf(\"Hello, World!\");\n  return ???\n}",
+    "output": "Hello, World!",
     "choice": [
-        "char",
-        "short",
-        "int*",
-        "struct"
+        "0",
+        "(0)",
+        "0;",
+        "0!"
     ],
-    "answer" : 1,
-    "exp": 10,
-    "point": 1
+    "answer" : 3,
+    "exp":10,
+    "point":1
 }
