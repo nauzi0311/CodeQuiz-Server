@@ -1,0 +1,16 @@
+{
+    "id": 1201,
+    "title": "型1",
+    "question": "???に入るのはなに",
+    "source":"include <stdio.h>\n\nint main(){\n  ??? x;\n  x = 3;\n  printf(\"%d\",x);\n  return (0);\n}",
+    "output": "3",
+    "choice": [
+        "int",
+        "char",
+        "float",
+        "double"
+    ],
+    "answer" : 1,
+    "exp":20,
+    "point":1
+}
