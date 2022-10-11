@@ -74,7 +74,7 @@ router.post('/version', function(req, res, next) {
   const user_version = req.body.version;
   console.log(user_version);
   const version = "1-0-0";
-  const url = "https://se.is.kit.ac.jp/beakfish/";
+  const url = "https://se.is.kit.ac.jp/beakfish/apk/CodeQuiz-" + version + ".apk" ;
   const response = {"version":version,"url":url};
 
   //write log
