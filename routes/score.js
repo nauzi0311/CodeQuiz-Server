@@ -15,11 +15,13 @@ router.post('/', function(req, res, next) {
     for(i = 1;i <= level;i++) {
         var path = './data/soft1/' + i + '/';
         const filenames = fs.readdirSync(path);
-        filenames.forEach((fname) => {
-            const data = ReadJSONFile(path + fname);
-            id_list.push(data.id);
-            title_list.push(data.title);
-        });
+        if(filenames.length > 0) {
+            filenames.forEach((fname) => {
+                const data = ReadJSONFile(path + fname);
+                id_list.push(data.id);
+                title_list.push(data.title);
+            });
+        }
     }
     var json = {"id_list" : id_list,"title_list":title_list};
     res.json(json);
