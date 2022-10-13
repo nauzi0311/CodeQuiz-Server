@@ -46,13 +46,13 @@ string insert_color_code_for_Bracket(int pos,string token,string color_code,stri
         _tmpa = token.substr(pos+1,token.length()-1);
     }
     string result = _tmpp + "<color=" + color_code + ">" + bracket + "</color>" + _tmpa;
-    
+    cout << endl << "color_code: " << color_code << endl;
     return result;
 }
 
 bool BracketChecker(vector<string> &tokens,int i){
     string color_code[] = {"#ffd700","#da70d6","#179fff"};
-    static int bracket_count = 0;
+    static int bracket_count = 3;
     string token = tokens[i];
     int pos = 0;
     if((pos = token.find("(")) != string::npos){
@@ -77,19 +77,38 @@ bool BracketChecker(vector<string> &tokens,int i){
     return false;
 }
 
-bool StringChecker(vector<string> &tokens,int i){
+bool StringChecker(vector<string> &tokens,int &i){
     int pos = 0;
     string token = tokens[i];
     if((pos = token.find("\"")) != string::npos){
+        cout << endl << "token: " << token << endl;
+        cout << "pos: " << pos << endl;
         int next_pos = token.substr(pos+1).find("\"") + pos+1;
-        string _tmpp = token.substr(0,pos);
-        string _tmpm = token.substr(pos,next_pos - pos + 1);
-        string _tmpa = "";
-        if(next_pos+1 <= token.length()-1){
-            _tmpa = token.substr(next_pos+1,token.length()-1);
+        if(next_pos == pos){
+            string _tmpp = token.substr(0,pos);
+            string _tmpm = token.substr(pos);
+            string result = _tmpp + "<color=#ce9178>" + _tmpm;
+            tokens[i] = result;
+            token = tokens[++i];
+            while((next_pos = token.find("\"")) == string::npos){
+                token = tokens[++i];
+            }
+            _tmpp = token.substr(0,next_pos+1);
+            _tmpm = token.substr(next_pos+1);
+            cout << "_tmpp: " << _tmpp << endl;
+            cout << "_tmpm: " << _tmpm << endl;
+            result = _tmpp + "</color>" + _tmpm;
+            tokens[i] = result;
+        }else{
+            string _tmpp = token.substr(0,pos);
+            string _tmpm = token.substr(pos,next_pos - pos + 1);
+            string _tmpa = "";
+            if(next_pos+1 <= token.length()-1){
+                _tmpa = token.substr(next_pos+1,token.length()-1);
+            }
+            string result = _tmpp + "<color=#ce9178>" + _tmpm + "</color>" + _tmpa;
+            tokens[i] = result;
         }
-        string result = _tmpp + "<color=#ce9178>" + _tmpm + "</color>" + _tmpa;
-        tokens[i] = result;
         return true;
     }
     return false;
@@ -196,6 +215,7 @@ int main() {
         }
     }
     for(int i = 0; i < Tokens.size(); i++){
+        cout << Tokens[i] << " ";
         TokenChecker(Tokens,i);
         StringChecker(Tokens,i);
         BracketChecker(Tokens,i);
