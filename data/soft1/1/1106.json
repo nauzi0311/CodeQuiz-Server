@@ -2,7 +2,7 @@
     "id": 1106,
     "title": "出力6",
     "question": "???に入るのはなに",
-    "source":"#include <stdio.h>\n\nint main(){\n  printf(\"3 plus 8 is %d\",???);\n  return (0);\n}",
+    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\tprintf<color=#da70d6>(</color><color=#ce9178>\"</color>3 plus 8 is %d<color=#ce9178>\"</color>,???<color=#da70d6>)</color>;\n\t<color=#c586c0>return</color> <color=#da70d6>(</color>0<color=#da70d6>)</color>;\n<color=#ffd700>}</color>\n",
     "output": "3 plus 8 is 11",
     "choice": [
         "\"3+8\"",

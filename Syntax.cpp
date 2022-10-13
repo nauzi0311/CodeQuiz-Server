@@ -39,46 +39,144 @@ bool DefineIncludeChecker(vector<string> &tokens,int i){
     return false;
 }
 
-bool Bracket(vector<string> &tokens,int i){
-    string color_code[] = {"ffd700","da70d6","179fff"};
+string insert_color_code_for_Bracket(int pos,string token,string color_code,string bracket){
+    string _tmpp = token.substr(0,pos);
+    string _tmpa = "";
+    if(pos+1 <= token.length()-1){
+        _tmpa = token.substr(pos+1,token.length()-1);
+    }
+    string result = _tmpp + "<color=" + color_code + ">" + bracket + "</color>" + _tmpa;
+    
+    return result;
+}
+
+bool BracketChecker(vector<string> &tokens,int i){
+    string color_code[] = {"#ffd700","#da70d6","#179fff"};
     static int bracket_count = 0;
     string token = tokens[i];
-    if((int pos = token.find("(")) != string::npos){
-        string _tmpp = token.substr(0,pos);
-        string _tmpa = "";
-        if(pos+1 <= token.length()-1){
-            _tmpa = token.substr(pos+1,token.length()-1);
-        }
-
+    int pos = 0;
+    if((pos = token.find("(")) != string::npos){
+        token = insert_color_code_for_Bracket(pos,token,color_code[bracket_count++%3],"(");
     }
+    if((pos = token.find(")")) != string::npos){
+        token = insert_color_code_for_Bracket(pos,token,color_code[--bracket_count%3],")");
+    }
+    if((pos = token.find("{")) != string::npos){
+        token = insert_color_code_for_Bracket(pos,token,color_code[bracket_count++%3],"{");
+    }
+    if((pos = token.find("}")) != string::npos){
+        token = insert_color_code_for_Bracket(pos,token,color_code[--bracket_count%3],"}");
+    }
+    if((pos = token.find("[")) != string::npos){
+        token = insert_color_code_for_Bracket(pos,token,color_code[bracket_count++%3],"[");
+    }
+    if((pos = token.find("]")) != string::npos){
+        token = insert_color_code_for_Bracket(pos,token,color_code[--bracket_count%3],"]");
+    }
+    tokens[i] = token;
+    return false;
 }
+
+bool StringChecker(vector<string> &tokens,int i){
+    int pos = 0;
+    string token = tokens[i];
+    if((pos = token.find("\"")) != string::npos){
+        int next_pos = token.substr(pos+1).find("\"") + pos+1;
+        string _tmpp = token.substr(0,pos);
+        string _tmpm = token.substr(pos,next_pos - pos + 1);
+        string _tmpa = "";
+        if(next_pos+1 <= token.length()-1){
+            _tmpa = token.substr(next_pos+1,token.length()-1);
+        }
+        string result = _tmpp + "<color=#ce9178>" + _tmpm + "</color>" + _tmpa;
+        tokens[i] = result;
+        return true;
+    }
+    return false;
+}
+
+
+
 void print_script(vector<string> Tokens){
     int tab_count = 0;
+    cout << "Preview:" << endl;
     for(int i = 0; i < Tokens.size(); i++) {
-        char last = Tokens[i][Tokens[i].length() - 1];
-        cout << Tokens[i] << " ";
-        switch (last)
-        {
-        case '{':
-            tab_count++;
-            
-            break;
-        case ';':
-            cout << endl;
-            if(i + 1 < Tokens.size()){
-                if(Tokens[i+1][Tokens[i+1].length() - 1] == '}') tab_count--;
-                for(int j = 0; j < tab_count;j++){
-                    cout << '\t';
+        //;見つけたら改行
+        //{見つけたら改行してタブ増やす
+        //}見つけたらタブ減らして改行
+        string token = Tokens[i];
+        int pos = 0;
+        if((pos = token.rfind(";")) != string::npos){
+            if(pos == token.length()-1){
+                cout << token << endl;
+                if(Tokens[i+1].find("}") != string::npos){
+                    tab_count--;
+                    for(int j = 0; j < tab_count; j++)cout << "\t";
+                    cout << Tokens[i+1] << endl;
+                    i++;
                 }
+                for(int j = 0; j < tab_count; j++)cout << "\t";
+                continue;
             }
-            break;
-        default:
-            regex re(R"(<.*\.h>)");
-            if(regex_search(Tokens[i],re)){
-                cout << endl;
-            }
-            break;
         }
+        if((pos = token.find("{")) != string::npos){
+            cout << token << endl;
+            tab_count++;
+            if(Tokens[i+1] == "}"){
+                tab_count--;
+                for(int j = 0; j < tab_count; j++)cout << "\t";
+                cout << Tokens[i+1] << endl;
+                i++;
+            }
+            for(int j = 0; j < tab_count; j++)cout << "\t";
+            continue;
+        }
+        regex re(R"(<.*\.h>)");
+        if(regex_search(token,re)){
+            cout << token << endl;
+            continue;
+        }
+        cout << token << " ";
+    }
+
+    cout << endl << "JSON:" << endl;
+    for(int i = 0; i < Tokens.size(); i++) {
+        string token = Tokens[i];
+        int pos = 0;
+        if((pos = token.find("\"")) != string::npos){
+            token = regex_replace(token,regex("\""),"\\\"");
+        }
+        if((pos = token.rfind(";")) != string::npos){
+            if(pos == token.length()-1){
+                cout << token << "\\n";
+                if(Tokens[i+1].find("}") != string::npos){
+                    tab_count--;
+                    for(int j = 0; j < tab_count; j++)cout << "\\t";
+                    cout << Tokens[i+1] << "\\n";
+                    i++;
+                }
+                for(int j = 0; j < tab_count; j++)cout << "\\t";
+                continue;
+            }
+        }
+        if((pos = token.find("{")) != string::npos){
+            cout << token << "\\n";
+            tab_count++;
+            if(Tokens[i+1] == "}"){
+                tab_count--;
+                for(int j = 0; j < tab_count; j++)cout << "\\t";
+                cout << Tokens[i+1] << "\\n";
+                i++;
+            }
+            for(int j = 0; j < tab_count; j++)cout << "\\t";
+            continue;
+        }
+        regex re(R"(<.*\.h>)");
+        if(regex_search(token,re)){
+            cout << token << "\\n";
+            continue;
+        }
+        cout << token << " ";
     }
 }
 
@@ -98,7 +196,9 @@ int main() {
         }
     }
     for(int i = 0; i < Tokens.size(); i++){
-        if(TokenChecker(Tokens,i))continue;
+        TokenChecker(Tokens,i);
+        StringChecker(Tokens,i);
+        BracketChecker(Tokens,i);
         if(DefineIncludeChecker(Tokens,i)){
             i++;
             continue;
