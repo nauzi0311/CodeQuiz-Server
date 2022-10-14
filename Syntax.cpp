@@ -26,9 +26,12 @@ bool TokenChecker(vector<string> &tokens, int i)
     }
     for (auto s : control)
     {
-        if (tokens[i] == s)
+        int pos = 0;
+        if ((pos = tokens[i].find(s)) != string::npos)
         {
-            tokens[i] = "<color=#c586c0>" + tokens[i] + "</color>";
+            string _tmp_pre = tokens[i].substr(0,pos);
+            string _tmp_post = tokens[i].substr(pos + s.length());
+            tokens[i] = _tmp_pre + "<color=#c586c0>" + s + "</color>" + _tmp_post;
             return true;
         }
     }
@@ -55,8 +58,6 @@ string insert_color_code_for_Bracket(int pos, string token, string color_code, s
         _tmpa = token.substr(pos + 1, token.length() - 1);
     }
     string result = _tmpp + "<color=" + color_code + ">" + bracket + "</color>" + _tmpa;
-    cout << endl
-         << "color_code: " << color_code << endl;
     return result;
 }
 
@@ -126,9 +127,6 @@ bool StringChecker(vector<string> &tokens, int &i)
     string token = tokens[i];
     if ((pos = token.find("\"")) != string::npos)
     {
-        cout << endl
-             << "token: " << token << endl;
-        cout << "pos: " << pos << endl;
         int next_pos = token.substr(pos + 1).find("\"") + pos + 1;
         if (next_pos == pos)
         {
@@ -143,8 +141,6 @@ bool StringChecker(vector<string> &tokens, int &i)
             }
             _tmpp = token.substr(0, next_pos + 1);
             _tmpm = token.substr(next_pos + 1);
-            cout << "_tmpp: " << _tmpp << endl;
-            cout << "_tmpm: " << _tmpm << endl;
             result = _tmpp + "</color>" + _tmpm;
             tokens[i] = result;
         }

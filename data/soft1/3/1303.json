@@ -1,0 +1,16 @@
+{
+    "id": 1303,
+    "title": "条件3",
+    "question": "???に入るのはなに",
+    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> x = 10;\n\t<color=#c586c0>if</color><color=#ffd700>(</color>x ??? 11<color=#ffd700>)</color><color=#ffd700>{</color>\n\t\tprintf<color=#ffd700>(</color><color=#ce9178>\"True\"</color><color=#ffd700>)</color>;\n\t\t<color=#c586c0>return</color> 0;\n\t<color=#ffd700>}</color>\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"False\"</color><color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "True",
+    "choice": [
+        "<=",
+        "=<",
+        ">=",
+        "=>"
+    ],
+    "answer" : 1,
+    "exp":20,
+    "point":1
+}

@@ -2,7 +2,7 @@
     "id": 1205,
     "title": "演算子2",
     "question": "???に入るのはなに",
-    "source": "#include <stdio.h>\n\nint main(){\n  int x;\n  x = 10;\n  x ??? 3;\n  printf(\"%d\",x);\n  return (0);\n}",
+    "source": "<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> x;\n\tx = 10;\n\tx ??? 3;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,x<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> <color=#ffd700>(</color>0<color=#ffd700>)</color>;\n<color=#ffd700>}</color>\n",
     "output": "30",
     "choice": [
         "+=",
