@@ -2,7 +2,7 @@
     "id": 1209,
     "title": "演算子5",
     "question": "???に入るのはなに",
-    "source":"#include <stdio.h>\n\nint main(){\n  int x,y,z;\n  x = 2;y = 6;z = 36;\n  z = z - (y - x);\n  printf(\"%d\",z);\n  return (0);\n}",
+    "source": "#include <stdio.h>\n\nint main(){\n  int x,y,z;\n  x = 2;y = 6;z = 36;\n  z = z - (y - x);\n  printf(\"%d\",z);\n  return (0);\n}",
     "output": "???",
     "choice": [
         "32",
@@ -10,7 +10,7 @@
         "-40",
         "36"
     ],
-    "answer" : 1,
-    "exp":20,
-    "point":1
+    "answer": 1,
+    "exp": 20,
+    "point": 1
 }

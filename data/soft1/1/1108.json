@@ -2,7 +2,7 @@
     "id": 1108,
     "title": "出力8",
     "question": "???に入るのはなに",
-    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\tprintf<color=#da70d6>(</color><color=#ce9178>\"???\"</color>,2.7182818<color=#da70d6>)</color>;\n\t<color=#c586c0>return</color> <color=#da70d6>(</color>0<color=#da70d6>)</color>;\n<color=#ffd700>}</color>\n",
+    "source": "<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\tprintf<color=#ffd70>(</color><color=#ce9178>\"???\"</color>,2.7182818<color=#ffd70>)</color>;\n\t<color=#c586c0>return</color> <color=#ffd70>(</color>0<color=#ffd70>)</color>;\n<color=#ffd700>}</color>\n",
     "output": "2.718",
     "choice": [
         "%f",
@@ -10,7 +10,7 @@
         "%.3f",
         "%d"
     ],
-    "answer" : 3,
-    "exp":10,
-    "point":1
+    "answer": 3,
+    "exp": 10,
+    "point": 1
 }

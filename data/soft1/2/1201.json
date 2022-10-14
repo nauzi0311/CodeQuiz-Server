@@ -2,7 +2,7 @@
     "id": 1201,
     "title": "型1",
     "question": "???に入るのはなに",
-    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t??? x;\n\tx = 3;\n\tprintf<color=#da70d6>(</color><color=#ce9178>\"%d\"</color>,x<color=#da70d6>)</color>;\n\t<color=#c586c0>return</color> <color=#da70d6>(</color>0<color=#da70d6>)</color>;\n<color=#ffd700>}</color>\n",
+    "source": "<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t??? x;\n\tx = 3;\n\tprintf<color=#ffd70>(</color><color=#ce9178>\"%d\"</color>,x<color=#ffd70>)</color>;\n\t<color=#c586c0>return</color> <color=#ffd70>(</color>0<color=#ffd70>)</color>;\n<color=#ffd700>}</color>\n",
     "output": "3",
     "choice": [
         "int",
@@ -10,7 +10,7 @@
         "float",
         "double"
     ],
-    "answer" : 1,
-    "exp":20,
-    "point":1
+    "answer": 1,
+    "exp": 20,
+    "point": 1
 }
