@@ -54,25 +54,46 @@ bool BracketChecker(vector<string> &tokens,int i){
     string color_code[] = {"#ffd700","#da70d6","#179fff"};
     static int bracket_count = 3;
     string token = tokens[i];
+    //string search = token;
     int pos = 0;
-    if((pos = token.find("(")) != string::npos){
-        token = insert_color_code_for_Bracket(pos,token,color_code[bracket_count++%3],"(");
-    }
-    if((pos = token.find(")")) != string::npos){
-        token = insert_color_code_for_Bracket(pos,token,color_code[--bracket_count%3],")");
-    }
-    if((pos = token.find("{")) != string::npos){
-        token = insert_color_code_for_Bracket(pos,token,color_code[bracket_count++%3],"{");
-    }
-    if((pos = token.find("}")) != string::npos){
-        token = insert_color_code_for_Bracket(pos,token,color_code[--bracket_count%3],"}");
-    }
-    if((pos = token.find("[")) != string::npos){
-        token = insert_color_code_for_Bracket(pos,token,color_code[bracket_count++%3],"[");
-    }
-    if((pos = token.find("]")) != string::npos){
-        token = insert_color_code_for_Bracket(pos,token,color_code[--bracket_count%3],"]");
-    }
+    int next = pos;
+    //while(next < token.length()){
+        if( ((pos = token.substr(next).find("(")) != string::npos) || 
+            ((pos = token.substr(next).find("{")) != string::npos) || 
+            ((pos = token.substr(next).find("[")) != string::npos) ||
+            ((pos = token.substr(next).find(")")) != string::npos) ||
+            ((pos = token.substr(next).find("}")) != string::npos) ||
+            ((pos = token.substr(next).find("]")) != string::npos)){
+            string hit_bracket = {token[pos + next]};
+            if
+            token = insert_color_code_for_Bracket(pos,token,color_code[bracket_count++%3],hit_bracket);
+            next += pos;
+        }
+        if( ((pos = token.substr(next).find(")")) != string::npos) || ((pos = token.substr(next).find("}")) != string::npos) || ((pos = token.substr(next).find("]")) != string::npos)){
+            string hit_bracket = {token[pos + next]};
+            token = insert_color_code_for_Bracket(pos,token,color_code[--bracket_count%3],hit_bracket);
+            next += pos;
+        }
+    //}
+
+    // if((pos = token.find("(")) != string::npos){
+    //     token = insert_color_code_for_Bracket(pos,token,color_code[bracket_count++%3],"(");
+    // }
+    // if((pos = token.find(")")) != string::npos){
+    //     token = insert_color_code_for_Bracket(pos,token,color_code[--bracket_count%3],")");
+    // }
+    // if((pos = token.find("{")) != string::npos){
+    //     token = insert_color_code_for_Bracket(pos,token,color_code[bracket_count++%3],"{");
+    // }
+    // if((pos = token.find("}")) != string::npos){
+    //     token = insert_color_code_for_Bracket(pos,token,color_code[--bracket_count%3],"}");
+    // }
+    // if((pos = token.find("[")) != string::npos){
+    //     token = insert_color_code_for_Bracket(pos,token,color_code[bracket_count++%3],"[");
+    // }
+    // if((pos = token.find("]")) != string::npos){
+    //     token = insert_color_code_for_Bracket(pos,token,color_code[--bracket_count%3],"]");
+    // }
     tokens[i] = token;
     return false;
 }
