@@ -1,0 +1,16 @@
+{
+    "id": 1703,
+    "title": "関数の応用3",
+    "question": "???に入るのはなに",
+    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> func<color=#ffd700>(</color>int x<color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#c586c0>if</color><color=#ffd700>(</color>x == 1 || x == 2<color=#ffd700>)</color> <color=#c586c0>return</color> 1;\n\t<color=#c586c0>return</color> func<color=#ffd700>(</color>x-1<color=#ffd700>)</color> + func<color=#ffd700>(</color>x-2<color=#ffd700>)</color>;\n<color=#ffd700>}</color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> a = 4;\n\ta = func<color=#ffd700>(</color>a<color=#ffd700>)</color>;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,a<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "???",
+    "choice": [
+        "3",
+        "2",
+        "1",
+        "5"
+    ],
+    "answer" : 1,
+    "exp":50,
+    "point":2
+}

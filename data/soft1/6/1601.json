@@ -1,16 +1,16 @@
 {
-    "id": 1201,
-    "title": "型1",
+    "id": 1601,
+    "title": "関数1",
     "question": "???に入るのはなに",
-    "source":"include <stdio.h>\n\nint main(){\n  ??? x;\n  x = 3;\n  printf(\"%d\",x);\n  return (0);\n}",
-    "output": "3",
+    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> func<color=#ffd700>(</color>int x,int y<color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#c586c0>return</color> x + y;\n<color=#ffd700>}</color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> a = 2,b = 3,c;\n\tc = ???;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,c<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "5",
     "choice": [
-        "int",
-        "char",
-        "float",
-        "double"
+        "func(1,5)",
+        "int func(a,b)",
+        "func(&a,&b)",
+        "func(a,b)"
     ],
-    "answer" : 1,
-    "exp":20,
-    "point":1
+    "answer" : 4,
+    "exp":50,
+    "point":2
 }

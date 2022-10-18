@@ -1,0 +1,16 @@
+{
+    "id": 1605,
+    "title": "関数5",
+    "question": "???に入るのはなに",
+    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> a = 2;\n<color=#358cd6>int</color> func<color=#ffd700>(</color>int x,int y<color=#ffd700>)</color><color=#ffd700>{</color>\n\ta += 1;\n\t<color=#c586c0>return</color> x + y;\n<color=#ffd700>}</color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> b = 3,c;\n\tc = func<color=#ffd700>(</color>a,b<color=#ffd700>)</color>;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d %d\"</color>,c,a<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "???",
+    "choice": [
+        "5 3",
+        "5 2",
+        "6 3",
+        "6 2"
+    ],
+    "answer" : 1,
+    "exp":50,
+    "point":2
+}

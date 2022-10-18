@@ -71,7 +71,7 @@ bool BracketChecker(vector<string> &tokens, int i)
     int pos = 0;
     if ((pos = token.find("(")) != string::npos)
     {
-        while (pos != string::npos)
+        while (pos != string::npos || pos >= 0)
         {
             token = insert_color_code_for_Bracket(pos, token, color_code, "(");
             pos = token.substr(pos + 16).find("(");
@@ -79,44 +79,46 @@ bool BracketChecker(vector<string> &tokens, int i)
     }
     if ((pos = token.find(")")) != string::npos)
     {
-        while (pos != string::npos)
+        while (pos != string::npos || pos >= 0)
         {
             token = insert_color_code_for_Bracket(pos, token, color_code, ")");
-            pos = token.substr(pos + 16).find("(");
+            pos = token.substr(pos + 16).find(")");
         }
     }
     if ((pos = token.find("{")) != string::npos)
     {
-        while (pos != string::npos)
+        int i = 3;
+        while (pos != string::npos || pos >= 0)
         {
             token = insert_color_code_for_Bracket(pos, token, color_code, "{");
-            pos = token.substr(pos + 16).find("(");
+            pos = token.substr(pos + 16).find("{");
         }
     }
     if ((pos = token.find("}")) != string::npos)
     {
-        while (pos != string::npos)
+        while (pos != string::npos || pos >= 0)
         {
             token = insert_color_code_for_Bracket(pos, token, color_code, "}");
-            pos = token.substr(pos + 16).find("(");
+            pos = token.substr(pos + 16).find("}");
         }
     }
     if ((pos = token.find("[")) != string::npos)
     {
-        while (pos != string::npos)
+        while (pos != string::npos || pos >= 0)
         {
             token = insert_color_code_for_Bracket(pos, token, color_code, "[");
-            pos = token.substr(pos + 16).find("(");
+            pos = token.substr(pos + 16).find("[");
         }
     }
     if ((pos = token.find("]")) != string::npos)
     {
-        while (pos != string::npos)
+        while (pos != string::npos || pos >= 0)
         {
             token = insert_color_code_for_Bracket(pos, token, color_code, "]");
-            pos = token.substr(pos + 16).find("(");
+            pos = token.substr(pos + 16).find("]");
         }
     }
+    cout << token << endl;
     tokens[i] = token;
     return false;
 }
@@ -291,10 +293,14 @@ int main()
     }
     for (int i = 0; i < Tokens.size(); i++)
     {
-        cout << Tokens[i] << " ";
+        //cout << Tokens[i] << " ";
+        cout << Tokens[i] << endl;
         TokenChecker(Tokens, i);
+        cout << 1 << endl;
         StringChecker(Tokens, i);
+        cout << 2 << endl;
         BracketChecker(Tokens, i);
+        cout << 3 << endl;
         if (DefineIncludeChecker(Tokens, i))
         {
             i++;

@@ -1,1 +1,6 @@
-[2022年10月11日 15時04分45秒] signup process | 11111111 signup as PiyoPiyo using id:poijnbgtrdx
+[2022年10月17日 16時55分02秒] signup process | 11111111 signup as debug using id:debug
+[2022年10月17日 16時55分03秒] access calender {11111111}2022-10-17
+[2022年10月17日 16時55分07秒] request question "ソフトウェア演習Ⅰ 第1回" 
+[2022年10月17日 16時56分41秒] access index {11111111}
+[2022年10月17日 16時56分42秒] access calender {11111111}2022-10-17
+[2022年10月17日 16時56分45秒] request question "ソフトウェア演習Ⅰ 第1回" 

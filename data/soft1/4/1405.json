@@ -1,0 +1,16 @@
+{
+    "id": 1405,
+    "title": "繰り返し5",
+    "question": "???に入るのはなに",
+    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> i;\n\ti = 0;\n\t<color=#c586c0>while</color><color=#ffd700>(</color>i < 4<color=#ffd700>)</color><color=#ffd700>{</color>\n\t\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,i++<color=#ffd700>)</color>;\n\t<color=#ffd700>}</color>\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "???",
+    "choice": [
+        "234",
+        "1234",
+        "123",
+        "0123"
+    ],
+    "answer" : 4,
+    "exp":30,
+    "point":2
+}

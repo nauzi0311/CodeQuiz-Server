@@ -2,12 +2,12 @@
     "id": 1203,
     "title": "型3",
     "question": "???に入るのはなに",
-    "source": "<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t??? x;\n\tx = 'a';\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%f\"</color>,x<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> <color=#ffd700>(</color>0<color=#ffd700>)</color>;\n<color=#ffd700>}</color>\n",
+    "source": "<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t??? x;\n\tx = 14;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%f\"</color>,x<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> <color=#ffd700>(</color>0<color=#ffd700>)</color>;\n<color=#ffd700>}</color>\n",
     "output": "14.000000",
     "choice": [
         "int",
         "char",
-        "float",
+        "short",
         "double"
     ],
     "answer": 4,

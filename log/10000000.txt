@@ -1,0 +1,169 @@
+[2022年10月18日 11時39分42秒] signup process | 10000000 signup as qwertyuiop using id:qwertyuiop
+[2022年10月18日 11時39分43秒] access calender {10000000}2022-10-18
+[2022年10月18日 11時39分47秒] request question "ソフトウェア演習Ⅰ 第1回" 
+[2022年10月18日 11時40分17秒] update result 
+ソフトウェア演習Ⅰ 第1回
+id: 1102,1107,1105,1106,1103,1108,1104
+second_list: 2,1,2,4,4,1,2
+user_answer: 3,1,2,4,2,3,4
+correct: true,true,true,true,true,true,false
+level: 2
+exp: 20
+point: 6
+correct_id: 1102,1103,1105,1106,1107,1108
+correct_count: 6
+badge: false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false
+date: 2022-10-18
+[2022年10月18日 11時40分22秒] access calender {10000000}2022-10-18
+[2022年10月18日 11時40分25秒] request question "ソフトウェア演習Ⅰ 第2回" 
+[2022年10月18日 11時42分01秒] update result 
+ソフトウェア演習Ⅰ 第2回
+id: 1205,1202,1201,1208,1209,1203,1206
+second_list: 3,3,2,7,3,0,4
+user_answer: 2,2,1,2,1,0,3
+correct: true,true,true,true,true,false,true
+level: 3
+exp: 60
+point: 12
+correct_id: 1102,1103,1105,1106,1107,1108,1201,1202,1205,1206,1208,1209
+correct_count: 12
+badge: false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false
+date: 2022-10-18
+[2022年10月18日 11時42分05秒] access calender {10000000}2022-10-18
+[2022年10月18日 11時42分09秒] request question "ソフトウェア演習Ⅰ 第3回" 
+[2022年10月18日 11時43分39秒] update result 
+ソフトウェア演習Ⅰ 第3回
+id: 1306,1302,1307,1305,1303,1301,1308
+second_list: 13,13,10,16,12,4,10
+user_answer: 2,4,1,1,1,2,1
+correct: true,true,true,true,true,true,true
+level: 4
+exp: 90
+point: 19
+correct_id: 1102,1103,1105,1106,1107,1108,1201,1202,1205,1206,1208,1209,1301,1302,1303,1305,1306,1307,1308
+correct_count: 19
+badge: false,true,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false
+date: 2022-10-18
+[2022年10月18日 11時44分06秒] access detail 10000000 id:1305
+[2022年10月18日 11時44分34秒] access calender {10000000}2022-10-18
+[2022年10月18日 11時44分38秒] request question "ソフトウェア演習Ⅰ 第4回" 
+[2022年10月18日 11時46分05秒] update result 
+ソフトウェア演習Ⅰ 第4回
+id: 1406,1402,1401,1403,1405,1404,1407
+second_list: 16,9,7,9,10,4,9
+user_answer: 1,3,3,2,4,1,2
+correct: true,true,true,true,true,true,false
+level: 5
+exp: 120
+point: 31
+correct_id: 1102,1103,1105,1106,1107,1108,1201,1202,1205,1206,1208,1209,1301,1302,1303,1305,1306,1307,1308,1401,1402,1403,1404,1405,1406
+correct_count: 25
+badge: false,true,true,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,true,true,false,false,false,false,false,false,false,false
+date: 2022-10-18
+[2022年10月18日 11時46分08秒] access calender {10000000}2022-10-18
+[2022年10月18日 11時46分12秒] request question "ソフトウェア演習Ⅰ 第5回" 
+[2022年10月18日 11時48分24秒] update result 
+ソフトウェア演習Ⅰ 第5回
+id: 1505,1507,1504,1501,1506,1502,1503
+second_list: 4,0,7,6,0,8,4
+user_answer: 3,0,2,1,0,4,1
+correct: true,false,true,true,false,true,true
+level: 6
+exp: 70
+point: 41
+correct_id: 1102,1103,1105,1106,1107,1108,1201,1202,1205,1206,1208,1209,1301,1302,1303,1305,1306,1307,1308,1401,1402,1403,1404,1405,1406,1501,1502,1503,1504,1505
+correct_count: 30
+badge: false,true,true,false,false,false,false,false,true,true,false,false,false,false,false,false,false,false,false,true,true,true,false,false,false,false,false,false,false
+date: 2022-10-18
+[2022年10月18日 11時48分27秒] access calender {10000000}2022-10-18
+[2022年10月18日 11時48分31秒] request question "ソフトウェア演習Ⅰ 第6回" 
+[2022年10月18日 11時50分53秒] update result 
+ソフトウェア演習Ⅰ 第6回
+id: 1604,1603,1607,1601,1606,1602,1605
+second_list: 16,5,9,10,8,0,0
+user_answer: 1,3,2,4,1,0,0
+correct: true,true,true,true,true,false,false
+level: 6
+exp: 370
+point: 51
+correct_id: 1102,1103,1105,1106,1107,1108,1201,1202,1205,1206,1208,1209,1301,1302,1303,1305,1306,1307,1308,1401,1402,1403,1404,1405,1406,1501,1502,1503,1504,1505,1601,1603,1604,1606,1607
+correct_count: 35
+badge: false,true,true,false,false,false,false,false,true,true,false,false,false,false,false,false,false,false,false,true,true,true,false,false,false,false,false,false,false
+date: 2022-10-18
+[2022年10月18日 11時50分57秒] access calender {10000000}2022-10-18
+[2022年10月18日 11時51分01秒] request question "ソフトウェア演習Ⅰ 第6回" 
+[2022年10月18日 11時53分27秒] update result 
+ソフトウェア演習Ⅰ 第6回
+id: 1606,1607,1604,1605,1603,1602,1601
+second_list: 6,8,4,24,7,0,3
+user_answer: 1,2,1,1,3,0,4
+correct: true,true,true,true,true,false,true
+level: 7
+exp: 170
+point: 63
+correct_id: 1102,1103,1105,1106,1107,1108,1201,1202,1205,1206,1208,1209,1301,1302,1303,1305,1306,1307,1308,1401,1402,1403,1404,1405,1406,1501,1502,1503,1504,1505,1601,1603,1604,1605,1606,1607
+correct_count: 41
+badge: false,true,true,true,false,false,false,false,true,true,true,false,false,false,false,false,false,false,false,true,true,true,false,false,false,false,false,false,false
+date: 2022-10-18
+[2022年10月18日 11時53分31秒] access calender {10000000}2022-10-18
+[2022年10月18日 11時53分36秒] request question "ソフトウェア演習Ⅰ 第7回" 
+[2022年10月18日 11時54分53秒] update result 
+ソフトウェア演習Ⅰ 第7回
+id: 1706,1702,1704,1705,1703,1707,1701
+second_list: 7,14,4,11,14,9,6
+user_answer: 3,4,4,2,1,1,2
+correct: true,true,true,true,true,true,true
+level: 7
+exp: 590
+point: 77
+correct_id: 1102,1103,1105,1106,1107,1108,1201,1202,1205,1206,1208,1209,1301,1302,1303,1305,1306,1307,1308,1401,1402,1403,1404,1405,1406,1501,1502,1503,1504,1505,1601,1603,1604,1605,1606,1607,1701,1702,1703,1704,1705,1706,1707
+correct_count: 48
+badge: false,true,true,true,false,false,false,false,true,true,true,false,false,false,false,false,false,false,false,true,true,true,false,false,false,false,false,false,false
+date: 2022-10-18
+[2022年10月18日 11時55分00秒] access calender {10000000}2022-10-18
+[2022年10月18日 11時58分00秒] request question "ソフトウェア演習Ⅰ 第7回" 
+[2022年10月18日 11時58分36秒] update result 
+ソフトウェア演習Ⅰ 第7回
+id: 1701,1702,1706,1707,1703,1705,1704
+second_list: 5,1,2,2,3,4,6
+user_answer: 2,4,3,1,1,2,4
+correct: true,true,true,true,true,true,true
+level: 8
+exp: 455
+point: 91
+correct_id: 1102,1103,1105,1106,1107,1108,1201,1202,1205,1206,1208,1209,1301,1302,1303,1305,1306,1307,1308,1401,1402,1403,1404,1405,1406,1501,1502,1503,1504,1505,1601,1603,1604,1605,1606,1607,1701,1702,1703,1704,1705,1706,1707
+correct_count: 55
+badge: false,true,true,true,false,false,false,false,true,true,true,false,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false
+date: 2022-10-18
+[2022年10月18日 11時58分40秒] access calender {10000000}2022-10-18
+[2022年10月18日 11時58分44秒] request question "ソフトウェア演習Ⅰ 第8回" 
+[2022年10月18日 12時03分21秒] update result 
+ソフトウェア演習Ⅰ 第8回
+id: 1803,1806,1805,1801,1802,1807,1804
+second_list: 0,8,0,10,2,7,5
+user_answer: 0,1,0,1,1,2,1
+correct: false,true,false,false,true,true,true
+level: 9
+exp: 115
+point: 99
+correct_id: 1102,1103,1105,1106,1107,1108,1201,1202,1205,1206,1208,1209,1301,1302,1303,1305,1306,1307,1308,1401,1402,1403,1404,1405,1406,1501,1502,1503,1504,1505,1601,1603,1604,1605,1606,1607,1701,1702,1703,1704,1705,1706,1707,1802,1804,1806,1807
+correct_count: 59
+badge: false,true,true,true,true,false,false,false,true,true,true,true,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false
+date: 2022-10-18
+[2022年10月18日 12時03分24秒] access calender {10000000}2022-10-18
+[2022年10月18日 12時03分29秒] request question "ソフトウェア演習Ⅰ 第9回" 
+[2022年10月18日 12時04分44秒] update result 
+ソフトウェア演習Ⅰ 第9回
+id: 1905,1904,1906,1907,1901,1902,1903
+second_list: 5,6,4,3,11,17,5
+user_answer: 1,2,3,4,1,2,2
+correct: true,true,true,false,true,true,true
+level: 9
+exp: 655
+point: 111
+correct_id: 1102,1103,1105,1106,1107,1108,1201,1202,1205,1206,1208,1209,1301,1302,1303,1305,1306,1307,1308,1401,1402,1403,1404,1405,1406,1501,1502,1503,1504,1505,1601,1603,1604,1605,1606,1607,1701,1702,1703,1704,1705,1706,1707,1802,1804,1806,1807,1901,1902,1903,1904,1905,1906
+correct_count: 65
+badge: false,true,true,true,true,false,false,false,true,true,true,true,false,false,false,false,false,false,false,true,true,true,true,false,false,false,false,false,false
+date: 2022-10-18
+[2022年10月18日 12時04分48秒] access calender {10000000}2022-10-18
+[2022年10月18日 12時04分54秒] request question "ソフトウェア演習Ⅰ 第9回" 

@@ -1,25 +1,15 @@
 #include <stdio.h>
 
-int main(){
-  int x;
-  x = 8;
-  switch (x)
-  {
-  case 2:
-    printf("2");
-  case 4:
-    printf("4");
-  case 6:
-    printf("6");
-  case 8:
-    printf("8");
-  case 10:
-    printf("10");
-    break;
-  default:
-    printf("default");
-    break;
+void func(char* string){
+  int i;
+  for(i = 0;i < 7;i++){
+    string[i] += ???;
   }
+}
 
+int main(){
+  char str[] = "aquatan";
+  func(str);
+  printf("%s",str);
   return 0;
 }

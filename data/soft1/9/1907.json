@@ -1,0 +1,16 @@
+{
+    "id": 1907,
+    "title": "文字コード3",
+    "question": "???に入るのはなに",
+    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>void</color> func<color=#ffd700>(</color><color=#358cd6>char</color>* string<color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> i;\n\t<color=#c586c0>for</color><color=#ffd700>(</color>i = 0;i < 7;i++<color=#ffd700>)</color><color=#ffd700>{</color>\n\t\tstring<color=#ffd700>[</color>i<color=#ffd700>]</color> += ???;\n\t<color=#ffd700>}</color>\n<color=#ffd700>}</color> <color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>char</color> str<color=#ffd700>[</color><color=#ffd700>]</color> = <color=#ce9178>\"AQUATAN\"</color>;\n\tfunc<color=#ffd700>(</color>str<color=#ffd700>)</color>;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%s\"</color>,str<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "AB",
+    "choice": [
+        "a-A",
+        "26",
+        "'A'-'a'",
+        "'a'-'A'"
+    ],
+    "answer" : 3,
+    "exp":60,
+    "point":2
+}

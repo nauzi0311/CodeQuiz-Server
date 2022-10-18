@@ -1,0 +1,16 @@
+{
+    "id": 1407,
+    "title": "繰り返す7",
+    "question": "???に入るのはなに",
+    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t\t<color=#358cd6>int</color> i,j;\n\t\t<color=#c586c0>for</color><color=#ffd700>(</color>i = 0;i < 3;i++<color=#ffd700>)</color><color=#ffd700>{</color>\n\t\t\t<color=#c586c0>for</color><color=#ffd700>(</color>j = 0;j < 1;j++<color=#ffd700>)</color><color=#ffd700>{</color>\n\t\t\t\t<color=#c586c0>if</color><color=#ffd700>(</color>j == 1<color=#ffd700>)</color>???;\n\t\t\t\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,2*i+j<color=#ffd700>)</color>;\n\t\t\t<color=#ffd700>}</color>\n\t\t\t<color=#ffd700>}</color> <color=#c586c0>return</color> 0;\n\t\t<color=#ffd700>}</color>\n",
+    "output": "024",
+    "choice": [
+        "return",
+        "continue",
+        "break",
+        "exit"
+    ],
+    "answer" : 3,
+    "exp":30,
+    "point":2
+}

@@ -1,0 +1,16 @@
+{
+    "id": 1507,
+    "title": "配列7",
+    "question": "???に入るのはなに",
+    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>char</color> list ??? = <color=#ffd700>{</color>\n\t\t<color=#ffd700>{</color>'a','q','\\0','b','x'<color=#ffd700>}</color>,\n\t\t<color=#ffd700>{</color>'u','a','t','\\0','y'<color=#ffd700>}</color>,\n\t\t<color=#ffd700>{</color>'a','n','\\0','w','z'<color=#ffd700>}</color>,\n\t<color=#ffd700>}</color>;\n\t<color=#358cd6>int</color> i;\n\t<color=#c586c0>for</color><color=#ffd700>(</color>i = 0;i < 3;i++<color=#ffd700>)</color><color=#ffd700>{</color>\n\t\tprintf<color=#ffd700>(</color><color=#ce9178>\"%s\"</color>,list<color=#ffd700>[</color>i<color=#ffd700>]</color><color=#ffd700>)</color>;\n\t<color=#ffd700>}</color>\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "hoge",
+    "choice": [
+        "[][4]",
+        "[][5]",
+        "[4][]",
+        "[5][]"
+    ],
+    "answer" : 2,
+    "exp":40,
+    "point":2
+}
