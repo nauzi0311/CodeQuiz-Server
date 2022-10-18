@@ -1,14 +1,3 @@
 [
-    {
-        "device": "a282cb63-4aaa-4f7c-b3c0-7733fe0e43f2",
-        "id": "debug",
-        "username": "debug",
-        "school_num": 11111111
-    },
-    {
-        "device": "5897155a-2772-465f-b5f0-fde9ff53d27d",
-        "id": "qwertyuiop",
-        "username": "qwertyuiop",
-        "school_num": 10000000
-    }
+
 ]
