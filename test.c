@@ -1,15 +1,8 @@
 #include <stdio.h>
-
-void func(char* string){
-  int i;
-  for(i = 0;i < 7;i++){
-    string[i] += ???;
-  }
-}
+#define TEST 10
 
 int main(){
-  char str[] = "aquatan";
-  func(str);
-  printf("%s",str);
+  char* list[3] = {"aqua","tan","aquatan"};
+  printf("%s",list[2]);
   return 0;
 }

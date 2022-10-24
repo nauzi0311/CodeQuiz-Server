@@ -1,0 +1,16 @@
+{
+    "id": 1904,
+    "title": "ポインタと配列4",
+    "question": "???に入るのはなに",
+    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> a<color=#ffd700>[</color><color=#ffd700>]</color> = <color=#ffd700>{</color>0,10,100<color=#ffd700>}</color>;\n\ta<color=#ffd700>[</color>0<color=#ffd700>]</color> += ??? + 1;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,a<color=#ffd700>[</color>0<color=#ffd700>]</color><color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "111",
+    "choice": [
+        "*(a++) + *(a+2)",
+        "*(a+1) + *(a+2)",
+        "*(++a) + *(a+2)",
+        "*(++a) + *(++a)"
+    ],
+    "answer" : 2,
+    "exp":60,
+    "point":2
+}
