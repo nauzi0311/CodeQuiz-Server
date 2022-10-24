@@ -1,6 +1,0 @@
-#include <stdio.h>
-
-int main(){
-  printf("3 plus 8 is %d",???);
-  return (0);
-}
