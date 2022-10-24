@@ -28,7 +28,6 @@ router.post('/', function (req, res, next) {
   WriteAddFile("./log/" + GetSchoolNum(device) + ".txt", log_data);
   console.log("question complete");
   res.json(response);
-  //res.json([response[0],response[1],response[2],response[3],response[4],response[5],response[6]]);
 });
 
 function stringToBinary(input) {
@@ -64,7 +63,7 @@ function GetQuestion(course, times) {
   var course_id;
   switch (course) {
     case "soft1":
-      course_id = 1000;
+      course_id = '1';
       break;
     default:
       try {
@@ -77,7 +76,7 @@ function GetQuestion(course, times) {
   const file_count = fs.readdirSync(course_dir).length;
   var question_number = GetRandom7Num(file_count);
   for (i = 0; i < question_number.length; i++) {
-    question_number[i] += course_id + times * 100;
+    question_number[i] = course_id + (times * 100 + question_number[i]).toString();
     console.log(course_dir + '/' + question_number[i] + '.json');
     questions[i] = ReadJSONFile(course_dir + '/' + question_number[i] + '.json');
     console.log(questions[i]);
