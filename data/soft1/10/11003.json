@@ -1,16 +1,16 @@
 {
-    "id": 1903,
-    "title": "ポインタと配列3",
+    "id": 11003,
+    "title": "ポインタの配列3",
     "question": "???に入るのはなに",
-    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>void</color> func<color=#ffd700>(</color><color=#358cd6>int</color>* p<color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> result;\n\tp<color=#ffd700>[</color>0<color=#ffd700>]</color> += 10;\n\tp<color=#ffd700>[</color>1<color=#ffd700>]</color> += 100;\n\tresult += *p + *<color=#ffd700>(</color>++p<color=#ffd700>)</color>;\n\t??? = result;\n<color=#ffd700>}</color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> a<color=#ffd700>[</color><color=#ffd700>]</color> = <color=#ffd700>{</color>0,1,0<color=#ffd700>}</color>;\n\tfunc<color=#ffd700>(</color>a<color=#ffd700>)</color>;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,a<color=#ffd700>[</color>2<color=#ffd700>]</color><color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
-    "output": "111",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#358cd6>int</color> argc,<color=#358cd6>char</color>* argv<color=#ffd700>[</color><color=#ffd700>]</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  printf<color=#ffd700>(</color><color=#ce9178>\"%s\"</color>,???<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "一つ目のコマンドライン引数",
     "choice": [
-        "--p[2]",
-        "(--p)[2]",
-        "--(p[2])",
-        "p[0]"
+        "argc[0]",
+        "*argv[0]",
+        "argv[0]",
+        "argv[1]"
     ],
-    "answer" : 2,
-    "exp":60,
+    "answer" : 4,
+    "exp":70,
     "point":2
 }

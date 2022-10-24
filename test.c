@@ -1,8 +1,8 @@
 #include <stdio.h>
-#define TEST 10
 
-int main(){
-  char* list[3] = {"aqua","tan","aquatan"};
-  printf("%s",list[2]);
+int main(int argc,char* argv[]){
+  int i = 1;
+  i = i >> 1 << 1;
+  printf("%d\n",i);
   return 0;
 }

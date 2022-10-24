@@ -1,6 +1,6 @@
 {
-    "id": 11001,
-    "title": "ポインタの配列1",
+    "id": 11105,
+    "title": "復習5",
     "question": "???に入るのはなに",
     "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6>char</color> ??? = <color=#ffd700>{</color><color=#ce9178>\"aqua\"</color>,<color=#ce9178>\"tan\"</color>,<color=#ce9178>\"aquatan\"</color><color=#ffd700>}</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%s\"</color>,list<color=#ffd700>[</color>2<color=#ffd700>]</color><color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
     "output": "aquatan",
