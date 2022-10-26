@@ -1,0 +1,16 @@
+{
+    "id": 11404,
+    "title": "ファイル操作4",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#358cd6>int</color> argc,<color=#358cd6>char</color>* argv<color=#ffd700>[</color><color=#ffd700>]</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  fprintf<color=#ffd700>(</color>???,<color=#ce9178>\"%s\"</color>,<color=#ce9178>\"aquatan\"</color><color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "aquatan",
+    "choice": [
+        "stdout",
+        "stdin",
+        "stderr",
+        "stdfl"
+    ],
+    "answer" : 1,
+    "exp":70,
+    "point":2
+}

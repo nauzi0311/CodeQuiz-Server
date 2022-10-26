@@ -1,0 +1,16 @@
+{
+    "id": 11205,
+    "title": "構造体5",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#c586c0>typedef</color> <color=#358cd6>struct</color> test<color=#ffd700>{</color>\n  <color=#358cd6>int</color> x;\n  <color=#358cd6>char</color> c;\n<color=#ffd700>}</color>TEST;\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#358cd6>int</color> argc,<color=#358cd6>char</color>* argv<color=#ffd700>[</color><color=#ffd700>]</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  TEST ex1 = <color=#ffd700>{</color>12,<color=#ce9178>'a'</color><color=#ffd700>}</color>,*p;\n  p = &ex1;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,???<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "",
+    "choice": [
+        "p.x",
+        "*p",
+        "*p->x",
+        "p->x"
+    ],
+    "answer" : 4,
+    "exp":70,
+    "point":2
+}

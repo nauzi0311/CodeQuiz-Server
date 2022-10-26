@@ -1,0 +1,16 @@
+{
+    "id": 11401,
+    "title": "ファイル操作1",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#358cd6>int</color> argc,<color=#358cd6>char</color>* argv<color=#ffd700>[</color><color=#ffd700>]</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  FILE* fp;\n  <color=#358cd6>char</color> buf<color=#ffd700>[</color>50<color=#ffd700>]</color>;\n  <color=#c586c0>if</color><color=#ffd700>(</color><color=#ffd700>(</color>fp = fopen<color=#ffd700>(</color><color=#ce9178>\"aquatan.txt\"</color>,???<color=#ffd700>)</color><color=#ffd700>)</color> == NULL<color=#ffd700>)</color><color=#ffd700>{</color>\n    printf<color=#ffd700>(</color><color=#ce9178>\"Error: Cannot open file <color=#ce9178>'aquatan.txt'</color>\n\"</color><color=#ffd700>)</color>;\n  <color=#ffd700>}</color>;\n  fgets<color=#ffd700>(</color>buf,50,fp<color=#ffd700>)</color>;\n  fclose<color=#ffd700>(</color>fp<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "",
+    "choice": [
+        "\"w\"",
+        "\"a\"",
+        "\"r\"",
+        "\"wb\""
+    ],
+    "answer" : 3,
+    "exp":70,
+    "point":2
+}

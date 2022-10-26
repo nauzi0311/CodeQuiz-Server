@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 int main(int argc,char* argv[]){
-  int i = 1;
-  i = i >> 1 << 1;
-  printf("%d\n",i);
+  char s[8];
+  fprintf(stdin,"%s","aquatan");
+  fscanf(stdin,"%s",s);
+  printf("%s",s);
   return 0;
 }
