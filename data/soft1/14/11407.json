@@ -1,0 +1,16 @@
+{
+    "id": 11407,
+    "title": "ファイル操作7",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#358cd6>int</color> argc,<color=#358cd6>char</color>* argv<color=#ffd700>[</color><color=#ffd700>]</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6>char</color> c;\n  ungetc<color=#ffd700>(</color><color=#ce9178>'a'</color>,???<color=#ffd700>)</color>;\n  scanf<color=#ffd700>(</color><color=#ce9178>\"%c\"</color>,&c<color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%c\"</color>,c<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "a",
+    "choice": [
+        "stdout",
+        "stdin",
+        "stderr",
+        "stdfl"
+    ],
+    "answer" : 2,
+    "exp":80,
+    "point":2
+}
