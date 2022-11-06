@@ -1,0 +1,16 @@
+{
+    "id": 11303,
+    "title": "復習ii3",
+    "question": "???に入るのはなに",
+    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> a = 10;\n<color=#358cd6>int</color> func<color=#ffd700>(</color>int x<color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#c586c0>if</color><color=#ffd700>(</color>x == 0<color=#ffd700>)</color> <color=#c586c0>return</color> 0;\n\t<color=#c586c0>return</color> a + func<color=#ffd700>(</color>x-1<color=#ffd700>)</color>;\n<color=#ffd700>}</color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\ta = func<color=#ffd700>(</color>a<color=#ffd700>)</color>;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,a<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "???",
+    "choice": [
+        "45",
+        "55",
+        "0",
+        "100"
+    ],
+    "answer" : 4,
+    "exp":50,
+    "point":2
+}
