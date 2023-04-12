@@ -2,9 +2,9 @@ var express = require('express');
 var router = express.Router();
 require('date-utils');
 
-const fs = require('fs');
 const child_process = require("child_process");
-const { WriteAddFile, GenerateTimestamp, GetSchoolNum,ReadJSONFile,GetUserData, WriteNewFile } = require('./library');
+const course = 'soft1'
+const { WriteAddFile, GenerateTimestamp, GetSchoolNum,ReadJSONFile} = require('../library');
 
 router.post('/', function(req, res, next) {
     console.log(req.body);
@@ -12,9 +12,9 @@ router.post('/', function(req, res, next) {
     const file_name = GetFileNameFromId(id);
     const detail_data = ReadJSONFile(file_name);
 
-    var log_data = GenerateTimestamp() + " access detail " + GetSchoolNum(device) + " id:" + id + "\n";
-    WriteAddFile("./log/log.txt",log_data);
-    WriteAddFile("./log/" + GetSchoolNum(device) + ".txt",log_data);
+    var log_data = GenerateTimestamp() + " access detail " + GetSchoolNum(device,course) + " id:" + id + "\n";
+    WriteAddFile("./log/soft1/log.txt",log_data);
+    WriteAddFile("./log/soft1/" + GetSchoolNum(device,course) + ".txt",log_data);
     console.log("detail complete");
     res.json(detail_data);
 });
@@ -25,10 +25,10 @@ function QuestData(body){
 }
 
 function GetFileNameFromId(id){
-    console.log(id);
+    console.log("id:" + id);
     var course,times;
-    console.log(parseInt(id / 1000));
-    switch(parseInt(id / 1000)){
+    console.log("Parse:" + parseInt(String(id).charAt(0)));
+    switch(parseInt(String(id).charAt(0))){
         case 1:
         course = "soft1";
         break;
@@ -41,7 +41,7 @@ function GetFileNameFromId(id){
         }
         break;
     }
-    times = parseInt(id / 100) % 10;
+    times = parseInt(String(id/100).substring(1));
     console.log("./data/" + course + '/' + times + '/' + id + ".json");
     return "./data/" + course + '/' + times + '/' + id + ".json";
 }

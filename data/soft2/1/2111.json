@@ -1,0 +1,17 @@
+{
+    "id": 2111,
+    "title": "再帰関数1",
+    "question": "???に入るのはなに(フィボナッチ)",
+    "source": "<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#358cd6>int</color> fib<color=#ffd700>(</color><color=#358cd6>int</color> n<color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#c586c0>if</color><color=#ffd700>(</color>n <= 2<color=#ffd700>)</color> <color=#c586c0>return</color> 1;\n  <color=#c586c0>return</color> fib<color=#ffd700>(</color>n-1<color=#ffd700>)</color> + fib<color=#ffd700>(</color>n-2<color=#ffd700>)</color>;\n<color=#ffd700>}</color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,fib<color=#ffd700>(</color>7<color=#ffd700>)</color><color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "<color=#ff0000>???</color>",
+    "choice": [
+        "1",
+        "3",
+        "8",
+        "13"
+    ],
+    "answer": 4,
+    "exp": 50,
+    "point": 1,
+    "rank":5
+}

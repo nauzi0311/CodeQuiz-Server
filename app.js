@@ -7,15 +7,24 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var memoRouter = require('./routes/memo');
-var questionRouter = require('./routes/question');
-var calenderRouter = require('./routes/calender');
-var resultRouter = require('./routes/result');
-var detailRouter = require('./routes/detail');
-var scoreRouter = require('./routes/score');
-var rankRouter = require('./routes/ranking');
+var indexRouter = require('./routes/soft1/index');
+var memoRouter = require('./routes/soft1/memo');
+var questionRouter = require('./routes/soft1/question');
+var calenderRouter = require('./routes/soft1/calender');
+var resultRouter = require('./routes/soft1/result');
+var detailRouter = require('./routes/soft1/detail');
+var scoreRouter = require('./routes/soft1/score');
+var rankRouter = require('./routes/soft1/ranking');
 //var addRouter = require('./routes/add');
+
+var indexRouter2 = require('./routes/soft2/index');
+var memoRouter2 = require('./routes/soft2/memo');
+var questionRouter2 = require('./routes/soft2/question');
+var calenderRouter2 = require('./routes/soft2/calender');
+var resultRouter2 = require('./routes/soft2/result');
+var detailRouter2 = require('./routes/soft2/detail');
+var scoreRouter2 = require('./routes/soft2/score');
+var rankRouter2 = require('./routes/soft2/ranking');
 
 
 var app = express();
@@ -39,6 +48,15 @@ app.use('/detail', detailRouter);
 app.use('/score', scoreRouter);
 app.use('/rank', rankRouter);
 // app.use('/add',addRouter);
+
+app.use('/soft2/index', indexRouter2);
+app.use('/soft2/memo', memoRouter2);
+app.use('/soft2/quest', questionRouter2);
+app.use('/soft2/calender', calenderRouter2);
+app.use('/soft2/result', resultRouter2);
+app.use('/soft2/detail', detailRouter2);
+app.use('/soft2/score', scoreRouter2);
+app.use('/soft2/rank', rankRouter2);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

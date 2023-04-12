@@ -1,0 +1,146 @@
+[2023年04月11日 11時07分18秒] request question "ソフトウェア演習Ⅱ 第1回" 
+[2023年04月11日 11時07分48秒] update result 
+ソフトウェア演習Ⅱ 第1回
+id: 2106,2107,2109,2110,2112,2111,2201
+second_list: 2,3,1,0,1,0,0
+user_answer: 3,2,4,3,4,4,1
+correct: true,true,true,true,true,true,true
+level: 3
+exp: 165
+point: 7
+correct_id: 2106,2107,2109,2110,2111,2112,2201
+correct_count: 7
+badge: 
+date: 2023-04-11
+[2023年04月11日 11時09分43秒] access index {45678912}
+[2023年04月11日 11時12分16秒] access index {45678912}
+[2023年04月11日 11時12分20秒] request question "ソフトウェア演習Ⅱ 第1回" 
+[2023年04月11日 11時12分47秒] update result 
+ソフトウェア演習Ⅱ 第1回
+id: 2108,2106,2110,2109,2111,2112,2201
+second_list: 1,1,1,1,0,1,1
+user_answer: 2,3,3,4,4,4,1
+correct: true,true,true,true,true,true,true
+level: 3
+exp: 165
+point: 7
+correct_id: 2106,2108,2109,2110,2111,2112,2201
+correct_count: 7
+badge: 
+date: 2023-04-11
+[2023年04月11日 11時21分43秒] access index {45678912}
+[2023年04月11日 11時22分20秒] access index {45678912}
+[2023年04月11日 11時22分23秒] request question "ソフトウェア演習Ⅱ 第1回" 
+[2023年04月11日 11時22分53秒] update result 
+ソフトウェア演習Ⅱ 第1回
+id: 2107,2106,2109,2110,2111,2112,2201
+second_list: 3,1,1,1,1,1,1
+user_answer: 2,3,4,3,4,4,1
+correct: true,true,true,true,true,true,true
+level: 3
+exp: 165
+point: 7
+correct_id: 2106,2107,2109,2110,2111,2112,2201
+correct_count: 7
+badge: 
+date: 2023-04-11
+[2023年04月11日 11時32分33秒] access index {45678912}
+[2023年04月11日 11時32分35秒] request question "ソフトウェア演習Ⅱ 第1回" 
+[2023年04月11日 11時33分08秒] update result 
+ソフトウェア演習Ⅱ 第1回
+id: 2106,2105,2109,2110,2112,2111,2201
+second_list: 1,1,1,3,0,1,1
+user_answer: 3,4,4,3,4,4,1
+correct: true,false,true,true,true,true,true
+level: 3
+exp: 120
+point: 6
+correct_id: 2106,2109,2110,2111,2112,2201
+correct_count: 6
+badge: 
+date: 2023-04-11
+[2023年04月11日 12時41分33秒] access index {45678912}
+[2023年04月11日 12時42分59秒] access index {45678912}
+[2023年04月11日 12時43分02秒] request question "ソフトウェア演習Ⅱ 第1回" 
+[2023年04月11日 12時43分59秒] update result 
+ソフトウェア演習Ⅱ 第1回
+id: 2108,2107,2109,2110,2112,2111,2201
+second_list: 23,3,2,1,1,2,3
+user_answer: 2,2,4,3,4,4,1
+correct: true,true,true,true,true,true,true
+level: 3
+exp: 165
+point: 7
+correct_id: 2107,2108,2109,2110,2111,2112,2201
+correct_count: 7
+badge: 
+date: 2023-04-11
+[2023年04月11日 12時58分28秒] access index {45678912}
+[2023年04月11日 12時58分32秒] request question "ソフトウェア演習Ⅱ 第1回" 
+[2023年04月11日 12時59分05秒] update result 
+ソフトウェア演習Ⅱ 第1回
+id: 2106,2105,2109,2110,2112,2111,2201
+second_list: 3,0,1,1,1,1,3
+user_answer: 3,3,4,3,4,4,1
+correct: true,true,true,true,true,true,true
+level: 3
+exp: 165
+point: 7
+correct_id: 2105,2106,2109,2110,2111,2112,2201
+correct_count: 7
+badge: 
+date: 2023-04-11
+[2023年04月11日 13時29分10秒] access index {45678912}
+[2023年04月11日 13時29分12秒] request question "ソフトウェア演習Ⅱ 第1回" 
+[2023年04月11日 13時29分40秒] update result 
+ソフトウェア演習Ⅱ 第1回
+id: 2105,2108,2109,2110,2112,2111,2201
+second_list: 1,1,1,1,0,0,1
+user_answer: 3,2,4,3,4,4,1
+correct: true,true,true,true,true,true,true
+level: 3
+exp: 165
+point: 7
+correct_id: 2105,2108,2109,2110,2111,2112,2201
+correct_count: 7
+badge: 
+date: 2023-04-11
+[2023年04月11日 13時31分41秒] access index {45678912}
+[2023年04月11日 13時32分11秒] access index {45678912}
+[2023年04月11日 13時32分14秒] request question "ソフトウェア演習Ⅱ 第1回" 
+[2023年04月11日 13時32分41秒] update result 
+ソフトウェア演習Ⅱ 第1回
+id: 2108,2105,2110,2109,2111,2112,2201
+second_list: 1,0,0,1,0,0,1
+user_answer: 2,4,3,4,4,4,1
+correct: true,false,true,true,true,true,true
+level: 3
+exp: 120
+point: 6
+correct_id: 2108,2109,2110,2111,2112,2201
+correct_count: 6
+badge: 
+date: 2023-04-11
+[2023年04月11日 13時53分45秒] access index {45678912}
+[2023年04月11日 13時53分48秒] request question "ソフトウェア演習Ⅱ 第1回" 
+[2023年04月11日 13時57分26秒] access index {45678912}
+[2023年04月11日 13時57分29秒] request question "ソフトウェア演習Ⅱ 第1回" 
+[2023年04月11日 14時01分40秒] access index {45678912}
+[2023年04月11日 14時01分43秒] request question "ソフトウェア演習Ⅱ 第1回" 
+[2023年04月11日 14時04分58秒] access index {45678912}
+[2023年04月11日 14時05分02秒] request question "ソフトウェア演習Ⅱ 第1回" 
+[2023年04月11日 14時05分32秒] update result 
+ソフトウェア演習Ⅱ 第1回
+id: 2107,2105,2110,2109,2112,2111,2201
+second_list: 1,1,1,1,1,0,2
+user_answer: 2,3,3,4,4,4,4
+correct: true,true,true,true,true,true,false
+level: 3
+exp: 150
+point: 6
+correct_id: 2105,2107,2109,2110,2111,2112
+correct_count: 6
+badge: 1,3,4
+date: 2023-04-11
+[2023年04月11日 14時06分10秒] access calender {45678912}Calender Button Clicked
+[2023年04月11日 14時55分12秒] access index {45678912}

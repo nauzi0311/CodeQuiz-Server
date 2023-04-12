@@ -29,7 +29,8 @@ CType = {
     "short* ":"<color=#358cd6>short</color>* ",
     "struct* ":"<color=#358cd6>struct</color>* ",
     "union* ":"<color=#358cd6>union</color>* ",
-    "void* ":"<color=#358cd6>void</color>* "
+    "void* ":"<color=#358cd6>void</color>* ",
+    "NULL":"<color=#358cd6>NULL</color>"
 }
 
 CControl = {
@@ -65,7 +66,9 @@ source = re.sub('(\'.*?\')',r'<color=#ce9178>\1</color>',source)
 source = re.sub('(\".*?\")',r'<color=#ce9178>\1</color>',source)
 source = re.sub('(#include) ([<"].*?[>"])',r'<color=#da70d6>\1</color> <color=#ce9178>\2</color>',source)
 source = re.sub('(#define) (.*?)\n',r'<color=#da70d6>\1</color> <color=#ce9178>\2</color>\n',source)
-# source = re.sub('(#include)',r'<color=#da70d6>\1</color>',source)
+source = re.sub('(//.*?)\n',r'<color=#6a9955>\1</color>\n',source)
+source = re.sub('(FILE)',r'<color=#3ac995>\1</color>',source)
+source = re.sub('(\?\?\?)',r'<color=#ff0000>\1</color>',source)
 
 for key_type in CType.keys():
     source = source.replace(key_type,CType[key_type])

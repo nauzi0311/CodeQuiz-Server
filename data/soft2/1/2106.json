@@ -1,0 +1,17 @@
+{
+    "id": 2106,
+    "title": "参照2",
+    "question": "???に入るのはなに",
+    "source": "<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#358cd6>void</color> func<color=#ffd700>(</color><color=#358cd6>int</color>* x<color=#ffd700>)</color><color=#ffd700>{</color>\n  *x = 10;\n<color=#ffd700>}</color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6>int</color> aquatan = 0;\n  func<color=#ffd700>(</color>&aquatan<color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>, aquatan<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "<color=#ff0000>???</color>",
+    "choice": [
+        "0",
+        "1",
+        "10",
+        "11"
+    ],
+    "answer": 3,
+    "exp": 30,
+    "point": 1,
+    "rank":3
+}

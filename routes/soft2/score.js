@@ -4,8 +4,7 @@ require('date-utils');
 
 const fs = require('fs');
 const child_process = require("child_process");
-const { WriteAddFile, GenerateTimestamp, GetSchoolNum,ReadJSONFile,GetUserData, WriteNewFile } = require('./library');
-const { title } = require('process');
+const { ReadJSONFile} = require('../library');
 
 router.post('/', function(req, res, next) {
     console.log(req.body);
@@ -13,7 +12,7 @@ router.post('/', function(req, res, next) {
     var id_list = [];
     var title_list = [];
     for(i = 1;i <= level;i++) {
-        var path = './data/soft1/' + i + '/';
+        var path = './data/soft2/' + i + '/';
         const filenames = fs.readdirSync(path);
         if(filenames.length > 0) {
             filenames.forEach((fname) => {
@@ -38,20 +37,23 @@ function GetFileNameFromId(id){
     console.log(parseInt(id / 1000));
     switch(parseInt(id / 1000)){
         case 1:
-        course = "soft1";
-        break;
+            course = "soft1";
+            break;
+        case 2:
+            course = "soft2";
+            break;
         default:
-        course = "Undefined Course";
-        try{
-            throw new Error("Error:" + id);
-        }catch(e){
-            console.log(e.message);
-        }
-        break;
+            course = "Undefined Course";
+            try{
+                throw new Error("Error:" + id);
+            }catch(e){
+                console.log(e.message);
+            }
+            break;
     }
     times = parseInt(id / 100) % 10;
-    console.log("./data/" + course + '/' + times + '/' + id + ".json");
-    return "./data/" + course + '/' + times + '/' + id + ".json";
+    console.log("./data/soft2/" + course + '/' + times + '/' + id + ".json");
+    return "./data/soft2/" + course + '/' + times + '/' + id + ".json";
 }
 
 module.exports = router;

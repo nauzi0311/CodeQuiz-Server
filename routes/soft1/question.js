@@ -3,9 +3,8 @@ var router = express.Router();
 
 const fs = require('fs');
 const child_process = require("child_process");
-const { WriteAddFile, GenerateTimestamp, GetSchoolNum, ReadJSONFile } = require('./library');
-const { log } = require('console');
-const { randomFillSync } = require('crypto');
+const { WriteAddFile, GenerateTimestamp, GetSchoolNum, ReadJSONFile } = require('../library');
+const log_file = "./log/soft1/log.txt";
 
 /* POST users listing. */
 /* to get question
@@ -24,18 +23,11 @@ router.post('/', function (req, res, next) {
   }
 
   var log_data = GenerateTimestamp() + " request question " + "\"" + GetCourseNameForLog(course) + " " + GetCourseTimeForLog(times) + "\" " + res_quest_id + "\n";
-  WriteAddFile("./log/log.txt", log_data);
-  WriteAddFile("./log/" + GetSchoolNum(device) + ".txt", log_data);
+  WriteAddFile(log_file, log_data);
+  WriteAddFile("./log/soft1/" + GetSchoolNum(device,course) + ".txt", log_data);
   console.log("question complete");
   res.json(response);
 });
-
-function stringToBinary(input) {
-  var characters = input.split('');
-  return characters.map(function (char) {
-    return char.charCodeAt(0).toString(2)
-  }).join('');
-}
 
 function QuestData(body) {
   return [body.device, body.course, body.times];

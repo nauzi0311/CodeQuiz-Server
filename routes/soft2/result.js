@@ -2,10 +2,13 @@ var express = require('express');
 var router = express.Router();
 require('date-utils');
 
-const fs = require('fs');
 const child_process = require("child_process");
-const { WriteAddFile, GenerateTimestamp, GetSchoolNum, ReadJSONFile, GetUserData, WriteNewJSONFile } = require('./library');
-const { log } = require('console');
+const { WriteAddFile, GenerateTimestamp, GetSchoolNum, ReadJSONFile, GetUserData, WriteNewJSONFile, GetCourseDir } = require('../library');
+const log_file = './log/soft2/log.txt';
+const course = 'soft2';
+const user_file = GetCourseDir(course) + 'user.json';
+const ranking_file = GetCourseDir(course) + 'ranking.json';
+
 
 /* POST users listing. */
 /* to get question
@@ -13,8 +16,12 @@ const { log } = require('console');
   when get the json like above, send each json file.
 */
 router.post('/', function (req, res, next) {
+  console.log(req.body);
   const [device, level, exp,point, id_list, correct_list, second_list, user_answer, badge] = ResultData(req.body);
-  var user_data = GetUserData(device);
+  console.log("check");
+  var user_data = GetUserData(device,course);
+  console.log(user_data);
+  console.log("check");
   //change level
   user_data.level = level;
 
@@ -37,6 +44,7 @@ router.post('/', function (req, res, next) {
         user_data.correct_count++;
       }
     }
+    console.log("check");
     user_data.correct_id = Array.from(new Set(user_data.correct_id));
     //降順にソート
     user_data.correct_id.sort(function (first, second) {
@@ -55,25 +63,25 @@ router.post('/', function (req, res, next) {
 
   //write ranking file
   {
-    const user_file = ReadJSONFile('./data/user.json');
+    const user_data = ReadJSONFile(user_file);
     var username;
-    for (i = 0; i < user_file.length; i++) {
-      if (user_file[i].device == device) {
-        username = user_file[i].username;
+    for (i = 0; i < user_data.length; i++) {
+      if (user_data[i].device == device) {
+        username = user_data[i].username;
       }
     }
 
-    var ranking_file = ReadJSONFile('./data/ranking.json');
-    for (i = 0; i < ranking_file.length; i++) {
-      if (ranking_file[i].username == username) {
-        ranking_file[i].level = level;
-        ranking_file[i].exp = exp;
+    var ranking_data = ReadJSONFile(ranking_file);
+    for (i = 0; i < ranking_data.length; i++) {
+      if (ranking_data[i].username == username) {
+        ranking_data[i].level = level;
+        ranking_data[i].exp = exp;
       }
     }
     
     //sort
-    if (ranking_file.length >= 2) {
-      ranking_file.sort(function (first, second) {
+    if (ranking_data.length >= 2) {
+      ranking_data.sort(function (first, second) {
         if (first.level < second.level) {
           return 1;
         } else if (first.level > second.level) {
@@ -92,12 +100,12 @@ router.post('/', function (req, res, next) {
         }
       })
     }
-    WriteNewJSONFile('./data/ranking.json', ranking_file);
+    WriteNewJSONFile(ranking_file, ranking_data);
   }
 
-  WriteNewJSONFile('./data/user/' + device + '.json', user_data);
-  var log_data = GenerateTimestamp() + " update result " + GetSchoolNum(device) + " level:" + level + " point:" + point + "\n";
-  WriteAddFile("./log/log.txt", log_data);
+  WriteNewJSONFile('./data/soft2/user/' + device + '.json', user_data);
+  var log_data = GenerateTimestamp() + " update result " + GetSchoolNum(device,course) + " level:" + level + " point:" + point + "\n";
+  WriteAddFile(log_file, log_data);
   console.log(GetCourseNameFromId(id_list) + "\nid_list:" + id_list);
   log_data = GenerateTimestamp() + " update result \n" +
     GetCourseNameFromId(id_list) + "\n" +
@@ -112,7 +120,7 @@ router.post('/', function (req, res, next) {
     "correct_count: " + user_data.correct_count + "\n" +
     "badge: " + user_data.badge + "\n" +
     "date: " + user_data.date[user_data.date.length - 1] + "\n";
-  WriteAddFile("./log/" + GetSchoolNum(device) + ".txt", log_data);
+  WriteAddFile("./log/soft2/" + GetSchoolNum(device,course) + ".txt", log_data);
   console.log("result complete");
   res.send("result complete");
 });
@@ -127,6 +135,9 @@ function GetCourseNameFromId(ids) {
   switch (parseInt(ids[0] / 1000)) {
     case 1:
       course = "ソフトウェア演習Ⅰ";
+      break;
+    case 2:
+      course = "ソフトウェア演習Ⅱ";
       break;
     default:
       course = "Undefined Course";

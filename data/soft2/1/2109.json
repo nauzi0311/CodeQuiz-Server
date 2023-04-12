@@ -1,0 +1,17 @@
+{
+    "id": 2109,
+    "title": "ファイル1",
+    "question": "???に入るのはなに",
+    "source": "<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#3ac995>FILE</color> *fp = fopen<color=#ffd700>(</color><color=#ce9178>\"aquatan\"</color>,<color=#ff0000>???</color><color=#ffd700>)</color>;\n  <color=#c586c0>if</color><color=#ffd700>(</color>fp == <color=#358cd6>NULL</color><color=#ffd700>)</color><color=#ffd700>{</color>\n    printf<color=#ffd700>(</color><color=#ce9178>\"Error\"</color><color=#ffd700>)</color>;\n  <color=#ffd700>}</color><color=#c586c0>else</color><color=#ffd700>{</color>\n    printf<color=#ffd700>(</color><color=#ce9178>\"aquatan\"</color><color=#ffd700>)</color>;\n  <color=#ffd700>}</color>\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "aquatan",
+    "choice": [
+        "'b'",
+        "\"b\"",
+        "'r'",
+        "\"r\""
+    ],
+    "answer": 4,
+    "exp": 40,
+    "point": 1,
+    "rank":4
+}

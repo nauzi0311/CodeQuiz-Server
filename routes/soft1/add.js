@@ -1,5 +1,4 @@
 var express = require('express');
-const { json, type } = require('express/lib/response');
 var router = express.Router();
 const fs = require('fs');
 
@@ -13,7 +12,7 @@ router.post('/', function(req, res, next) {
     var exp = req.body.exp;
     var point = req.body.point;
     var restrict = req.body.restrict;
-    var jfile = './data/' + id + '.json';
+    var jfile = './data/soft1/' + id + '.json';
 
     var data = {"id":id,"title":title,"question":question,"output":output,"answer":answer,"exp":exp,"point":point,"restrict":restrict};
     fs.writeFileSync(jfile,JSON.stringify(data,null,'    '));
