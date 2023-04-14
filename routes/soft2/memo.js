@@ -16,13 +16,13 @@ router.get('/', function(req, res, next) {
 
 // memoをPOSTで受け取る
 router.post('/', function(req, res, next){
-    console.log(req.body)
-    const date = new Date();
-    const currentTime = date.toFormat('YYYYMMDDHH24MISS');
-    var fdata = currentTime + " memo get method called\n";
-    fs.appendFile(log_file ,fdata,(err) => {if (err) throw err;
-    console.log("memo post complete");})
-    res.send("Memo Post success");
-  })
+  console.log(req.body)
+  const date = new Date();
+  const currentTime = date.toFormat('YYYYMMDDHH24MISS');
+  var fdata = currentTime + " memo get method called\n";
+  fs.appendFile(log_file ,fdata,(err) => {if (err) throw err;
+  console.log("memo post complete");})
+  res.send("Memo Post success");
+})
   
 module.exports = router;

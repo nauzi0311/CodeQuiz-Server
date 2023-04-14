@@ -106,5 +106,25 @@ function GetCourseIDFromCourse(course) {
   return course_id;
 }
 
+router.post('/recommend', function(req, res, next){
+  console.log(req.body);
+  const device = req.body.device;
+  const course = req.body.course;
+  const times = req.body.times;
+  const rank = req.body.rank;
+  const recommend = req.body.recommend;
+
+  var log_data = GenerateTimestamp() + " access recommend " + 
+  "\"" + GetCourseNameForLog(course) + " " + 
+  GetCourseTimeForLog(times) + " " +
+  "rank:" + rank + " " +
+  "recommend:" + recommend +
+  "\" " + "\n";
+  WriteAddFile(log_file, log_data);
+  WriteAddFile("./log/soft2/" + GetSchoolNum(device,course) + ".txt", log_data);
+  console.log("recommend complete");
+  res.json("recommend ok");
+})
+
 
 module.exports = router;
