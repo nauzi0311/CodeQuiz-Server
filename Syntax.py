@@ -80,6 +80,7 @@ for key_bracket in CBracket.keys():
     source = source.replace(key_bracket,CBracket[key_bracket])
 
 print("Preview:\n" + source)
+source = source .replace('\\0',"\\\\0")
 source = source .replace('\n',"\\n")
 source = source .replace('\t',"\\t")
 source = source .replace('\"',"\\\"")
