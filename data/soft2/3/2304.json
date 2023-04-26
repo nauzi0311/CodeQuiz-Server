@@ -1,0 +1,17 @@
+{
+    "id": 2304,
+    "title": "多重ループ3",
+    "question": "???に入るのはなに",
+    "source": "<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color>\n<color=#ffd700>{</color>\n  <color=#358cd6>int</color> list<color=#ffd700>[</color>3<color=#ffd700>]</color><color=#ffd700>[</color>3<color=#ffd700>]</color> = <color=#ffd700>{</color>\n    <color=#ffd700>{</color>0,0,0<color=#ffd700>}</color>,\n    <color=#ffd700>{</color>0,0,0<color=#ffd700>}</color>,\n    <color=#ffd700>{</color>0,0,0<color=#ffd700>}</color>\n  <color=#ffd700>}</color>;\n  <color=#358cd6>int</color> i,j;\n  <color=#c586c0>for</color><color=#ffd700>(</color>i = 0;i < 2;i++<color=#ffd700>)</color><color=#ffd700>{</color>\n    <color=#c586c0>for</color><color=#ffd700>(</color>j = 0;j < 2;j++<color=#ffd700>)</color><color=#ffd700>{</color>\n      <color=#358cd6>int</color> value = list<color=#ffd700>[</color>i<color=#ffd700>]</color><color=#ffd700>[</color>j<color=#ffd700>]</color>;\n      list<color=#ffd700>[</color>i + 1<color=#ffd700>]</color><color=#ffd700>[</color>j<color=#ffd700>]</color> = value + 1;\n      list<color=#ffd700>[</color>i + 1<color=#ffd700>]</color><color=#ffd700>[</color>j + 1<color=#ffd700>]</color> = value + 1;\n      list<color=#ffd700>[</color>i<color=#ffd700>]</color><color=#ffd700>[</color>j + 1<color=#ffd700>]</color> = value + 1;\n    <color=#ffd700>}</color>\n  <color=#ffd700>}</color>\n  <color=#c586c0>for</color><color=#ffd700>(</color>i = 0; i < 3; i++<color=#ffd700>)</color><color=#ffd700>{</color>\n    <color=#c586c0>for</color><color=#ffd700>(</color>j = 0; j < 3; j++<color=#ffd700>)</color><color=#ffd700>{</color>\n      printf<color=#ffd700>(</color><color=#ce9178>\"%d \"</color>,list<color=#ffd700>[</color>i<color=#ffd700>]</color><color=#ffd700>[</color>j<color=#ffd700>]</color><color=#ffd700>)</color>;\n    <color=#ffd700>}</color>\n    printf<color=#ffd700>(</color><color=#ce9178>\"\n\"</color><color=#ffd700>)</color>;\n  <color=#ffd700>}</color>\n<color=#ffd700>}</color>\n",
+    "output": "0 1 2\n1 2 3\n2 3 3",
+    "choice": [
+        "[i][j]",
+        "[j][i]",
+        "[i + 1][j + 1]",
+        "[i + 1][i + 1]"
+    ],
+    "answer": 3,
+    "exp": 40,
+    "point": 1,
+    "rank":2
+}

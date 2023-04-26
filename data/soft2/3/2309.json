@@ -1,0 +1,17 @@
+{
+    "id": 2309,
+    "title": "複雑な参照1",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#358cd6>int</color> argc, <color=#358cd6>char</color> <color=#358cd6>const</color> *argv<color=#ffd700>[</color><color=#ffd700>]</color><color=#ffd700>)</color>\n<color=#ffd700>{</color>\n  <color=#358cd6>int</color> list<color=#ffd700>[</color><color=#ffd700>]</color> = <color=#ffd700>{</color>1,2,3,4<color=#ffd700>}</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,<color=#ff0000>???</color><color=#ffd700>)</color>;\n<color=#ffd700>}</color>\n",
+    "output": "4",
+    "choice": [
+        "list + 3",
+        "list[2]",
+        "3[list]",
+        "*list + 3"
+    ],
+    "answer" : 3,
+    "exp":60,
+    "point":1,
+    "rank":3
+}

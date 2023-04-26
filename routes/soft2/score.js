@@ -31,29 +31,4 @@ function ScoreData(body){
     return [body.device,body.level];
 }
 
-function GetFileNameFromId(id){
-    console.log(id);
-    var course,times;
-    console.log(parseInt(id / 1000));
-    switch(parseInt(id / 1000)){
-        case 1:
-            course = "soft1";
-            break;
-        case 2:
-            course = "soft2";
-            break;
-        default:
-            course = "Undefined Course";
-            try{
-                throw new Error("Error:" + id);
-            }catch(e){
-                console.log(e.message);
-            }
-            break;
-    }
-    times = parseInt(id / 100) % 10;
-    console.log("./data/soft2/" + course + '/' + times + '/' + id + ".json");
-    return "./data/soft2/" + course + '/' + times + '/' + id + ".json";
-}
-
 module.exports = router;
