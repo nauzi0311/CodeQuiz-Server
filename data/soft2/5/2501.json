@@ -1,6 +1,6 @@
 {
-    "id": 1901,
-    "title": "ポインタと配列1",
+    "id": 2501,
+    "title": "ポインタ3",
     "question": "???に入るのはなに",
     "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> a<color=#ffd700>[</color><color=#ffd700>]</color> = <color=#ffd700>{</color>0,10,20,30,40,50<color=#ffd700>}</color>;\n\t<color=#358cd6>int</color> *p = a;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,???<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
     "output": "10",
@@ -11,6 +11,7 @@
         "*(p++)"
     ],
     "answer" : 1,
-    "exp":60,
-    "point":2
+    "exp":50,
+    "point":1,
+    "rank":1
 }

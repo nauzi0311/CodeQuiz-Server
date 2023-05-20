@@ -1,0 +1,17 @@
+{
+    "id": 2511,
+    "title": "構造体1",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#da70d6>#include</color> <color=#ce9178><stdlib.h></color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color>\n<color=#ffd700>{</color>\n  <color=#358cd6>struct</color> data<color=#ffd700>{</color>\n    <color=#358cd6>int</color> id;\n    <color=#358cd6>char</color>* name;\n  <color=#ffd700>}</color>;\n  <color=#358cd6>struct</color> data _d;\n  _d.id = 23000000;\n  _d.name = <color=#ce9178>\"Bob\"</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d:%s\"</color>, _d.id, _d.name<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "23000000:Bob",
+    "choice": [
+        "data",
+        "struct",
+        "struct data",
+        "DATA"
+    ],
+    "answer" : 3,
+    "exp":90,
+    "point":1,
+    "rank":3
+}

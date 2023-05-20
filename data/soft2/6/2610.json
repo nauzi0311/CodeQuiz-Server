@@ -1,0 +1,17 @@
+{
+    "id": 2610,
+    "title": "複雑な宣言2",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#da70d6>#include</color> <color=#ce9178><stdlib.h></color>\n\n<color=#358cd6>int</color> add<color=#ffd700>(</color><color=#358cd6>int</color> a,<color=#358cd6>int</color> b<color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#c586c0>return</color> a + b;\n<color=#ffd700>}</color>\n\n<color=#358cd6>int</color> sub<color=#ffd700>(</color><color=#358cd6>int</color> a,<color=#358cd6>int</color> b<color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#c586c0>return</color> a - b;\n<color=#ffd700>}</color>\n\n<color=#358cd6>int</color> <color=#ffd700>(</color>*select<color=#ffd700>(</color><color=#358cd6>int</color> i<color=#ffd700>)</color><color=#ffd700>)</color><color=#ffd700>(</color>int,int<color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#c586c0>return</color> i == 0 ? add : sub;\n<color=#ffd700>}</color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color>\n<color=#ffd700>{</color>\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d\n\"</color>,select<color=#ffd700>(</color>0<color=#ffd700>)</color><color=#ffd700>(</color>5,3<color=#ffd700>)</color><color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "8",
+    "choice": [
+        "*select(int,int)(int i)",
+        "(*select(int,int))(int i)",
+        "(*select(int i))(int,int)",
+        "*select(int i)(int,int)"
+    ],
+    "answer" : 3,
+    "exp":90,
+    "point":1,
+    "rank":4
+}
