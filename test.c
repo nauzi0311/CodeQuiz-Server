@@ -1,18 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct data DATA;
-struct data{
+typedef struct data{
   int number;
   float point;
-  DATA* left;
-  DATA* right;
-};
+}DATA;
 
 int main()
 {
-  DATA* p;
-  p = ???;
-  free(p);
+  DATA d = {2,20.0};
+  DATA *p = &d;
+  printf("%f",p->point);
   return 0;
 }

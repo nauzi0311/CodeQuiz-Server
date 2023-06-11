@@ -1,0 +1,17 @@
+{
+    "id": 2801,
+    "title": "構造体5",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#da70d6>#include</color> <color=#ce9178><stdlib.h></color>\n\n<color=#ff0000>???</color> <color=#358cd6>struct</color> data DATA;\n\n<color=#358cd6>struct</color> data<color=#ffd700>{</color>\n  <color=#358cd6>int</color> num;\n  <color=#358cd6>float</color> point;\n<color=#ffd700>}</color>;\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color>\n<color=#ffd700>{</color>\n  DATA d1 = <color=#ffd700>{</color>\n    1,10.0\n  <color=#ffd700>}</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "",
+    "choice": [
+        "# define",
+        "# if",
+        "typedef",
+        "# include"
+    ],
+    "answer" : 3,
+    "exp":80,
+    "point":1,
+    "rank":1
+}

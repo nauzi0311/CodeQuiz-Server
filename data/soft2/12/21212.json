@@ -1,0 +1,17 @@
+{
+    "id": 21212,
+    "title": "二分木の操作8",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#da70d6>#include</color> <color=#ce9178><stdlib.h></color>\n\n<color=#c586c0>typedef</color> <color=#358cd6>struct</color> data DATA;\n<color=#358cd6>struct</color> data<color=#ffd700>{</color>\n  <color=#358cd6>int</color> number;\n  <color=#358cd6>float</color> point;\n  DATA* left;\n  DATA* right;\n<color=#ffd700>}</color>;\n\nDATA* findMax<color=#ffd700>(</color>DATA* node<color=#ffd700>)</color><color=#ffd700>{</color>\n  DATA* p = node;\n  <color=#c586c0>while</color><color=#ffd700>(</color>p && p->right != <color=#358cd6>NULL</color><color=#ffd700>)</color><color=#ffd700>{</color>\n    p = p->right;\n  <color=#ffd700>}</color>\n  <color=#c586c0>return</color> p;\n<color=#ffd700>}</color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color>\n<color=#ffd700>{</color>\n  DATA d2 = <color=#ffd700>{</color>\n    2,20,<color=#358cd6>NULL</color>,<color=#358cd6>NULL</color>\n  <color=#ffd700>}</color>,d1 = <color=#ffd700>{</color>\n    1,10,<color=#358cd6>NULL</color>,&d2\n  <color=#ffd700>}</color>,d4 = <color=#ffd700>{</color>\n    4,40,<color=#358cd6>NULL</color>,<color=#358cd6>NULL</color>\n  <color=#ffd700>}</color>,d5 = <color=#ffd700>{</color>\n    5,50,&d4,<color=#358cd6>NULL</color>\n  <color=#ffd700>}</color>,d3 = <color=#ffd700>{</color>\n    3,30,&d1,&d5\n  <color=#ffd700>}</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d  \"</color>,findMax<color=#ffd700>(</color>&d3<color=#ffd700>)</color>->number<color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d  \"</color>,findMax<color=#ffd700>(</color>&d1<color=#ffd700>)</color>->number<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "5  2",
+    "choice": [
+        "p && p->left",
+        "p || p->left",
+        "p && p->right",
+        "p || p->right"
+    ],
+    "answer" : 3,
+    "exp":160,
+    "point":1,
+    "rank":5
+}

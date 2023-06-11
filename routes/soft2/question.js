@@ -17,7 +17,7 @@ router.post('/', function (req, res, next) {
   var response = [];
   var res_quest_id = [];
 
-  response = GetQuestion(course, times);
+  response = GetQuestionAndReview(course, times);
   for (i = 0; i < response.length; i++) {
     res_quest_id[i] = response[i].id;
   }
@@ -59,7 +59,11 @@ function GetQuestion(course, times) {
   const needs_rank = [2,2,4,2,2,1];
   var course_id = GetCourseIDFromCourse(course); 
   const course_dir = GetCourseDir(course) + times;
-  const next_course_dir = GetCourseDir(course) + (times+1);
+  if (times == 9 || times == 12){
+    const next_course_dir = GetCourseDir(course) + (times+2);
+  }else{
+    const next_course_dir = GetCourseDir(course) + (times+1);
+  }
   const max = fs.readdirSync(course_dir).length;
   const next_max = fs.readdirSync(next_course_dir).length;
   while(question_number.length < 12){
@@ -86,6 +90,15 @@ function GetQuestion(course, times) {
   questions.push(extra_question);
   console.log("{\"quest\":" + questions + "}");
   return { "quest": questions };
+}
+
+function GetQuestionAndReview(course,times){
+  var selected_times = times
+  while(selected_times == 10 || selected_times == 13){
+      const rand = Math.random() * times + 1
+      selected_times = Math.floor(rand)
+  }
+  return GetQuestion(course,selected_times);
 }
 
 function GetCourseIDFromCourse(course) {
