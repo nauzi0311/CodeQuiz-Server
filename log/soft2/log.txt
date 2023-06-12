@@ -1,3 +1,0 @@
-[2023年06月12日 17時39分13秒] access index!nofile {TestDevice}
-[2023年06月12日 17時39分19秒] signup process | 99999999 signup as TEST using id:wordpass
-[2023年06月12日 17時39分27秒] request question "ソフトウェア演習Ⅱ 第1回" 
