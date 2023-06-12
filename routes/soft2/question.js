@@ -59,10 +59,11 @@ function GetQuestion(course, times) {
   const needs_rank = [2,2,4,2,2,1];
   var course_id = GetCourseIDFromCourse(course); 
   const course_dir = GetCourseDir(course) + times;
+  let next_course_dir;
   if (times == 9 || times == 12){
-    const next_course_dir = GetCourseDir(course) + (times+2);
+    next_course_dir = GetCourseDir(course) + (times+2);
   }else{
-    const next_course_dir = GetCourseDir(course) + (times+1);
+    next_course_dir = GetCourseDir(course) + (times+1);
   }
   const max = fs.readdirSync(course_dir).length;
   const next_max = fs.readdirSync(next_course_dir).length;

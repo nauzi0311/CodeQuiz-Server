@@ -1,3 +1,9 @@
 [
-    
+    {
+        "device": "TestDevice",
+        "username": "TEST",
+        "level": 1,
+        "exp": 0,
+        "equipment": 0
+    }
 ]

@@ -1,0 +1,5 @@
+20230612150113 memo get method called
+[2023年06月12日 15時01分29秒] signup process | 99999999 signup as TestDevice using id:TEST
+[2023年06月12日 15時01分34秒] access index {undefined}
+[2023年06月12日 15時05分42秒] access index {undefined}
+[2023年06月12日 15時17分00秒] request question "ソフトウェア演習Ⅱ 第1回" 
