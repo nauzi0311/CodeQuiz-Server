@@ -84,7 +84,7 @@ router.post('/version', function(req, res, next) {
 });
 
 function UserData(body){
-  return [body.device,body.username,body.id,body.school_num];
+  return [body.username,body.id,body.school_num];
 }
 
 function AddUserData(body){

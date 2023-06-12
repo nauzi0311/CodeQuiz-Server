@@ -57,7 +57,7 @@ function GetQuestion(course, times) {
   var question_number = [];
   var used_ranks = [0,0,0,0,0,0];
   const needs_rank = [2,2,4,2,2,1];
-  var course_id = GetCourseIDFromCourse(course); 
+  const course_id = GetCourseIDFromCourse(course); 
   const course_dir = GetCourseDir(course) + times;
   let next_course_dir;
   if (times == 9 || times == 12){

@@ -1,7 +1,7 @@
 [
     {
-        "device": "TestDevice",
+        "device": "TEST",
         "password": 99999999,
-        "username": "TEST"
+        "username": "wordpass"
     }
 ]
