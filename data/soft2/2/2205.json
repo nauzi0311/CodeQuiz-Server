@@ -6,8 +6,8 @@
     "output": "3023",
     "choice": [
         "list[]",
-        "list[4]",
-        "list[0]",
+        "*list[4]",
+        "&list[0]",
         "list"
     ],
     "answer": 2,
