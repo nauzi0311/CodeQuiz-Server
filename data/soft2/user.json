@@ -1,13 +1,3 @@
 [
-    {
-        "device": "TEST",
-        "password": 99999999,
-        "username": "wordpass"
-    },
-    {
-        "device": "TestDevice",
-        "password": "wordpass",
-        "username": "TEST",
-        "school_num": 99999999
-    }
+    
 ]
