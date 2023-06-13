@@ -51,7 +51,7 @@ router.post('/', function(req, res, next) {
 
 router.post('/signup', function(req, res, next) {
   console.log(req.body);
-  const [username,id,school_num] = UserData(req.body);
+  const [device,username,id,school_num] = UserData(req.body);
   const config_data = ReadJSONFile(config_file);
   const response = config_data;
 
@@ -84,7 +84,7 @@ router.post('/version', function(req, res, next) {
 });
 
 function UserData(body){
-  return [body.username,body.id,body.school_num];
+  return [body.device,body.username,body.id,body.school_num];
 }
 
 function AddUserData(body){
