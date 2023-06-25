@@ -12,6 +12,12 @@ router.post('/', function(req, res, next) {
     var id_list = [];
     var title_list = [];
     for(i = 1;i <= level;i++) {
+        if(i >= 15){
+            break;
+        }
+        if(i == 10 || i == 13){
+            continue;
+        }
         var path = './data/soft2/' + i + '/';
         const filenames = fs.readdirSync(path);
         if(filenames.length > 0) {

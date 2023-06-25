@@ -1,0 +1,17 @@
+{
+    "id": 21507,
+    "title": "関数ポインタ7",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#da70d6>#include</color> <color=#ce9178><stdlib.h></color>\n\n<color=#c586c0>typedef</color> <color=#ff0000>???</color><color=#ffd700>(</color>void*<color=#ffd700>)</color>;\n\n<color=#358cd6>void</color>* f1<color=#ffd700>(</color><color=#358cd6>void</color>* p<color=#ffd700>)</color><color=#ffd700>{</color>\n  p = <color=#ffd700>(</color>void*<color=#ffd700>)</color>malloc<color=#ffd700>(</color>sizeof<color=#ffd700>(</color>int<color=#ffd700>)</color>*2<color=#ffd700>)</color>;\n  <color=#358cd6>int</color> *pi = p;\n  pi<color=#ffd700>[</color>0<color=#ffd700>]</color> = 10;pi<color=#ffd700>[</color>1<color=#ffd700>]</color> = 20;\n  <color=#c586c0>return</color> p;\n<color=#ffd700>}</color>\n\n<color=#358cd6>void</color>* f2<color=#ffd700>(</color><color=#358cd6>void</color>* p<color=#ffd700>)</color><color=#ffd700>{</color>\n  p = <color=#ffd700>(</color>void*<color=#ffd700>)</color>malloc<color=#ffd700>(</color>sizeof<color=#ffd700>(</color>char<color=#ffd700>)</color>*3<color=#ffd700>)</color>;\n  <color=#358cd6>char</color> *pc = p;\n  pc<color=#ffd700>[</color>0<color=#ffd700>]</color> = <color=#ce9178>'a'</color>;pc<color=#ffd700>[</color>1<color=#ffd700>]</color> = <color=#ce9178>'b'</color>;\n  pc<color=#ffd700>[</color>2<color=#ffd700>]</color> = <color=#ce9178>'\\0'</color>;\n  <color=#c586c0>return</color> p;\n<color=#ffd700>}</color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color>\n<color=#ffd700>{</color>\n  <color=#358cd6>char</color> *p = <color=#358cd6>NULL</color>;\n  FUNC flist<color=#ffd700>[</color><color=#ffd700>]</color> = \n  <color=#ffd700>{</color>f1, f2<color=#ffd700>}</color>;\n  p = flist<color=#ffd700>[</color>1<color=#ffd700>]</color><color=#ffd700>(</color><color=#ffd700>(</color>void*<color=#ffd700>)</color>p<color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%s\"</color>,p<color=#ffd700>)</color>;\n  free<color=#ffd700>(</color>p<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "ab",
+    "choice": [
+        "void*(*FUNC)",
+        "void(*FUNC)",
+        "void*(FUNC)",
+        "void(**FUNC)"
+    ],
+    "answer" : 1,
+    "exp":90,
+    "point":1,
+    "rank":3
+}

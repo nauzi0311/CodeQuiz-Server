@@ -1,20 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int add(int a,int b){
-  return a + b;
+void func(char* list){
+  printf("%d\n",sizeof(int));
+  ((int*)list)[1] = 0x74616e00;
 }
 
-int sub(int a,int b){
-  return a - b;
-}
-
-int ???(int,int){
-  return i == 0 ? add : sub;
-}
-
-int main()
-{
-  printf("%d",select(0)(5,3));
+int main(){
+  char str[] = "aquaban";
+  func(str);
+  printf("%s", str);
   return 0;
 }

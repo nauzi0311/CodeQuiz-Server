@@ -4,6 +4,7 @@ var router = express.Router();
 const fs = require('fs');
 const child_process = require("child_process");
 const { WriteAddFile, GenerateTimestamp, GetSchoolNum, ReadJSONFile, GetCourseDir } = require('../library');
+const { log } = require('console');
 const log_file = "./log/soft2/log.txt";
 
 /* POST users listing. */
@@ -60,6 +61,9 @@ function GetQuestion(course, times) {
   const course_id = GetCourseIDFromCourse(course); 
   const course_dir = GetCourseDir(course) + times;
   let next_course_dir;
+  console.log(times)
+  console.log(Number(times))
+  console.log(times+2)
   if (times == 9 || times == 12){
     next_course_dir = GetCourseDir(course) + (times+2);
   }else{
@@ -85,7 +89,11 @@ function GetQuestion(course, times) {
     console.log(course_dir + '/' + question_number[question_number.length-1] + '.json');
     console.log(questions[questions.length-1]);
   }
-  const extra_question_number = course_id + ((times + 1)*100 + Math.floor(Math.random() * next_max + 1)).toString();
+  if (times == 9 || times == 12){
+    var extra_question_number = course_id + ((times + 2)*100 + Math.floor(Math.random() * next_max + 1)).toString();
+  }else{
+    var extra_question_number = course_id + ((times + 1)*100 + Math.floor(Math.random() * next_max + 1)).toString();
+  }
   const extra_question = ReadJSONFile(next_course_dir + '/' + extra_question_number + '.json');
   question_number.push(extra_question);
   questions.push(extra_question);
