@@ -1,13 +1,15 @@
 #include <stdio.h>
+#define SIZE(list) (sizeof(list)/sizeof(list[0]))
 
-void func(char* list){
-  printf("%d\n",sizeof(int));
-  ((int*)list)[1] = 0x74616e00;
+void func(int list[]){
+  list[0]++;
 }
 
 int main(){
-  char str[] = "aquaban";
-  func(str);
-  printf("%s", str);
+  int i,aquatan[] = {2,0,2,3};
+  func(aquatan);
+  for(i = 0; i < SIZE(aquatan); i++){
+    printf("%d",aquatan[i]);
+  }
   return 0;
 }
