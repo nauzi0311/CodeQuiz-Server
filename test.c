@@ -1,15 +1,12 @@
 #include <stdio.h>
-#define SIZE(list) (sizeof(list)/sizeof(list[0]))
+#include <stdlib.h>
 
-void func(int list[]){
-  list[0]++;
-}
-
-int main(){
-  int i,aquatan[] = {2,0,2,3};
-  func(aquatan);
-  for(i = 0; i < SIZE(aquatan); i++){
-    printf("%d",aquatan[i]);
-  }
+int main()
+{
+  char **p;
+  p = (char**)malloc(sizeof(char*)*2);
+  p[0] = "hello";
+  p[1] = "world";
+  printf("%s %s",p[0],p[1]);
   return 0;
 }
