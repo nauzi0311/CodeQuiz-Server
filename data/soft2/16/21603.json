@@ -1,0 +1,17 @@
+{
+    "id": 21511,
+    "title": "最後の挑戦 3",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6>char</color> str<color=#ffd700>[</color><color=#ffd700>]</color> = <color=#ce9178>\"treetan\"</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%s<color=#ff0000>???</color>\"</color>, str<color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%s\"</color>,<color=#ce9178>\"aqua\"</color><color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "aquatan",
+    "choice": [
+        "\\b",
+        "\\r",
+        "\\a",
+        "\\n"
+    ],
+    "answer" : 2,
+    "exp":180,
+    "point":1,
+    "rank":5
+}
