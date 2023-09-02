@@ -11,6 +11,7 @@
         "%d"
     ],
     "answer": 1,
-    "exp": 10,
-    "point": 1
+    "exp": 20,
+    "point": 1,
+    "rank" : 2
 }

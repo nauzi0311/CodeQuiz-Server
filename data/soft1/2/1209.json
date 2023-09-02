@@ -1,8 +1,8 @@
 {
     "id": 1209,
-    "title": "演算子5",
+    "title": "計算1",
     "question": "???に入るのはなに",
-    "source": "<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> x,y,z;\n\tx = 2;y = 6;z = 36;\n\tz = z - <color=#ffd700>(</color>y - x<color=#ffd700>)</color>;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,z<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> <color=#ffd700>(</color>0<color=#ffd700>)</color>;\n<color=#ffd700>}</color>\n",
+    "source": "<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> x,y,z;\n\tx = 2;y = 6;z = 36;\n\tz = z - y - x;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,z<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> <color=#ffd700>(</color>0<color=#ffd700>)</color>;\n<color=#ffd700>}</color>\n",
     "output": "???",
     "choice": [
         "32",
@@ -10,7 +10,8 @@
         "-40",
         "36"
     ],
-    "answer": 1,
-    "exp": 20,
-    "point": 1
+    "answer": 3,
+    "exp": 50,
+    "point": 1,
+    "rank" : 4
 }

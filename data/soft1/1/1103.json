@@ -11,6 +11,7 @@
         "\"Hello World!\\n\""
     ],
     "answer": 2,
-    "exp": 10,
-    "point": 1
+    "exp": 20,
+    "point": 1,
+    "rank" : 2
 }

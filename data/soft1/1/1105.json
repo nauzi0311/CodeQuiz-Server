@@ -11,6 +11,7 @@
         "%c"
     ],
     "answer": 2,
-    "exp": 10,
-    "point": 1
+    "exp": 30,
+    "point": 1,
+    "rank" : 3
 }
