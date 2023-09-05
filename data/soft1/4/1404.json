@@ -1,16 +1,17 @@
 {
     "id": 1404,
-    "title": "繰り返し4",
+    "title": "条件 8",
     "question": "???に入るのはなに",
-    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> i;\n\t<color=#c586c0>for</color><color=#ffd700>(</color>i = 0;i < 4;i++<color=#ffd700>)</color><color=#ffd700>{</color>\n\t\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,++i<color=#ffd700>)</color>;\n\t<color=#ffd700>}</color>\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
-    "output": "???",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6>int</color> i = 0;\n  <color=#358cd6>int</color> j = 2;\n  <color=#c586c0>if</color><color=#ffd700>(</color>j == 2 <color=#ff0000>???</color> <color=#ffd700>(</color>i = 3<color=#ffd700>)</color> == 3<color=#ffd700>)</color><color=#ffd700>{</color>\n    printf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,i<color=#ffd700>)</color>;\n  <color=#ffd700>}</color>\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "0",
     "choice": [
-        "13",
-        "02",
-        "0123",
-        "2"
+        "&&",
+        "&",
+        "||",
+        "|"
     ],
-    "answer" : 1,
-    "exp":30,
-    "point":2
+    "answer" : 3,
+    "exp":50,
+    "point":2,
+    "rank":2
 }

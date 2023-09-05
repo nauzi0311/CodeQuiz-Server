@@ -1,16 +1,17 @@
 {
     "id": 1402,
-    "title": "繰り返し2",
+    "title": "16進数 2",
     "question": "???に入るのはなに",
-    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> i;\n\t<color=#c586c0>for</color><color=#ffd700>(</color>i = 0;i < 4;i++<color=#ffd700>)</color><color=#ffd700>{</color>\n\t\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,i<color=#ffd700>)</color>;\n\t<color=#ffd700>}</color>\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6>int</color> i = 0x00000010;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,i<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
     "output": "???",
     "choice": [
-        "3",
-        "4",
-        "0123",
-        "123"
+        "1",
+        "10",
+        "A",
+        "16"
     ],
-    "answer" : 3,
-    "exp":30,
-    "point":2
+    "answer" : 4,
+    "exp":40,
+    "point":2,
+    "rank":1
 }

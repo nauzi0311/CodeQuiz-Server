@@ -1,16 +1,17 @@
 {
-    "id": 1407,
-    "title": "繰り返す7",
+    "id": 1403,
+    "title": "for文 3",
     "question": "???に入るのはなに",
-    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t\t<color=#358cd6>int</color> i,j;\n\t\t<color=#c586c0>for</color><color=#ffd700>(</color>i = 0;i < 3;i++<color=#ffd700>)</color><color=#ffd700>{</color>\n\t\t\t<color=#c586c0>for</color><color=#ffd700>(</color>j = 0;j < 1;j++<color=#ffd700>)</color><color=#ffd700>{</color>\n\t\t\t\t<color=#c586c0>if</color><color=#ffd700>(</color>j == 1<color=#ffd700>)</color>???;\n\t\t\t\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,2*i+j<color=#ffd700>)</color>;\n\t\t\t<color=#ffd700>}</color>\n\t\t\t<color=#ffd700>}</color> <color=#c586c0>return</color> 0;\n\t\t<color=#ffd700>}</color>\n",
-    "output": "024",
+    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> i;\n\t<color=#c586c0>for</color><color=#ffd700>(</color>i = 0;i < 4;i++<color=#ffd700>)</color><color=#ffd700>{</color>\n\t\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,i++<color=#ffd700>)</color>;\n\t<color=#ffd700>}</color>\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "???",
     "choice": [
-        "return",
-        "continue",
-        "break",
-        "exit"
+        "13",
+        "02",
+        "0123",
+        "2"
     ],
-    "answer" : 3,
-    "exp":30,
-    "point":2
+    "answer" : 2,
+    "exp":60,
+    "point":2,
+    "rank":3
 }

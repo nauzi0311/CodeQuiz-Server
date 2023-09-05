@@ -1,0 +1,17 @@
+{
+    "id": 1311,
+    "title": "三項演算子 1",
+    "question": "???に入るのはなに",
+    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> x,y,z;\n\tx = 2;y = 6;\n\tz = x ??? y ? x : y;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,z<color=#ffd700>)</color>;\n<color=#ffd700>}</color>\n",
+    "output": "2",
+    "choice": [
+        "<",
+        ">",
+        "==",
+        "?"
+    ],
+    "answer" : 1,
+    "exp":70,
+    "point":1,
+    "rank":5
+}

@@ -1,16 +1,17 @@
 {
     "id": 1302,
-    "title": "条件2",
+    "title": "出力14",
     "question": "???に入るのはなに",
-    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> x = 10;\n\t<color=#c586c0>if</color><color=#ffd700>(</color>x ??? 10<color=#ffd700>)</color><color=#ffd700>{</color>\n\t\tprintf<color=#ffd700>(</color><color=#ce9178>\"True\"</color><color=#ffd700>)</color>;\n\t\t<color=#c586c0>return</color> 0;\n\t<color=#ffd700>}</color>\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"False\"</color><color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
-    "output": "False",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6><color=#c586c0>do</color>uble</color> x = 0.32e2;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%lf\"</color>,x<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "32.000000",
     "choice": [
-        "<=",
-        "==",
-        ">=",
-        "!="
+        "%d",
+        "%c",
+        "%s",
+        "%lf"
     ],
-    "answer" : 4,
-    "exp":20,
-    "point":1
+    "answer" : 3,
+    "exp":30,
+    "point":1,
+    "rank":1
 }

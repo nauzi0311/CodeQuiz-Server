@@ -1,16 +1,17 @@
 {
     "id": 1304,
-    "title": "条件4",
+    "title": "条件2",
     "question": "???に入るのはなに",
-    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#c586c0>if</color><color=#ffd700>(</color>0<color=#ffd700>)</color><color=#ffd700>{</color>\n\t\tprintf<color=#ffd700>(</color><color=#ce9178>\"0\"</color><color=#ffd700>)</color>;\n\t<color=#ffd700>}</color>\n\t<color=#c586c0>if</color><color=#ffd700>(</color>-1<color=#ffd700>)</color><color=#ffd700>{</color>\n\t\tprintf<color=#ffd700>(</color><color=#ce9178>\"-1\"</color><color=#ffd700>)</color>;\n\t<color=#ffd700>}</color>\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
-    "output": "???",
+    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> x = 10;\n\t<color=#c586c0>if</color><color=#ffd700>(</color>x ??? 10<color=#ffd700>)</color><color=#ffd700>{</color>\n\t\tprintf<color=#ffd700>(</color><color=#ce9178>\"True\"</color><color=#ffd700>)</color>;\n\t\t<color=#c586c0>return</color> 0;\n\t<color=#ffd700>}</color>\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"False\"</color><color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "False",
     "choice": [
-        "0-1",
-        "0",
-        "-1",
-        "0\n-1"
+        "<=",
+        "==",
+        ">=",
+        "!="
     ],
-    "answer" : 3,
-    "exp":20,
-    "point":1
+    "answer" : 4,
+    "exp":40,
+    "point":1,
+    "rank":2
 }

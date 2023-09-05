@@ -1,16 +1,17 @@
 {
     "id": 1505,
-    "title": "配列5",
+    "title": "配列1",
     "question": "???に入るのはなに",
-    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>char</color> string<color=#ffd700>[</color><color=#ffd700>]</color> = <color=#ffd700>{</color>'a','b','c',???<color=#ffd700>}</color>;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%s\"</color>,string<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
-    "output": "abc",
+    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> ??? = <color=#ffd700>{</color>0,1,2<color=#ffd700>}</color>;\n\t<color=#358cd6>int</color> i = 0;\n\t<color=#c586c0>for</color><color=#ffd700>(</color>;i < 3;i++<color=#ffd700>)</color><color=#ffd700>{</color>\n\t\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,list<color=#ffd700>[</color>i<color=#ffd700>]</color><color=#ffd700>)</color>;\n\t<color=#ffd700>}</color>\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "012",
     "choice": [
-        "\\0",
-        "0",
-        "'\\0'",
-        "end"
+        "list[]",
+        "[] list",
+        "[list]",
+        "*list"
     ],
-    "answer" : 3,
+    "answer" : 1,
     "exp":40,
-    "point":2
+    "point":2,
+    "rank" : 3
 }
