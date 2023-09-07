@@ -1,16 +1,17 @@
 {
     "id": 1607,
-    "title": "関数7",
+    "title": "関数3",
     "question": "???に入るのはなに",
-    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> a = 2;\n<color=#358cd6>void</color> func<color=#ffd700>(</color>???<color=#ffd700>)</color><color=#ffd700>{</color>\n\ta += 10;\n<color=#ffd700>}</color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\tfunc<color=#ffd700>(</color>a<color=#ffd700>)</color>;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,a<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
-    "output": "2",
+    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n???;\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> a = 2,b = 3,c;\n\tc = func<color=#ffd700>(</color>a,b<color=#ffd700>)</color>;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,c<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n<color=#358cd6>int</color> func<color=#ffd700>(</color>int x,int y<color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#c586c0>return</color> x + y;\n<color=#ffd700>}</color>\n",
+    "output": "5",
     "choice": [
-        "int x",
-        "int a",
-        "int",
-        "a"
+        "int func",
+        "func",
+        "int func(int,int)",
+        "func(x,y)"
     ],
-    "answer" : 2,
-    "exp":50,
-    "point":2
+    "answer" : 3,
+    "exp":80,
+    "point":2,
+    "rank" : 3
 }

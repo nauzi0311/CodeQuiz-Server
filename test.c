@@ -1,13 +1,10 @@
 #include <stdio.h>
+char func(char c){
+  return ++c;
+}
 int main(){
-  char list[][5] = {
-    {'a','q','\0','b','x'},
-    {'u','a','t','\0','y'},
-    {'a','n','\0','w','z'},
-  };
-  int i;
-  for(i = 0;i < 3;i++){
-    printf("%s",list[i]);
-  }
+  char x = 'a';
+  x = func(x);
+  printf("%c",x);
   return 0;
 }

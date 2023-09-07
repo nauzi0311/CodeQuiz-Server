@@ -1,16 +1,17 @@
 {
     "id": 1704,
-    "title": "関数の応用4",
+    "title": "スコープ 4",
     "question": "???に入るのはなに",
-    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> func<color=#ffd700>(</color>int x<color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#c586c0>if</color><color=#ffd700>(</color>x == 1 || x == 2<color=#ffd700>)</color> <color=#c586c0>return</color> 1;\n\t<color=#c586c0>return</color> func<color=#ffd700>(</color>x-1<color=#ffd700>)</color> + func<color=#ffd700>(</color>x-2<color=#ffd700>)</color>;\n<color=#ffd700>}</color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> a = 5;\n\ta = func<color=#ffd700>(</color>a<color=#ffd700>)</color>;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,a<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
-    "output": "???",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> x = 5;\n<color=#358cd6>int</color> func<color=#ffd700>(</color><color=#ff0000>???</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#c586c0>return</color> x*x;\n<color=#ffd700>}</color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6>int</color> x = 10;\n  x = func<color=#ffd700>(</color><color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,x<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "25",
     "choice": [
-        "3",
-        "2",
-        "1",
-        "5"
+        "int a",
+        "int x",
+        "void",
+        "void x"
     ],
-    "answer" : 4,
+    "answer" : 3,
     "exp":50,
-    "point":2
+    "point":2,
+    "rank":2
 }

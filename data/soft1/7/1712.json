@@ -1,0 +1,17 @@
+{
+    "id": 1712,
+    "title": "再帰関数 8",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> func<color=#ffd700>(</color><color=#358cd6>int</color> a,<color=#358cd6>int</color> r,<color=#358cd6>int</color> n<color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#c586c0>if</color><color=#ffd700>(</color>n == 1<color=#ffd700>)</color> <color=#c586c0>return</color> a;\n  <color=#c586c0>return</color> func<color=#ffd700>(</color>a,r,n-1<color=#ffd700>)</color>*r + a;\n<color=#ffd700>}</color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6>int</color> a = 1,r = 3,n = 4;\n  a = func<color=#ffd700>(</color>a,r,n<color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,a<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "???",
+    "choice": [
+        "1",
+        "4",
+        "13",
+        "40"
+    ],
+    "answer" : 4,
+    "exp":50,
+    "point":2,
+    "rank":5
+}

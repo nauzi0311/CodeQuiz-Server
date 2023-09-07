@@ -1,0 +1,17 @@
+{
+    "id": 1710,
+    "title": "再帰関数 6",
+    "question": "???に入るのはなに",
+    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> func<color=#ffd700>(</color>int a,int d,int n<color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#c586c0>if</color><color=#ffd700>(</color>n == 0<color=#ffd700>)</color> <color=#c586c0>return</color> a;\n\t<color=#c586c0>return</color> func<color=#ffd700>(</color>???<color=#ffd700>)</color> + <color=#ffd700>(</color>a + d*n<color=#ffd700>)</color>;\n<color=#ffd700>}</color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> a = 2,d = 3,n = 3;\n\ta = func<color=#ffd700>(</color>a,d,n<color=#ffd700>)</color>;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,a<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "26",
+    "choice": [
+        "a-1,d,n",
+        "a,d-1,n",
+        "a,d,n-1",
+        "a,d,n"
+    ],
+    "answer" : 3,
+    "exp":50,
+    "point":2,
+    "rank":4
+}
