@@ -1,0 +1,17 @@
+{
+    "id": 1909,
+    "title": "文字コード1",
+    "question": "???に入るのはなに",
+    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>char</color> a = 0x41;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%c\"</color>,???<color=#ffd700>)</color>;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%c\"</color>,a<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "AB",
+    "choice": [
+        "a++",
+        "a",
+        "++a",
+        "a+1"
+    ],
+    "answer" : 1,
+    "exp":60,
+    "point":2,
+    "rank":4
+}

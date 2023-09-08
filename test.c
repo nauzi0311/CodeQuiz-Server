@@ -1,10 +1,12 @@
 #include <stdio.h>
-char func(char c){
-  return ++c;
+int x = 10;
+void func(int *px){
+  x += 10;
+  *px += 10;
 }
 int main(){
-  char x = 'a';
-  x = func(x);
-  printf("%c",x);
+  int x = 100;
+  func(&x);
+  printf("%d",x);
   return 0;
 }

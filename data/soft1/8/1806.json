@@ -2,15 +2,16 @@
     "id": 1806,
     "title": "ポインタ2",
     "question": "???に入るのはなに",
-    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>char</color> a<color=#ffd700>[</color><color=#ffd700>]</color> = <color=#ce9178>\"Aaquatan\"</color>;\n\t<color=#358cd6>char</color>* pa = a;\n\t???;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%s\"</color>,pa<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
-    "output": "aquatan",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6><color=#c586c0>do</color>uble</color> a = 8.8;\n  <color=#358cd6><color=#c586c0>do</color>uble</color>* pa = &a;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%lf\"</color>,<color=#ff0000>???</color><color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "8.800000",
     "choice": [
-        "pa += 1",
-        "pa[0] = 0",
-        "*a = 0",
-        "*pa = 0"
+        "pa",
+        "&a",
+        "*a",
+        "*pa"
     ],
-    "answer" : 1,
+    "answer" : 4,
     "exp":60,
-    "point":2
+    "point":2,
+    "rank":3
 }

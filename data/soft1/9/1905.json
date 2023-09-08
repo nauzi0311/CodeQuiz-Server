@@ -1,16 +1,17 @@
 {
     "id": 1905,
-    "title": "文字コード1",
+    "title": "ポインタと配列1",
     "question": "???に入るのはなに",
-    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>char</color> a = 0x41;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%c\"</color>,???<color=#ffd700>)</color>;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%c\"</color>,a<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
-    "output": "AB",
+    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> a<color=#ffd700>[</color><color=#ffd700>]</color> = <color=#ffd700>{</color>0,10,20,30,40,50<color=#ffd700>}</color>;\n\t<color=#358cd6>int</color> *p = a;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,???<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "10",
     "choice": [
-        "a++",
-        "a",
-        "++a",
-        "a+1"
+        "*(++p)",
+        "(++*p)",
+        "(++(*p))",
+        "*(p++)"
     ],
     "answer" : 1,
     "exp":60,
-    "point":2
+    "point":2,
+    "rank":3
 }

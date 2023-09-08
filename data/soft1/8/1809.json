@@ -1,0 +1,17 @@
+{
+    "id": 1809,
+    "title": "バイトサイズ1",
+    "question": "???に入るのはなに",
+    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>char</color> string<color=#ffd700>[</color><color=#ffd700>]</color> = <color=#ce9178>\"aquatans\"</color>;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,sizeof<color=#ffd700>(</color>string<color=#ffd700>)</color><color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "???",
+    "choice": [
+        "9",
+        "8",
+        "32",
+        "36"
+    ],
+    "answer" : 1,
+    "exp":60,
+    "point":2,
+    "rank":4
+}

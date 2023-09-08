@@ -1,16 +1,17 @@
 {
     "id": 1907,
-    "title": "文字コード3",
+    "title": "ポインタと配列3",
     "question": "???に入るのはなに",
-    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>void</color> func<color=#ffd700>(</color><color=#358cd6>char</color>* string<color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> i;\n\t<color=#c586c0>for</color><color=#ffd700>(</color>i = 0;i < 7;i++<color=#ffd700>)</color><color=#ffd700>{</color>\n\t\tstring<color=#ffd700>[</color>i<color=#ffd700>]</color> += ???;\n\t<color=#ffd700>}</color>\n<color=#ffd700>}</color> <color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>char</color> str<color=#ffd700>[</color><color=#ffd700>]</color> = <color=#ce9178>\"AQUATAN\"</color>;\n\tfunc<color=#ffd700>(</color>str<color=#ffd700>)</color>;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%s\"</color>,str<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
-    "output": "AB",
+    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>void</color> func<color=#ffd700>(</color><color=#358cd6>int</color>* p<color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> result;\n\tp<color=#ffd700>[</color>0<color=#ffd700>]</color> += 10;\n\tp<color=#ffd700>[</color>1<color=#ffd700>]</color> += 100;\n\tresult += *p + *<color=#ffd700>(</color>++p<color=#ffd700>)</color>;\n\t??? = result;\n<color=#ffd700>}</color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> a<color=#ffd700>[</color><color=#ffd700>]</color> = <color=#ffd700>{</color>0,1,0<color=#ffd700>}</color>;\n\tfunc<color=#ffd700>(</color>a<color=#ffd700>)</color>;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,a<color=#ffd700>[</color>2<color=#ffd700>]</color><color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "111",
     "choice": [
-        "a-A",
-        "26",
-        "'A'-'a'",
-        "'a'-'A'"
+        "--p[2]",
+        "(--p)[2]",
+        "--(p[2])",
+        "p[0]"
     ],
-    "answer" : 3,
+    "answer" : 2,
     "exp":60,
-    "point":2
+    "point":2,
+    "rank":3
 }

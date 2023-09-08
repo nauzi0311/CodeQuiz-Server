@@ -1,0 +1,17 @@
+{
+    "id": 1803,
+    "title": "バイトサイズ3",
+    "question": "???に入るのはなに",
+    "source":"<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>float</color> list<color=#ffd700>[</color><color=#ffd700>]</color> = <color=#ffd700>{</color>1,2,3<color=#ffd700>}</color>;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,sizeof<color=#ffd700>(</color>list<color=#ffd700>)</color><color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "???",
+    "choice": [
+        "24",
+        "16",
+        "12",
+        "8"
+    ],
+    "answer" : 3,
+    "exp":60,
+    "point":2,
+    "rank":4
+}
