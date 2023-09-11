@@ -3,8 +3,8 @@ var router = express.Router();
 require('date-utils');
 
 const child_process = require("child_process");
+const { WriteAddFile, GenerateTimestamp, GetSchoolNum,ReadJSONFile, GetCourseDir} = require('../library');
 const course = 'soft1'
-const { WriteAddFile, GenerateTimestamp, GetSchoolNum,ReadJSONFile} = require('../library');
 
 router.post('/', function(req, res, next) {
     console.log(req.body);
@@ -25,25 +25,28 @@ function QuestData(body){
 }
 
 function GetFileNameFromId(id){
-    console.log("id:" + id);
+    console.log("id: " + id);
     var course,times;
-    console.log("Parse:" + parseInt(String(id).charAt(0)));
-    switch(parseInt(String(id).charAt(0))){
+    console.log("Parse: " + parseInt(id / 1000));
+    switch(parseInt(id / 1000)){
         case 1:
-        course = "soft1";
-        break;
+            course = "soft1";
+            break;
+        case 2:
+            course = "soft2";
+            break;
         default:
-        course = "Undefined Course";
-        try{
-            throw new Error("Error:" + id);
-        }catch(e){
-            console.log(e.message);
-        }
-        break;
+            course = "Undefined Course";
+            try{
+                throw new Error("Error:" + id);
+            }catch(e){
+                console.log(e.message);
+            }
+            break;
     }
-    times = parseInt(String(id/100).substring(1));
-    console.log("./data/" + course + '/' + times + '/' + id + ".json");
-    return "./data/" + course + '/' + times + '/' + id + ".json";
+    times = parseInt(id / 100) % 10;
+    console.log(GetCourseDir(course) + times + '/' + id + ".json");
+    return GetCourseDir(course) + times + '/' + id + ".json";
 }
 
 module.exports = router;

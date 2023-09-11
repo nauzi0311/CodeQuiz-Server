@@ -1,12 +1,14 @@
 #include <stdio.h>
-int x = 10;
-void func(int *px){
-  x += 10;
-  *px += 10;
-}
-int main(){
-  int x = 100;
-  func(&x);
-  printf("%d",x);
+
+typedef struct test{
+  int x;
+  char c;
+}TEST;
+
+int main(int argc,char* argv[]){
+  TEST list[5] = {{1,'a'},{2,'b'},{3,'c'},{4,'d'},{5,'e'}};
+  TEST *p;
+  p = list;
+  printf("%d",???);
   return 0;
 }

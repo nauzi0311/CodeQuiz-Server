@@ -18,10 +18,8 @@ const ranking_file = GetCourseDir(course) + 'ranking.json';
 router.post('/', function (req, res, next) {
   console.log(req.body);
   const [device, level, exp,point, id_list, correct_list, second_list, user_answer, badge] = ResultData(req.body);
-  console.log("check");
   var user_data = GetUserData(device,course);
   console.log(user_data);
-  console.log("check");
   //change level
   user_data.level = level;
 
@@ -44,7 +42,6 @@ router.post('/', function (req, res, next) {
         user_data.correct_count++;
       }
     }
-    console.log("check");
     user_data.correct_id = Array.from(new Set(user_data.correct_id));
     //降順にソート
     user_data.correct_id.sort(function (first, second) {

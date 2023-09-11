@@ -1,0 +1,17 @@
+{
+    "id": 11010,
+    "title": "ctype.h 2",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#da70d6>#include</color> <color=#ce9178><ctype.h></color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#358cd6>int</color> argc,<color=#358cd6>char</color>* argv<color=#ffd700>[</color><color=#ffd700>]</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6>char</color> d = <color=#ce9178>'s'</color>;\n  <color=#c586c0>if</color><color=#ffd700>(</color>???<color=#ffd700>(</color>d<color=#ffd700>)</color> <= <color=#ce9178>'Z'</color><color=#ffd700>)</color><color=#ffd700>{</color>\n    printf<color=#ffd700>(</color><color=#ce9178>\"TRUE\"</color><color=#ffd700>)</color>;\n  <color=#ffd700>}</color><color=#c586c0>else</color><color=#ffd700>{</color>\n    printf<color=#ffd700>(</color><color=#ce9178>\"FALSE\"</color><color=#ffd700>)</color>;\n  <color=#ffd700>}</color>\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "TRUE",
+    "choice": [
+        "toupper",
+        "tolower",
+        "isdigit",
+        "islnum"
+    ],
+    "answer" : 1,
+    "exp":70,
+    "point":2,
+    "rank":4
+}

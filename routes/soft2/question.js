@@ -4,7 +4,6 @@ var router = express.Router();
 const fs = require('fs');
 const child_process = require("child_process");
 const { WriteAddFile, GenerateTimestamp, GetSchoolNum, ReadJSONFile, GetCourseDir } = require('../library');
-const { log } = require('console');
 const log_file = "./log/soft2/log.txt";
 
 /* POST users listing. */

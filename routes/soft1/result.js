@@ -4,7 +4,10 @@ require('date-utils');
 
 const child_process = require("child_process");
 const { WriteAddFile, GenerateTimestamp, GetSchoolNum, ReadJSONFile, GetUserData, WriteNewJSONFile, GetCourseDir } = require('../library');
+const log_file = './log/soft1/log.txt';
 const course = 'soft1'
+const user_file = GetCourseDir(course) + 'user.json';
+const ranking_file = GetCourseDir(course) + 'ranking.json';
 
 /* POST users listing. */
 /* to get question
@@ -54,22 +57,21 @@ router.post('/', function (req, res, next) {
 
   //write ranking file
   {
-    const user_file = ReadJSONFile(GetCourseDir(course) + 'user.json');
+    const user_data = ReadJSONFile(user_file);
     var username;
-    for (i = 0; i < user_file.length; i++) {
-      if (user_file[i].device == device) {
-        username = user_file[i].username;
+    for (i = 0; i < user_data.length; i++) {
+      if (user_data[i].device == device) {
+        username = user_data[i].username;
       }
     }
 
-    var ranking_file = ReadJSONFile(GetCourseDir(course) + 'ranking.json');
-    for (i = 0; i < ranking_file.length; i++) {
-      if (ranking_file[i].username == username) {
-        ranking_file[i].level = level;
-        ranking_file[i].exp = exp;
+    var ranking_data = ReadJSONFile(ranking_file);
+    for (i = 0; i < ranking_data.length; i++) {
+      if (ranking_data[i].username == username) {
+        ranking_data[i].level = level;
+        ranking_data[i].exp = exp;
       }
     }
-    console.log("check");
     
     //sort
     if (ranking_file.length >= 2) {
@@ -93,14 +95,11 @@ router.post('/', function (req, res, next) {
       })
     }
     WriteNewJSONFile(GetCourseDir(course) + 'ranking.json', ranking_file);
-    console.log("check");
   }
 
   WriteNewJSONFile(GetCourseDir(course) + 'user/' + device + '.json', user_data);
-  console.log("check");
   var log_data = GenerateTimestamp() + " update result " + GetSchoolNum(device,course) + " level:" + level + " point:" + point + "\n";
-  console.log("check");
-  WriteAddFile("./log/soft1/log.txt", log_data);
+  WriteAddFile(log_file, log_data);
   console.log(GetCourseNameFromId(id_list) + "\nid_list:" + id_list);
   log_data = GenerateTimestamp() + " update result \n" +
     GetCourseNameFromId(id_list) + "\n" +

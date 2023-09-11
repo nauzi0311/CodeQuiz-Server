@@ -4,7 +4,6 @@ require('date-utils');
 
 const child_process = require("child_process");
 const { WriteAddFile, GenerateTimestamp, GetSchoolNum, ReadJSONFile, WriteNewJSONFile, GetCourseDir } = require('../library');
-const { log } = require('console');
 const course = 'soft2';
 
 /* POST users listing. */
@@ -20,13 +19,11 @@ router.post('/', function (req, res, next) {
   const log_file = './log/soft2/log.txt';
   var rank = 0;
   var ranking_data = ReadJSONFile(ranking_file);
-  console.log("check");
   for(i = 0; i < ranking_data.length; i++) {
     if(ranking_data[i].device == device){
       rank = i + 1;
     }
   }
-  console.log("check");
   var response = {"ranking" : ranking_data,"count":rank};
   var log_data = GenerateTimestamp() + " access ranking " + GetSchoolNum(device,course) + "\n";
   console.log(log_data);
