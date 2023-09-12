@@ -39,14 +39,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/index', indexRouter);
-app.use('/memo', memoRouter);
-app.use('/quest', questionRouter);
-app.use('/calender', calenderRouter);
-app.use('/result', resultRouter);
-app.use('/detail', detailRouter);
-app.use('/score', scoreRouter);
-app.use('/rank', rankRouter);
+app.use('/soft1/index', indexRouter);
+app.use('/soft1/memo', memoRouter);
+app.use('/soft1/quest', questionRouter);
+app.use('/soft1/calender', calenderRouter);
+app.use('/soft1/result', resultRouter);
+app.use('/soft1/detail', detailRouter);
+app.use('/soft1/score', scoreRouter);
+app.use('/soft1/rank', rankRouter);
 // app.use('/add',addRouter);
 
 app.use('/soft2/index', indexRouter2);
