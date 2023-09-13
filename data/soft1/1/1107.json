@@ -2,7 +2,7 @@
     "id": 1107,
     "title": "出力7",
     "question": "???に入るのはなに",
-    "source": "<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\tprintf<color=#ffd70>(</color><color=#ce9178>\"???\"</color>,\"abcdef\"<color=#ffd70>)</color>;\n\t<color=#c586c0>return</color> <color=#ffd70>(</color>0<color=#ffd70>)</color>;\n<color=#ffd700>}</color>\n",
+    "source": "<color=#c586c0>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n printf<color=#ffd70>(</color><color=#ce9178>\"???\"</color>,\"abcdef\"<color=#ffd70>)</color>;\n <color=#c586c0>return</color> <color=#ffd70>(</color>0<color=#ffd70>)</color>;\n<color=#ffd700>}</color>\n",
     "output": "abcdef",
     "choice": [
         "%s",
