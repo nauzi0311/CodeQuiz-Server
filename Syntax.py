@@ -59,29 +59,34 @@ CBracket ={
     "]":"<color=#ffd700>]</color>",
 }
 
-f = open('test.c')
-source = f.read()
-print(source)
-source = re.sub('(\'.*?\')',r'<color=#ce9178>\1</color>',source)
-source = re.sub('(\".*?\")',r'<color=#ce9178>\1</color>',source)
-source = re.sub('(#include) ([<"].*?[>"])',r'<color=#da70d6>\1</color> <color=#ce9178>\2</color>',source)
-source = re.sub('(#define) (.*?)\n',r'<color=#da70d6>\1</color> <color=#ce9178>\2</color>\n',source)
-source = re.sub('(//.*?)\n',r'<color=#6a9955>\1</color>\n',source)
-source = re.sub('(FILE)',r'<color=#3ac995>\1</color>',source)
-source = re.sub('(\?\?\?)',r'<color=#ff0000>\1</color>',source)
+def main():
+    f = open('test.c')
+    source = f.read()
+    print(source)
+    source = re.sub('(\'.*?\')',r'<color=#ce9178>\1</color>',source)
+    source = re.sub('(\".*?\")',r'<color=#ce9178>\1</color>',source)
+    source = re.sub('(#include) ([<"].*?[>"])',r'<color=#da70d6>\1</color> <color=#ce9178>\2</color>',source)
+    source = re.sub('(#define) (.*?)\n',r'<color=#da70d6>\1</color> <color=#ce9178>\2</color>\n',source)
+    source = re.sub('(//.*?)\n',r'<color=#6a9955>\1</color>\n',source)
+    source = re.sub('(FILE)',r'<color=#3ac995>\1</color>',source)
+    source = re.sub('(\?\?\?)',r'<color=#ff0000>\1</color>',source)
 
-for key_type in CType.keys():
-    source = source.replace(key_type,CType[key_type])
+    for key_type in CType.keys():
+        source = source.replace(key_type,CType[key_type])
 
-for key_control in CControl.keys():
-    source = source.replace(key_control,CControl[key_control])
+    for key_control in CControl.keys():
+        source = source.replace(key_control,CControl[key_control])
 
-for key_bracket in CBracket.keys():
-    source = source.replace(key_bracket,CBracket[key_bracket])
+    for key_bracket in CBracket.keys():
+        source = source.replace(key_bracket,CBracket[key_bracket])
 
-print("Preview:\n" + source)
-source = source .replace('\\0',"\\\\0")
-source = source .replace('\n',"\\n")
-source = source .replace('\t',"\\t")
-source = source .replace('\"',"\\\"")
-print("JSON:\n" + source)
+    print("Preview:\n" + source)
+    source = source .replace('\\',"\\\\")
+    source = source .replace('\n',"\\n")
+    source = source .replace('\t',"\\t")
+    source = source .replace('\"',"\\\"")
+    print("JSON:\n" + source)
+    return source
+
+if __name__ == '__main__':
+    main()

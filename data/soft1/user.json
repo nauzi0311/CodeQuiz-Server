@@ -22,5 +22,11 @@
         "id": 1901,
         "username": "PiyoPiyo",
         "school_num": 11111111
+    },
+    {
+        "device": "a1c0500a-612f-4a00-a0e2-ae77e5739b14",
+        "password": "WindowsUnity",
+        "username": "WindowsUnity",
+        "school_num": 55555555
     }
 ]

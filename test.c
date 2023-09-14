@@ -1,5 +1,6 @@
 #include <stdio.h>
 int main(){
-  printf("Hello, World!");
-  return (0);
+	double list[] = {1,2,3};
+	printf("%d",sizeof(list)));
+	return 0;
 }

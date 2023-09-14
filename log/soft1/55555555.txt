@@ -1,12 +1,6 @@
-20230912110201 memo get method called
-[2023年09月13日 17時24分48秒] version process | 1-0-0 latest 1-0-0
-[2023年09月13日 17時24分50秒] access index!nofile {2ef08efb-250d-455a-a8a7-d13bd1b39202}
 [2023年09月13日 17時25分10秒] signup process | 55555555 signup as WindowsUnity using id:WindowsUnity
 [2023年09月13日 17時25分16秒] request question "ソフトウェア演習Ⅰ 第1回" 
-[2023年09月14日 10時41分13秒] version process | 1-0-0 latest 1-0-0
-[2023年09月14日 10時41分18秒] access index {55555555}
 [2023年09月14日 10時41分22秒] request question "ソフトウェア演習Ⅰ 第1回" 
-[2023年09月14日 10時42分05秒] access recommend "undefined 第1回 rank:5 recommend:Match" 
 [2023年09月14日 10時42分43秒] access detail 55555555 id:1111
 [2023年09月14日 10時42分58秒] access detail 55555555 id:1109
 [2023年09月14日 10時43分14秒] access detail 55555555 id:1109

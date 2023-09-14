@@ -18,5 +18,12 @@
         "device": "UUUUUUUUUU",
         "username": "PiyoPiyo",
         "level": 3
+    },
+    {
+        "device": "a1c0500a-612f-4a00-a0e2-ae77e5739b14",
+        "username": "WindowsUnity",
+        "level": 1,
+        "exp": 0,
+        "equipment": 1
     }
 ]
