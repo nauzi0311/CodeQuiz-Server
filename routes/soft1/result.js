@@ -15,6 +15,7 @@ const ranking_file = GetCourseDir(course) + 'ranking.json';
   when get the json like above, send each json file.
 */
 router.post('/', function (req, res, next) {
+  console.log(req.body)
   const [device, level, exp,point, id_list, correct_list, second_list, user_answer, badge] = ResultData(req.body);
   var user_data = GetUserData(device,course);
   //change level
@@ -74,8 +75,8 @@ router.post('/', function (req, res, next) {
     }
     
     //sort
-    if (ranking_file.length >= 2) {
-      ranking_file.sort(function (first, second) {
+    if (ranking_data.length >= 2) {
+      ranking_data.sort(function (first, second) {
         if (first.level < second.level) {
           return 1;
         } else if (first.level > second.level) {
@@ -94,7 +95,7 @@ router.post('/', function (req, res, next) {
         }
       })
     }
-    WriteNewJSONFile(GetCourseDir(course) + 'ranking.json', ranking_file);
+    WriteNewJSONFile(ranking_file, ranking_data);
   }
 
   WriteNewJSONFile(GetCourseDir(course) + 'user/' + device + '.json', user_data);
