@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main(){
-	double list[] = {1,2,3};
-	printf("%d",sizeof(list)));
+	long long ll = 2e9;
+	long long *pll = &ll;
+	printf("%d",???);
 	return 0;
 }

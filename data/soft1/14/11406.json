@@ -1,16 +1,17 @@
 {
     "id": 11406,
-    "title": "ファイル操作6",
+    "title": "ファイル操作2",
     "question": "???に入るのはなに",
-    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#358cd6>int</color> argc,<color=#358cd6>char</color>* argv<color=#ffd700>[</color><color=#ffd700>]</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d\n\"</color>,EOF<color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,fputc<color=#ffd700>(</color><color=#ce9178>'a'</color>,???<color=#ffd700>)</color><color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
-    "output": "-1\n-1",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#358cd6>int</color> argc,<color=#358cd6>char</color>* argv<color=#ffd700>[</color><color=#ffd700>]</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#3ac995>FILE</color>* fp;\n\t<color=#358cd6>char</color> buf<color=#ffd700>[</color>50<color=#ffd700>]</color>;\n\t<color=#c586c0>if</color><color=#ffd700>(</color><color=#ffd700>(</color>fp = fopen<color=#ffd700>(</color><color=#ce9178>\"aquatan.txt\"</color>,<color=#ff0000>???</color><color=#ffd700>)</color><color=#ffd700>)</color> == <color=#358cd6>NULL</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t\tprintf<color=#ffd700>(</color><color=#ce9178>\"Error: Cannot open file <color=#ce9178>'aquatan.txt'</color>\\n\"</color><color=#ffd700>)</color>;\n\t<color=#ffd700>}</color>;\n\tfprintf<color=#ffd700>(</color>fp,<color=#ce9178>\"%s\"</color>,<color=#ce9178>\"aquatan\"</color><color=#ffd700>)</color>;\n\tfclose<color=#ffd700>(</color>fp<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "",
     "choice": [
-        "stdout",
-        "stdin",
-        "stderr",
-        "stdfl"
+        "\"w\"",
+        "\"a\"",
+        "\"r\"",
+        "\"rb\""
     ],
-    "answer" : 2,
+    "answer" : 1,
     "exp":80,
-    "point":2
+    "point":2,
+    "rank" : 3
 }
