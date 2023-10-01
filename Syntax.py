@@ -79,6 +79,8 @@ def main():
 
     for key_bracket in CBracket.keys():
         source = source.replace(key_bracket,CBracket[key_bracket])
+    
+    source = source.replace("<color=#c586c0>do</color>uble","double")
 
     print("Preview:\n" + source)
     source = source .replace('\\',"\\\\")

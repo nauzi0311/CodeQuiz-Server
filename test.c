@@ -1,10 +1,8 @@
 #include <stdio.h>
 int main(){
-	int i,j;
-	for(i = 0;i < 3;i++){
-		for(j = 0;j < 1;j++){
-		if(j == 1)???;
-		printf("%d",2*i+j);
-		}
-	} return 0;
+  int list[] = {0,1,2};
+  printf("%p\n",&list[1]);
+  printf("%p\n",&list[2]);
+  printf("%p\n",&list[3]);
+  return 0;
 }
