@@ -1,0 +1,17 @@
+{
+    "id": 11002,
+    "title": "ポインタ8",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6>char</color> str<color=#ffd700>[</color>10<color=#ffd700>]</color>;\n  scanf<color=#ffd700>(</color><color=#ce9178>\"%s\"</color>,<color=#ff0000>???</color><color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "",
+    "choice": [
+        "str",
+        "&str[10]",
+        "*str",
+        "&str"
+    ],
+    "answer" : 1,
+    "exp":100,
+    "point":2,
+    "rank":1
+}

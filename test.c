@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(){
-  int list[] = {10,20,30,40};
-  int size = sizeof(NULL);
-  printf("%d",size);
+  char* lite = "%s";
+  char* str = "aquatan";
+  printf(???);
   return 0;
 }
