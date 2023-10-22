@@ -1,0 +1,17 @@
+{
+    "id": 11201,
+    "title": "do-while文3",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6>int</color> ans = 1;\n  <color=#358cd6>int</color> i = 0;\n  <color=#c586c0>do</color><color=#ffd700>{</color>\n    ans += ans;\n  <color=#ffd700>}</color><color=#c586c0>while</color><color=#ffd700>(</color>++i < 4<color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,ans<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "<color=#ff0000>???</color>",
+    "choice": [
+        "8",
+        "16",
+        "32",
+        "64"
+    ],
+    "answer" : 2,
+    "exp":80,
+    "point":2,
+    "rank":1
+}

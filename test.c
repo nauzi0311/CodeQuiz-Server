@@ -1,7 +1,6 @@
 #include <stdio.h>
 int main(){
-  char* lite = "%s";
-  char* str = "aquatan";
-  printf(???);
+  double x = 0.32e2;
+  printf("???",x);
   return 0;
 }
