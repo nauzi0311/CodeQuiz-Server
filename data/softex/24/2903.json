@@ -1,0 +1,17 @@
+{
+    "id": 2903,
+    "title": "構造体のポインタ5",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#da70d6>#include</color> <color=#ce9178><stdlib.h></color>\n\n<color=#c586c0>typedef</color> <color=#358cd6>struct</color> data DATA;\n\n<color=#358cd6>struct</color> data<color=#ffd700>{</color>\n  <color=#358cd6>int</color> num;\n  <color=#358cd6>float</color> point;\n  DATA* next;\n<color=#ffd700>}</color>;\n\n<color=#358cd6>void</color> Print<color=#ffd700>(</color>DATA* p<color=#ffd700>)</color><color=#ffd700>{</color>\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d  \"</color>,p->num<color=#ffd700>)</color>;\n<color=#ffd700>}</color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color>\n<color=#ffd700>{</color>\n  DATA d1;\n  d1 = <color=#ff0000>???</color>;\n  Print<color=#ffd700>(</color>&d1<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "1",
+    "choice": [
+        "&p",
+        "&(*p)",
+        "**P",
+        "&&p"
+    ],
+    "answer" : 2,
+    "exp":100,
+    "point":1,
+    "rank":2
+}

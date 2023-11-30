@@ -1,0 +1,17 @@
+{
+    "id": 1507,
+    "title": "文字列1",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>char</color> string<color=#ffd700>[</color><color=#ffd700>]</color> = <color=#ce9178>\"abc\"</color>;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%s\"</color>,<color=#ff0000>???</color><color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "abc",
+    "choice": [
+        "string",
+        "sting[0]",
+        "&string",
+        "string[]"
+    ],
+    "answer" : 1,
+    "exp":70,
+    "point":2,
+    "rank" : 3
+}

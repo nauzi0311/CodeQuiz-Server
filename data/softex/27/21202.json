@@ -1,0 +1,17 @@
+{
+    "id": 21202,
+    "title": "構造体のポインタ 6",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#da70d6>#include</color> <color=#ce9178><stdlib.h></color>\n\n<color=#c586c0>typedef</color> <color=#358cd6>struct</color> data<color=#ffd700>{</color>\n  <color=#358cd6>int</color> number;\n  <color=#358cd6>float</color> point;\n<color=#ffd700>}</color>DATA;\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color>\n<color=#ffd700>{</color>\n  DATA d = <color=#ffd700>{</color>2,20.0<color=#ffd700>}</color>;\n  DATA *p = &d;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%f\"</color>,p->point<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "20.000000",
+    "choice": [
+        "&p->point",
+        "*p->point",
+        "*p.point",
+        "(*p).point"
+    ],
+    "answer" : 4,
+    "exp":130,
+    "point":1,
+    "rank":1
+}

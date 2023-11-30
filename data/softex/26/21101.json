@@ -1,0 +1,17 @@
+{
+    "id": 21101,
+    "title": "関数5",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#da70d6>#include</color> <color=#ce9178><stdlib.h></color>\n\n<color=#358cd6>void</color> hoge<color=#ffd700>(</color><color=#358cd6>char</color>* str<color=#ffd700>)</color><color=#ffd700>{</color>\n  str<color=#ffd700>[</color>0<color=#ffd700>]</color> = <color=#ce9178>'a'</color>;\n<color=#ffd700>}</color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color>\n<color=#ffd700>{</color>\n  <color=#358cd6>char</color> str<color=#ffd700>[</color><color=#ffd700>]</color> = <color=#ce9178>\"bquatan\"</color>;\n  hoge<color=#ffd700>(</color>str<color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%s\n\"</color>, str<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "<color=#ff0000>???</color>",
+    "choice": [
+        "bquatan",
+        "aqubtbn",
+        "aquatan",
+        "bqubtbn"
+    ],
+    "answer" : 3,
+    "exp":110,
+    "point":1,
+    "rank":1
+}

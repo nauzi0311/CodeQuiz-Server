@@ -1,0 +1,17 @@
+{
+    "id": 2104,
+    "title": "配列2",
+    "question": "???に入るのはなに",
+    "source": "<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6>char</color> str<color=#ffd700>[</color><color=#ff0000>???</color><color=#ffd700>]</color> = <color=#ce9178>\"Hello aquatan\"</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%s\"</color>, str<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "Hello aquatan",
+    "choice": [
+        "13",
+        "14",
+        "sizeof",
+        "char"
+    ],
+    "answer": 2,
+    "exp": 20,
+    "point": 1,
+    "rank":2
+}

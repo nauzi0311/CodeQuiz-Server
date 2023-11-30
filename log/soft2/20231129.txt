@@ -1,0 +1,26 @@
+[2023年11月29日 15時46分34秒] update result 
+softex 第16回
+id: 1108,1106,1109,1110,1112,1111,1201
+second_list: 2,1,2,1,2,4,4
+user_answer: 3,4,3,4,2,3,1
+correct: true,true,true,true,true,true,true
+level: 2
+exp: 110
+point: 7
+correct_id: 1106,1108,1109,1110,1111,1112,1201
+correct_count: 7
+badge: 0,1,3
+date: 2023-11-29
+[2023年11月29日 15時49分05秒] update result 
+softex 第1回
+id: 1108,1106,1109,1110,1111,1112,1209
+second_list: 2,1,1,1,1,2,10
+user_answer: 3,4,3,4,3,2,2
+correct: true,true,true,true,true,true,true
+level: 2
+exp: 155
+point: 7
+correct_id: 1106,1108,1109,1110,1111,1112,1209
+correct_count: 7
+badge: 0,1,3
+date: 2023-11-29

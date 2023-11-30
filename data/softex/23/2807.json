@@ -1,0 +1,17 @@
+{
+    "id": 2807,
+    "title": "連結リスト3",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#da70d6>#include</color> <color=#ce9178><stdlib.h></color>\n\n<color=#c586c0>typedef</color> <color=#358cd6>struct</color> data DATA;\n<color=#358cd6>struct</color> data<color=#ffd700>{</color>\n  <color=#358cd6>int</color> number;\n  <color=#358cd6>float</color> point;\n  DATA* next;\n<color=#ffd700>}</color>;\n\n<color=#358cd6>void</color> init<color=#ffd700>(</color>DATA* p<color=#ffd700>)</color><color=#ffd700>{</color>\n  p->number = 0;\n  p->po<color=#358cd6>int</color> = 0.0;\n  p->next = <color=#358cd6>NULL</color>;\n<color=#ffd700>}</color>\n\n<color=#358cd6>void</color> Print<color=#ffd700>(</color>DATA* p<color=#ffd700>)</color><color=#ffd700>{</color>\n  printf<color=#ffd700>(</color><color=#ce9178>\"Num:%d\n\"</color>,p->number<color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"Point:%f\n\"</color>,p->point<color=#ffd700>)</color>;\n  fflush<color=#ffd700>(</color>stdout<color=#ffd700>)</color>;\n<color=#ffd700>}</color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color>\n<color=#ffd700>{</color>\n  DATA* p;\n  p = <color=#ffd700>(</color>DATA*<color=#ffd700>)</color>malloc<color=#ffd700>(</color>sizeof<color=#ffd700>(</color>DATA<color=#ffd700>)</color><color=#ffd700>)</color>;\n  <color=#c586c0>if</color><color=#ffd700>(</color>p == <color=#358cd6>NULL</color><color=#ffd700>)</color><color=#ffd700>{</color>\n    printf<color=#ffd700>(</color><color=#ce9178>\"malloc failure\n\"</color><color=#ffd700>)</color>;\n    <color=#c586c0>return</color> 1;\n  <color=#ffd700>}</color>\n  init<color=#ffd700>(</color>p<color=#ffd700>)</color>;\n  *p = <color=#ff0000>???</color>;\n  Print<color=#ffd700>(</color>p<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "",
+    "choice": [
+        "p1.next = p2",
+        "*p1.next = p2",
+        "p1->next = p2",
+        "*P1->next = p2"
+    ],
+    "answer" : 3,
+    "exp":100,
+    "point":1,
+    "rank":3
+}

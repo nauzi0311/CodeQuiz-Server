@@ -1,0 +1,17 @@
+{
+    "id": 2607,
+    "title": "関数ポインタ3",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#da70d6>#include</color> <color=#ce9178><stdlib.h></color>\n\n<color=#358cd6>void</color> func2<color=#ffd700>(</color><color=#358cd6>int</color> *x<color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#ffd700>(</color>*x<color=#ffd700>)</color>++;\n<color=#ffd700>}</color>\n\n<color=#358cd6>void</color> func<color=#ffd700>(</color><color=#358cd6>void</color> <color=#ff0000>???</color>,<color=#358cd6>int</color>* x<color=#ffd700>)</color><color=#ffd700>{</color>\n  fp<color=#ffd700>(</color>x<color=#ffd700>)</color>;\n<color=#ffd700>}</color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color>\n<color=#ffd700>{</color>\n  <color=#358cd6>int</color> x = 2023;\n  func<color=#ffd700>(</color>func2,&x<color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d\n\"</color>, x<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "11",
+    "choice": [
+        "*fp(int*)",
+        "(*fp)int*",
+        "(*fp)(int*)",
+        "fp(int*)"
+    ],
+    "answer" : 3,
+    "exp":80,
+    "point":1,
+    "rank":3
+}

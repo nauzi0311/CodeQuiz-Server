@@ -1,0 +1,17 @@
+{
+    "id": 21402,
+    "title": "スコープ 2",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#da70d6>#include</color> <color=#ce9178><stdlib.h></color>\n\n<color=#358cd6>int</color> x = 30;\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color>\n<color=#ffd700>{</color>\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d \"</color>, x<color=#ffd700>)</color>;\n  <color=#358cd6>int</color> x = 10;\n  <color=#ffd700>{</color>\n    <color=#358cd6>int</color> x = 20;\n    printf<color=#ffd700>(</color><color=#ce9178>\"%d \"</color>, x<color=#ffd700>)</color>;\n  <color=#ffd700>}</color>\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d \"</color>, x<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "<color=#ff0000>???</color>",
+    "choice": [
+        "30 20 20",
+        "30 20 10",
+        "20 20 20",
+        "30 20 30"
+    ],
+    "answer" : 2,
+    "exp":130,
+    "point":1,
+    "rank":1
+}

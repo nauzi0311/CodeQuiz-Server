@@ -1,0 +1,18 @@
+[2023年11月29日 22時56分18秒] version process | 1-0-0 latest 1-0-0
+[2023年11月29日 22時56分23秒] access index {20231129}
+[2023年11月29日 22時56分42秒] request question "ソフトウェア演習ⅠorⅡ 第1回" 
+[2023年11月29日 22時57分06秒] access recommend "ソフトウェア演習ⅠorⅡ 第1回 rank:5 recommend:Match" 
+[2023年11月29日 22時57分27秒] update result 20231129 level:4 point:21
+[2023年11月29日 22時57分30秒] access detail 20231129 id:1210
+[2023年11月29日 22時57分57秒] access calender {20231129}Calender Button Clicked
+[2023年11月29日 22時58分09秒] access detail 20231129 id:1412
+[2023年11月29日 22時58分23秒] access ranking 20231129
+[2023年11月29日 23時01分31秒] version process | 1-0-0 latest 1-0-0
+[2023年11月29日 23時01分34秒] access index {20231129}
+[2023年11月29日 23時01分38秒] request question "ソフトウェア演習ⅠorⅡ 第4回" 
+[2023年11月29日 23時02分54秒] access recommend "ソフトウェア演習ⅠorⅡ 第4回 rank:5 recommend:Match" 
+[2023年11月29日 23時04分11秒] update result 20231129 level:5 point:33
+[2023年11月29日 23時04分57秒] version process | 1-0-0 latest 1-0-0
+[2023年11月29日 23時05分00秒] access index {20231129}
+[2023年11月29日 23時05分19秒] version process | 1-0-0 latest 1-0-0
+[2023年11月29日 23時05分22秒] access index {20231129}

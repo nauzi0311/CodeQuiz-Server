@@ -1,0 +1,38 @@
+[2023年11月29日 22時56分23秒] access index {20231129}
+[2023年11月29日 22時56分42秒] request question "ソフトウェア演習ⅠorⅡ 第1回" 
+[2023年11月29日 22時57分06秒] access recommend "ソフトウェア演習ⅠorⅡ 第1回 rank:5 recommend:Match" 
+[2023年11月29日 22時57分27秒] update result 
+softexB 第1回
+id: 1107,1105,1110,1109,1112,1111,1210
+second_list: 2,2,1,1,2,2,6
+user_answer: 1,2,4,3,2,3,1
+correct: true,true,true,true,true,true,true
+level: 4
+exp: 375
+point: 21
+correct_id: 1105,1107,1109,1110,1111,1112,1207,1208,1209,1210,1211,1212,1312
+correct_count: 14
+badge: 0,1,3,4,6,7
+date: 2023-11-29
+[2023年11月29日 22時57分30秒] access detail 20231129 id:1210
+[2023年11月29日 22時57分57秒] access calender {20231129}Calender Button Clicked
+[2023年11月29日 22時58分09秒] access detail 20231129 id:1412
+[2023年11月29日 22時58分23秒] access ranking 20231129
+[2023年11月29日 23時01分34秒] access index {20231129}
+[2023年11月29日 23時01分38秒] request question "ソフトウェア演習ⅠorⅡ 第4回" 
+[2023年11月29日 23時02分54秒] access recommend "ソフトウェア演習ⅠorⅡ 第4回 rank:5 recommend:Match" 
+[2023年11月29日 23時04分11秒] update result 
+softexB 第4回
+id: 1405,1407,1410,1409,1412,1411,1506
+second_list: 11,9,28,13,47,7,11
+user_answer: 3,2,1,4,1,1,4
+correct: true,true,true,true,true,false,true
+level: 5
+exp: 460
+point: 33
+correct_id: 1105,1107,1109,1110,1111,1112,1207,1208,1209,1210,1211,1212,1312,1405,1407,1409,1410,1412,1506
+correct_count: 20
+badge: 0,1,3,4,6,7,9,10
+date: 2023-11-29
+[2023年11月29日 23時05分00秒] access index {20231129}
+[2023年11月29日 23時05分22秒] access index {20231129}

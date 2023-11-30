@@ -1,0 +1,17 @@
+{
+    "id": 1102,
+    "title": "出力2",
+    "question": "???に入るのはなに",
+    "source": "<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  printf<color=#ffd700>(</color><color=#ce9178>\"Hello, World!\"</color><color=#ffd700>)</color>;\n  <color=#c586c0>return</color> <color=#ff0000>???</color> \n<color=#ffd700>}</color>",
+    "output": "Hello, World!",
+    "choice": [
+        "0",
+        "(0)",
+        "0;",
+        "0!"
+    ],
+    "answer": 3,
+    "exp": 10,
+    "point": 1,
+    "rank" : 1
+}

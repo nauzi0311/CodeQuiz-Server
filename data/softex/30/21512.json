@@ -1,0 +1,17 @@
+{
+    "id": 21512,
+    "title": "最後の挑戦 4",
+    "question": "???に入るのはなに\n(ビッグエンディアン)",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#358cd6>void</color> func<color=#ffd700>(</color><color=#358cd6>char</color>* list<color=#ffd700>)</color><color=#ffd700>{</color>\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d\n\"</color>,sizeof<color=#ffd700>(</color>int<color=#ffd700>)</color><color=#ffd700>)</color>;\n  <color=#ffd700>(</color><color=#ffd700>(</color>int*<color=#ffd700>)</color>list<color=#ffd700>)</color><color=#ffd700>[</color>1<color=#ffd700>]</color> = 0x74616e00;\n<color=#ffd700>}</color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6>char</color> str<color=#ffd700>[</color><color=#ffd700>]</color> = <color=#ce9178>\"aquaban\"</color>;\n  func<color=#ffd700>(</color>str<color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%s\"</color>, str<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "4\ntan\n<color=#ff0000>???</color>",
+    "choice": [
+        "aqua0",
+        "aqua",
+        "aquatan",
+        "aquaban"
+    ],
+    "answer" : 3,
+    "exp":170,
+    "point":1,
+    "rank":5
+}

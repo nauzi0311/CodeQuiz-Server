@@ -1,0 +1,17 @@
+{
+    "id": 1505,
+    "title": "配列1",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> <color=#ff0000>???</color> = <color=#ffd700>{</color>0,1,2<color=#ffd700>}</color>;\n\t<color=#358cd6>int</color> i = 0;\n\t<color=#c586c0>for</color><color=#ffd700>(</color>;i < 3;i++<color=#ffd700>)</color><color=#ffd700>{</color>\n\t\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,list<color=#ffd700>[</color>i<color=#ffd700>]</color><color=#ffd700>)</color>;\n\t<color=#ffd700>}</color>\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "012",
+    "choice": [
+        "list[]",
+        "[] list",
+        "[list]",
+        "*list"
+    ],
+    "answer" : 1,
+    "exp":70,
+    "point":2,
+    "rank" : 3
+}

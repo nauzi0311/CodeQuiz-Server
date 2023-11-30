@@ -1,0 +1,17 @@
+{
+    "id": 1603,
+    "title": "誤差 1",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6><color=#c586c0>do</color>uble</color> a = 1e15;\n  <color=#358cd6><color=#c586c0>do</color>uble</color> b = <color=#ff0000>???</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%lf\"</color>,a + b<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "1000000000000000.000000",
+    "choice": [
+        "50",
+        "5",
+        "0.5",
+        "0.05"
+    ],
+    "answer" : 4,
+    "exp":70,
+    "point":2,
+    "rank" : 2
+}

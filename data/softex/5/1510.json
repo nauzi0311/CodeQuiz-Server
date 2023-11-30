@@ -1,0 +1,17 @@
+{
+    "id": 1510,
+    "title": "二次元配列2",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>char</color> list<color=#ff0000>???</color> = <color=#ffd700>{</color><color=#ce9178>\"hoge\"</color>,<color=#ce9178>\"piyo\"</color>,<color=#ce9178>\"aqua\"</color><color=#ffd700>}</color>;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%s\"</color>,list<color=#ffd700>[</color>0<color=#ffd700>]</color><color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "hoge",
+    "choice": [
+        "[][4]",
+        "[][5]",
+        "[4][]",
+        "[5][]"
+    ],
+    "answer" : 2,
+    "exp":80,
+    "point":2,
+    "rank" : 4
+}

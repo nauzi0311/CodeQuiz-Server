@@ -1,0 +1,17 @@
+{
+    "id": 1911,
+    "title": "スコープ 3",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> x = 10;\n<color=#358cd6>void</color> func<color=#ffd700>(</color><color=#358cd6>int</color> *px<color=#ffd700>)</color><color=#ffd700>{</color>\n  x += 10;\n  *px += 10;\n<color=#ffd700>}</color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  func<color=#ffd700>(</color>&x<color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,x<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "???",
+    "choice": [
+        "10",
+        "20",
+        "30",
+        "40"
+    ],
+    "answer" : 3,
+    "exp":130,
+    "point":2,
+    "rank":5
+}

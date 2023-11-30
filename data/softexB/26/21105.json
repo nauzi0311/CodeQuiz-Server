@@ -1,0 +1,17 @@
+{
+    "id": 21105,
+    "title": "二分木3",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#da70d6>#include</color> <color=#ce9178><stdlib.h></color>\n\n<color=#c586c0>typedef</color> <color=#358cd6>struct</color> data DATA;\n<color=#358cd6>struct</color> data<color=#ffd700>{</color>\n  <color=#358cd6>int</color> number;\n  <color=#358cd6>float</color> point;\n  DATA* left;\n  DATA* right;\n<color=#ffd700>}</color>;\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color>\n<color=#ffd700>{</color>\n  DATA* p;\n  p = <color=#ff0000>???</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "",
+    "choice": [
+        "DATA",
+        "struct data",
+        "sizeof(DATA)",
+        "sizeof(*DATA)"
+    ],
+    "answer" : 3,
+    "exp":130,
+    "point":1,
+    "rank":3
+}

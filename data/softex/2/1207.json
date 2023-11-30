@@ -1,0 +1,17 @@
+{
+    "id": 1207,
+    "title": "演算子3",
+    "question": "???に入るのはなに",
+    "source": "<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> x;\n\tx = 10;\n\tx <color=#ff0000>???</color> 3;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,x<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> <color=#ffd700>(</color>0<color=#ffd700>)</color>;\n<color=#ffd700>}</color>",
+    "output": "3",
+    "choice": [
+        "+=",
+        "*=",
+        "/=",
+        "%="
+    ],
+    "answer": 3,
+    "exp": 40,
+    "point": 1,
+    "rank" : 3
+}

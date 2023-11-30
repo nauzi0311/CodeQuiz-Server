@@ -1,0 +1,16 @@
+{
+    "id": 2000,
+    "title": "",
+    "question": "???に入るのはなに",
+    "source":"",
+    "output": "<color=#ff0000>???</color>",
+    "choice": [
+        "",
+        "",
+        "",
+        ""
+    ],
+    "answer" : 0,
+    "exp":0,
+    "point":0
+}

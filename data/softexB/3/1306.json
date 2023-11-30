@@ -1,0 +1,17 @@
+{
+    "id": 1306,
+    "title": "条件4",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#c586c0>if</color><color=#ffd700>(</color>0<color=#ffd700>)</color><color=#ffd700>{</color>\n\t\tprintf<color=#ffd700>(</color><color=#ce9178>\"0\"</color><color=#ffd700>)</color>;\n\t<color=#ffd700>}</color>\n\t<color=#c586c0>if</color><color=#ffd700>(</color>-1<color=#ffd700>)</color><color=#ffd700>{</color>\n\t\tprintf<color=#ffd700>(</color><color=#ce9178>\"-1\"</color><color=#ffd700>)</color>;\n\t<color=#ffd700>}</color>\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "???",
+    "choice": [
+        "0-1",
+        "0",
+        "-1",
+        "0\n-1"
+    ],
+    "answer" : 3,
+    "exp":50,
+    "point":1,
+    "rank":3
+}

@@ -1,0 +1,17 @@
+{
+    "id": 2507,
+    "title": "動的割り当て3",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#da70d6>#include</color> <color=#ce9178><stdlib.h></color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color>\n<color=#ffd700>{</color>\n  <color=#358cd6>char</color> *a,*b,*c;\n  a = <color=#ffd700>(</color>char*<color=#ffd700>)</color>malloc<color=#ffd700>(</color>sizeof<color=#ffd700>(</color>char<color=#ffd700>)</color>*4<color=#ffd700>)</color>;\n  b = <color=#ffd700>(</color>char*<color=#ffd700>)</color>malloc<color=#ffd700>(</color>sizeof<color=#ffd700>(</color>char<color=#ffd700>)</color>*4<color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"a:%p\n\"</color>,a<color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"b:%p\n\"</color>,b<color=#ffd700>)</color>;\n  free<color=#ffd700>(</color>b<color=#ffd700>)</color>;\n  c = <color=#ffd700>(</color>char*<color=#ffd700>)</color>malloc<color=#ffd700>(</color>sizeof<color=#ffd700>(</color>char<color=#ffd700>)</color>*6<color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"c:%p\n\"</color>,c<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "a:0000000000712490\nb:00000000007124B0\nc:00000000007124<color=#ff0000>???</color>",
+    "choice": [
+        "D0",
+        "F0",
+        "B0",
+        "B5"
+    ],
+    "answer" : 3,
+    "exp":70,
+    "point":1,
+    "rank":3
+}

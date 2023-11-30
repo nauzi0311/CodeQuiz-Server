@@ -1,0 +1,17 @@
+{
+    "id": 1811,
+    "title": "アドレス 1",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6>char</color> str<color=#ffd700>[</color><color=#ffd700>]</color> = <color=#ce9178>\"aquatans\"</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%p\\n\"</color>,&str<color=#ffd700>[</color>1<color=#ffd700>]</color><color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%p\\n\"</color>,&str<color=#ffd700>[</color>2<color=#ffd700>]</color><color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%p\\n\"</color>,&str<color=#ffd700>[</color>3<color=#ffd700>]</color><color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "00000047975FFDA4\n00000047975FFDA5\n00000047975FFDA???",
+    "choice": [
+        "4",
+        "5",
+        "6",
+        "7"
+    ],
+    "answer" : 3,
+    "exp":120,
+    "point":2,
+    "rank":5
+}

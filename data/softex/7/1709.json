@@ -1,0 +1,17 @@
+{
+    "id": 1709,
+    "title": "再帰関数 5",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> func<color=#ffd700>(</color><color=#358cd6>int</color> x<color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#c586c0>if</color><color=#ffd700>(</color>x == 0<color=#ffd700>)</color> <color=#c586c0>return</color> 1;\n\t<color=#c586c0>return</color> x * func<color=#ffd700>(</color>x-1<color=#ffd700>)</color>;\n<color=#ffd700>}</color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> a = 5;\n\ta = func<color=#ffd700>(</color>a<color=#ffd700>)</color>;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,a<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "???",
+    "choice": [
+        "24",
+        "120",
+        "6",
+        "1"
+    ],
+    "answer" : 2,
+    "exp":100,
+    "point":2,
+    "rank":4
+}

@@ -1,0 +1,16 @@
+{
+    "id": 11502,
+    "title": "プリプロセッサ2",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#define</color> <color=#ce9178>ADD<color=#ffd700>(</color>a,b<color=#ffd700>)</color> ??? </color>\n<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#358cd6>int</color> argc,<color=#358cd6>char</color>* argv<color=#ffd700>[</color><color=#ffd700>]</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,ADD<color=#ffd700>(</color>3,4<color=#ffd700>)</color><color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "7",
+    "choice": [
+        "a plus b",
+        "+a+b",
+        "-a-b",
+        "-a+b"
+    ],
+    "answer" : 2,
+    "exp":80,
+    "point":2
+}

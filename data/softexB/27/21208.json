@@ -1,0 +1,17 @@
+{
+    "id": 21208,
+    "title": "二分木の操作6",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#da70d6>#include</color> <color=#ce9178><stdlib.h></color>\n\n<color=#c586c0>typedef</color> <color=#358cd6>struct</color> data DATA;\n<color=#358cd6>struct</color> data<color=#ffd700>{</color>\n  <color=#358cd6>int</color> number;\n  <color=#358cd6>float</color> point;\n  DATA* left;\n  DATA* right;\n<color=#ffd700>}</color>;\n\n<color=#c586c0>typedef</color> <color=#358cd6>struct</color> queue<color=#ffd700>{</color>\n  <color=#358cd6>int</color> head;\n  <color=#358cd6>int</color> tail;\n  DATA* list<color=#ffd700>[</color>5<color=#ffd700>]</color>;\n<color=#ffd700>}</color>QUEUE;\n\n<color=#358cd6>void</color> push<color=#ffd700>(</color>QUEUE* queue, DATA* input<color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#c586c0>if</color><color=#ffd700>(</color>input == <color=#358cd6>NULL</color><color=#ffd700>)</color> <color=#c586c0>return</color>;\n  queue->list<color=#ffd700>[</color>queue->tail++<color=#ffd700>]</color> = input;\n<color=#ffd700>}</color>\n\nDATA* pop<color=#ffd700>(</color>QUEUE* queue<color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#c586c0>return</color> queue->list<color=#ffd700>[</color>queue->head++<color=#ffd700>]</color>;\n<color=#ffd700>}</color>\n\n<color=#358cd6>void</color> breadth_order<color=#ffd700>(</color>QUEUE* queue<color=#ffd700>)</color><color=#ffd700>{</color>\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d  \"</color>,\n    queue->list<color=#ffd700>[</color>queue->head<color=#ffd700>]</color>->number\n  <color=#ffd700>)</color>;\n  push<color=#ffd700>(</color>queue,\n    queue->list<color=#ffd700>[</color>queue->head<color=#ffd700>]</color>->left\n  <color=#ffd700>)</color>;\n  push<color=#ffd700>(</color>queue,\n    queue->list<color=#ffd700>[</color>queue->head<color=#ffd700>]</color>->right\n  <color=#ffd700>)</color>;\n  pop<color=#ffd700>(</color>queue<color=#ffd700>)</color>;\n  <color=#c586c0>if</color><color=#ffd700>(</color>queue->head == queue->tail<color=#ffd700>)</color> <color=#c586c0>return</color>;\n  <color=#c586c0>return</color> breadth_order<color=#ffd700>(</color>queue<color=#ffd700>)</color>;\n<color=#ffd700>}</color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color>\n<color=#ffd700>{</color>\n  DATA d2 = <color=#ffd700>{</color>\n    2,20,<color=#358cd6>NULL</color>,<color=#358cd6>NULL</color>\n  <color=#ffd700>}</color>,d1 = <color=#ffd700>{</color>\n    1,10,<color=#358cd6>NULL</color>,&d2\n  <color=#ffd700>}</color>,d4 = <color=#ffd700>{</color>\n    4,40,<color=#358cd6>NULL</color>,<color=#358cd6>NULL</color>\n  <color=#ffd700>}</color>,d5 = <color=#ffd700>{</color>\n    5,50,&d4,<color=#358cd6>NULL</color>\n  <color=#ffd700>}</color>,d3 = <color=#ffd700>{</color>\n    3,30,&d1,&d5\n  <color=#ffd700>}</color>;\n  QUEUE queue;\n  queue.tail = 1;\n  queue.head = 0;\n  queue.list<color=#ffd700>[</color>0<color=#ffd700>]</color> = &d3;\n  breadth_order<color=#ffd700>(</color>&queue<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "<color=#ff0000>???</color>",
+    "choice": [
+        "3  1  2  5  4",
+        "1  2  3  4  5",
+        "2  1  4  5  3",
+        "3  1  5  2  4"
+    ],
+    "answer" : 4,
+    "exp":140,
+    "point":1,
+    "rank":3
+}

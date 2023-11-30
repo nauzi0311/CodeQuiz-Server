@@ -1,0 +1,17 @@
+{
+    "id": 1702,
+    "title": "関数 6",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>char</color> func<color=#ffd700>(</color><color=#358cd6>char</color> c<color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#c586c0>return</color> ++c;\n<color=#ffd700>}</color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6>char</color> x = <color=#ce9178>'a'</color>;\n  x = func<color=#ffd700>(</color>x<color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%c\"</color>,x<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "???",
+    "choice": [
+        "a",
+        "b",
+        "A",
+        "Z"
+    ],
+    "answer" : 2,
+    "exp":70,
+    "point":2,
+    "rank":1
+}

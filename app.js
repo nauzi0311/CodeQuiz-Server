@@ -26,6 +26,24 @@ var detailRouter2 = require('./routes/soft2/detail');
 var scoreRouter2 = require('./routes/soft2/score');
 var rankRouter2 = require('./routes/soft2/ranking');
 
+var indexRouterex = require('./routes/softex/index');
+var memoRouterex = require('./routes/softex/memo');
+var questionRouterex = require('./routes/softex/question');
+var calenderRouterex = require('./routes/softex/calender');
+var resultRouterex = require('./routes/softex/result');
+var detailRouterex = require('./routes/softex/detail');
+var scoreRouterex = require('./routes/softex/score');
+var rankRouterex = require('./routes/softex/ranking');
+
+var indexRouterexB = require('./routes/softexB/index');
+var memoRouterexB = require('./routes/softexB/memo');
+var questionRouterexB = require('./routes/softexB/question');
+var calenderRouterexB = require('./routes/softexB/calender');
+var resultRouterexB = require('./routes/softexB/result');
+var detailRouterexB = require('./routes/softexB/detail');
+var scoreRouterexB = require('./routes/softexB/score');
+var rankRouterexB = require('./routes/softexB/ranking');
+
 
 var app = express();
 
@@ -57,6 +75,24 @@ app.use('/soft2/result', resultRouter2);
 app.use('/soft2/detail', detailRouter2);
 app.use('/soft2/score', scoreRouter2);
 app.use('/soft2/rank', rankRouter2);
+
+app.use('/softex/index', indexRouterex);
+app.use('/softex/memo', memoRouterex);
+app.use('/softex/quest', questionRouterex);
+app.use('/softex/calender', calenderRouterex);
+app.use('/softex/result', resultRouterex);
+app.use('/softex/detail', detailRouterex);
+app.use('/softex/score', scoreRouterex);
+app.use('/softex/rank', rankRouterex);
+
+app.use('/softexB/index', indexRouterexB);
+app.use('/softexB/memo', memoRouterexB);
+app.use('/softexB/quest', questionRouterexB);
+app.use('/softexB/calender', calenderRouterexB);
+app.use('/softexB/result', resultRouterexB);
+app.use('/softexB/detail', detailRouterexB);
+app.use('/softexB/score', scoreRouterexB);
+app.use('/softexB/rank', rankRouterexB);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

@@ -1,0 +1,17 @@
+{
+    "id": 2506,
+    "title": "動的割り当て2",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#da70d6>#include</color> <color=#ce9178><stdlib.h></color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color>\n<color=#ffd700>{</color>\n  <color=#358cd6>int</color> *list;\n  printf<color=#ffd700>(</color><color=#ce9178>\"list:%d\n\"</color>,sizeof<color=#ffd700>(</color>list<color=#ffd700>)</color><color=#ffd700>)</color>;\n  list = <color=#ffd700>(</color>int*<color=#ffd700>)</color>malloc<color=#ffd700>(</color>sizeof<color=#ffd700>(</color>int<color=#ffd700>)</color>*4<color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"list:%d\"</color>,sizeof<color=#ffd700>(</color>list<color=#ffd700>)</color><color=#ffd700>)</color>;\n  free<color=#ffd700>(</color>list<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "list:8\nlist:<color=#ff0000>???</color>",
+    "choice": [
+        "4",
+        "8",
+        "16",
+        "32"
+    ],
+    "answer" : 2,
+    "exp":70,
+    "point":1,
+    "rank":3
+}

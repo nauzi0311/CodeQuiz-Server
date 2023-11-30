@@ -1,0 +1,17 @@
+{
+    "id": 21111,
+    "title": "再帰関数3",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#da70d6>#include</color> <color=#ce9178><stdlib.h></color>\n\n<color=#358cd6>long</color> <color=#358cd6>long</color> power<color=#ffd700>(</color><color=#358cd6>int</color> a,<color=#358cd6>int</color> n<color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#c586c0>if</color><color=#ffd700>(</color>n == 0<color=#ffd700>)</color><color=#ffd700>{</color>\n    <color=#c586c0>return</color> 1;\n  <color=#ffd700>}</color>\n  <color=#358cd6>long</color> <color=#358cd6>long</color> b;\n  b = <color=#ff0000>???</color>;\n  b *= b;\n  <color=#c586c0>if</color><color=#ffd700>(</color>n % 2 == 1<color=#ffd700>)</color><color=#ffd700>{</color>\n    b *= a;\n  <color=#ffd700>}</color>\n  <color=#c586c0>return</color> b;\n<color=#ffd700>}</color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color>\n<color=#ffd700>{</color>\n  printf<color=#ffd700>(</color><color=#ce9178>\"%I64d\"</color>,power<color=#ffd700>(</color>2,10<color=#ffd700>)</color><color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "1024",
+    "choice": [
+        "power(a,n)",
+        "power(a/2,n)",
+        "power(a,n/2)",
+        "power(a,(n+1)/2)"
+    ],
+    "answer" : 3,
+    "exp":150,
+    "point":1,
+    "rank":5
+}

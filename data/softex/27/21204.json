@@ -1,0 +1,17 @@
+{
+    "id": 21204,
+    "title": "再帰関数 5",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#da70d6>#include</color> <color=#ce9178><stdlib.h></color>\n\n<color=#358cd6>int</color> comp_str<color=#ffd700>(</color><color=#358cd6>char</color>* s1, <color=#358cd6>char</color>* s2<color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#c586c0>if</color><color=#ffd700>(</color>*s1 != *s2<color=#ffd700>)</color><color=#ffd700>{</color>\n    printf<color=#ffd700>(</color><color=#ce9178>\"D<color=#c586c0>if</color>ferent\n\"</color><color=#ffd700>)</color>;\n    <color=#c586c0>return</color> -1;\n  <color=#ffd700>}</color><color=#c586c0>else</color> <color=#c586c0>if</color><color=#ffd700>(</color>\n    *s1 == <color=#ce9178>'\\0'</color> &&\n    *s2 == <color=#ce9178>'\\0'</color>\n  <color=#ffd700>)</color><color=#ffd700>{</color>\n    printf<color=#ffd700>(</color><color=#ce9178>\"Same\n\"</color><color=#ffd700>)</color>;\n    <color=#c586c0>return</color> 0;\n  <color=#ffd700>}</color><color=#c586c0>else</color><color=#ffd700>{</color>\n    <color=#c586c0>return</color> comp_str<color=#ffd700>(</color><color=#ff0000>???</color><color=#ffd700>)</color>;\n  <color=#ffd700>}</color>\n<color=#ffd700>}</color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color>\n<color=#ffd700>{</color>\n  comp_str<color=#ffd700>(</color><color=#ce9178>\"aquatan\"</color>,<color=#ce9178>\"bquatan\"</color><color=#ffd700>)</color>;\n  comp_str<color=#ffd700>(</color><color=#ce9178>\"aquatan\"</color>,<color=#ce9178>\"aquatan\"</color><color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "Different\nSame",
+    "choice": [
+        "*s1+1,*s2+1",
+        "&s1+1,&s2+1",
+        "s1+1,s2+1",
+        "(*s1)+1,(*s2)+1"
+    ],
+    "answer" : 3,
+    "exp":130,
+    "point":1,
+    "rank":2
+}

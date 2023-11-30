@@ -1,0 +1,17 @@
+{
+    "id": 2411,
+    "title": "\"%p\"1",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color>\n<color=#ffd700>{</color>\n  <color=#358cd6>char</color> list<color=#ffd700>[</color><color=#ffd700>]</color> = <color=#ce9178>\"aquatan\"</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d\n\"</color>,sizeof<color=#ffd700>(</color>char<color=#ffd700>)</color><color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%p\n\"</color>,list<color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%p\"</color>,&list<color=#ffd700>[</color>1<color=#ffd700>]</color><color=#ffd700>)</color>;\n<color=#ffd700>}</color>\n",
+    "output": "1\n000000000061FE18\n000000000061FE<color=#ff0000>???</color>",
+    "choice": [
+        "19",
+        "20",
+        "23",
+        "27"
+    ],
+    "answer" : 1,
+    "exp":80,
+    "point":1,
+    "rank":5
+}

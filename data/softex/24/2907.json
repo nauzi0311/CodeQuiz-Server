@@ -1,0 +1,17 @@
+{
+    "id": 2907,
+    "title": "連結リストの操作7",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#da70d6>#include</color> <color=#ce9178><stdlib.h></color>\n\n<color=#c586c0>typedef</color> <color=#358cd6>struct</color> data DATA;\n<color=#358cd6>struct</color> data<color=#ffd700>{</color>\n  <color=#358cd6>int</color> number;\n  <color=#358cd6>float</color> point;\n  DATA* next;\n<color=#ffd700>}</color>;\n\n<color=#358cd6>void</color> Print<color=#ffd700>(</color>DATA* head<color=#ffd700>)</color><color=#ffd700>{</color>\n  DATA *p;\n  <color=#c586c0>for</color><color=#ffd700>(</color>p = head; p != <color=#358cd6>NULL</color>; p = p->next<color=#ffd700>)</color><color=#ffd700>{</color>\n    printf<color=#ffd700>(</color><color=#ce9178>\"Num:%d\t\"</color>, p->number<color=#ffd700>)</color>;\n  <color=#ffd700>}</color>\n  fflush<color=#ffd700>(</color>stdout<color=#ffd700>)</color>;\n<color=#ffd700>}</color>\n\n<color=#358cd6>void</color> Add<color=#ffd700>(</color>\n  DATA* head,\n  DATA* data\n<color=#ffd700>)</color><color=#ffd700>{</color>\n  DATA* p = head;\n  <color=#c586c0>while</color><color=#ffd700>(</color>p->next != <color=#358cd6>NULL</color><color=#ffd700>)</color><color=#ffd700>{</color>\n    <color=#ff0000>???</color>;\n  <color=#ffd700>}</color>\n  p->next = data;\n<color=#ffd700>}</color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color>\n<color=#ffd700>{</color>\n  DATA d1 = <color=#ffd700>{</color>\n    1,10,<color=#358cd6>NULL</color>\n  <color=#ffd700>}</color>,d2 = <color=#ffd700>{</color>\n    2,20,<color=#358cd6>NULL</color>\n  <color=#ffd700>}</color>,d3 = <color=#ffd700>{</color>\n    3,30,&d2\n  <color=#ffd700>}</color>,d4 = <color=#ffd700>{</color>\n    4,40,&d3\n  <color=#ffd700>}</color>,d5 = <color=#ffd700>{</color>\n    5,50,&d4\n  <color=#ffd700>}</color>,*head = &d5;\n  Add<color=#ffd700>(</color>head,&d1<color=#ffd700>)</color>;\n  Print<color=#ffd700>(</color>head<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n",
+    "output": "Num:5   Num:4   Num:3   Num:2   Num:1",
+    "choice": [
+        "p = *p->next",
+        "*p = p->next",
+        "p = head->next",
+        "p = p->next"
+    ],
+    "answer" : 4,
+    "exp":110,
+    "point":1,
+    "rank":3
+}

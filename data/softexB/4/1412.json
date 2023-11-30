@@ -1,0 +1,17 @@
+{
+    "id": 1412,
+    "title": "二重ループ2",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6>int</color> i,j,count;\n  <color=#c586c0>for</color><color=#ffd700>(</color>i = 0;i < 8;i++<color=#ffd700>)</color><color=#ffd700>{</color>\n    <color=#c586c0>for</color><color=#ffd700>(</color>j = i;j < 8;j++<color=#ffd700>)</color><color=#ffd700>{</color>\n      count++;\n    <color=#ffd700>}</color>\n  <color=#ffd700>}</color>\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,count<color=#ffd700>)</color>; \n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "???",
+    "choice": [
+        "36",
+        "64",
+        "24",
+        "16"
+    ],
+    "answer" : 1,
+    "exp":80,
+    "point":2,
+    "rank":5
+}

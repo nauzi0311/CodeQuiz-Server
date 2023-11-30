@@ -1,0 +1,17 @@
+{
+    "id": 1609,
+    "title": "ラッパー関数 1",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#358cd6>void</color> Print_int<color=#ffd700>(</color><color=#ff0000>???</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,x<color=#ffd700>)</color>;\n<color=#ffd700>}</color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  Print_int<color=#ffd700>(</color>10<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "10",
+    "choice": [
+        "int a",
+        "int x",
+        "char a",
+        "char x"
+    ],
+    "answer" : 2,
+    "exp":90,
+    "point":2,
+    "rank" : 4
+}

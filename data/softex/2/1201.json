@@ -1,0 +1,17 @@
+{
+    "id": 1201,
+    "title": "型1",
+    "question": "???に入るのはなに",
+    "source": "<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#ff0000>???</color> x;\n  x = 3;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,x<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> <color=#ffd700>(</color>0<color=#ffd700>)</color>;\n<color=#ffd700>}</color>",
+    "output": "3",
+    "choice": [
+        "int",
+        "char",
+        "float",
+        "double"
+    ],
+    "answer": 1,
+    "exp": 20,
+    "point": 1,
+    "rank" : 1
+}

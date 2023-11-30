@@ -1,0 +1,17 @@
+{
+    "id": 1212,
+    "title": "計算4",
+    "question": "???に入るのはなに",
+    "source": "<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6>int</color> x,y,z;\n  x = 2;y = 6;z = 36;\n  z /= y / x;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,z<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> <color=#ffd700>(</color>0<color=#ffd700>)</color>;\n<color=#ffd700>}</color>",
+    "output": "???",
+    "choice": [
+        "3",
+        "0",
+        "12",
+        "36"
+    ],
+    "answer": 3,
+    "exp": 60,
+    "point": 1,
+    "rank" : 5
+}
