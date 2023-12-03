@@ -34,6 +34,7 @@ var resultRouterex = require('./routes/softex/result');
 var detailRouterex = require('./routes/softex/detail');
 var scoreRouterex = require('./routes/softex/score');
 var rankRouterex = require('./routes/softex/ranking');
+var badgeRouterex = require('./routes/softex/badge');
 
 var indexRouterexB = require('./routes/softexB/index');
 var memoRouterexB = require('./routes/softexB/memo');
@@ -43,6 +44,7 @@ var resultRouterexB = require('./routes/softexB/result');
 var detailRouterexB = require('./routes/softexB/detail');
 var scoreRouterexB = require('./routes/softexB/score');
 var rankRouterexB = require('./routes/softexB/ranking');
+var badgeRouterexB = require('./routes/softexB/badge');
 
 
 var app = express();
@@ -84,6 +86,7 @@ app.use('/softex/result', resultRouterex);
 app.use('/softex/detail', detailRouterex);
 app.use('/softex/score', scoreRouterex);
 app.use('/softex/rank', rankRouterex);
+app.use('/softex/badge', badgeRouterex);
 
 app.use('/softexB/index', indexRouterexB);
 app.use('/softexB/memo', memoRouterexB);
@@ -93,6 +96,7 @@ app.use('/softexB/result', resultRouterexB);
 app.use('/softexB/detail', detailRouterexB);
 app.use('/softexB/score', scoreRouterexB);
 app.use('/softexB/rank', rankRouterexB);
+app.use('/softexB/badge', badgeRouterexB);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
