@@ -1,3 +1,8 @@
 [
-    
+    {
+        "device": "e6a0e07a-d4e6-4224-8b69-f5dac5d9920e",
+        "password": "TestUser1",
+        "username": "TestUser1",
+        "school_num": 87654321
+    }
 ]

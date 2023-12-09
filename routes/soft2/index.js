@@ -73,7 +73,7 @@ router.post('/version', function(req, res, next) {
   console.log(user_version);
   const version = "1-0-5";
   const url = "https://se.is.kit.ac.jp/beakfish/apk/CodeQuiz-" + version + ".apk" ;
-  const response = {"version":version,"url":url};
+  const response = {"version":version,"url":url,visible:true};
 
   //write log
   const log_data = GenerateTimestamp() + " version process | " + user_version + " latest "+ version + "\n";

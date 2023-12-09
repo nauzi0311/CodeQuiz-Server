@@ -1,3 +1,9 @@
 [
-    
+    {
+        "device": "e6a0e07a-d4e6-4224-8b69-f5dac5d9920e",
+        "username": "TestUser1",
+        "level": 3,
+        "exp": 90,
+        "equipment": 0
+    }
 ]

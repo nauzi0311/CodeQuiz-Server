@@ -4,7 +4,7 @@ require('date-utils');
 
 const { WriteAddFile, GenerateTimestamp, GetSchoolNum,ReadJSONFile, GetCourseDir} = require('../library');
 const { GetCourseText } = require('./constValue');
-const course = 'softex';
+const course = 'softexB';
 
 router.post('/', function(req, res, next) {
     console.log(req.body);
