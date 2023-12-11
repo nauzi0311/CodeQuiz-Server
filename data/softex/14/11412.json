@@ -2,7 +2,7 @@
     "id": 11412,
     "title": "stdio.h 4",
     "question": "???に入るのはなに",
-    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#358cd6>int</color> argc,<color=#358cd6>char</color>* argv<color=#ffd700>[</color><color=#ffd700>]</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>char</color> str<color=#ffd700>[</color>20<color=#ffd700>]</color>;\n\tsprintf<color=#ffd700>(</color><color=#ff0000>???</color>,<color=#ce9178>\"%d + %d = %d\"</color>,7,5,7+5<color=#ffd700>)</color>;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%s\"</color>,str<color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#358cd6>int</color> argc,<color=#358cd6>char</color>* argv<color=#ffd700>[</color><color=#ffd700>]</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6>char</color> str<color=#ffd700>[</color>20<color=#ffd700>]</color>;\n  sprintf<color=#ffd700>(</color><color=#ff0000>???</color>,<color=#ce9178>\"%d + %d = %d\"</color>,7,5,7+5<color=#ffd700>)</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%s\"</color>,str<color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
     "output": "7 + 5 = 12",
     "choice": [
         "stdout",

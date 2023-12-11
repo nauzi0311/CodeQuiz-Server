@@ -2,7 +2,7 @@
     "id": 1409,
     "title": "while文 1",
     "question": "???に入るのはなに",
-    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>int</color> i;\n\ti = 0;\n\t<color=#c586c0>while</color><color=#ffd700>(</color>i < 4<color=#ffd700>)</color><color=#ffd700>{</color>\n\t\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,i++<color=#ffd700>)</color>;\n\t<color=#ffd700>}</color>\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6>int</color> i;\n  i = 0;\n  <color=#c586c0>while</color><color=#ffd700>(</color>i < 4<color=#ffd700>)</color><color=#ffd700>{</color>\n    printf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,i++<color=#ffd700>)</color>;\n  <color=#ffd700>}</color>\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
     "output": "???",
     "choice": [
         "234",

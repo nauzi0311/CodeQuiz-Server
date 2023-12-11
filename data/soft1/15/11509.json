@@ -1,0 +1,17 @@
+{
+    "id": 11509,
+    "title": "フラグ1",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#define</color> <color=#ce9178>DEBUG 1</color>\n<color=#da70d6>#define</color> <color=#ce9178>ADD<color=#ffd700>(</color>a,b<color=#ffd700>)</color> a+b</color>\n<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#da70d6>#if</color> DEBUG == 0\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#358cd6>int</color> argc,<color=#358cd6>char</color>* argv<color=#ffd700>[</color><color=#ffd700>]</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6>int</color> x = 3,y = 4;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,2*ADD<color=#ffd700>(</color>x,y<color=#ffd700>)</color><color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n<color=#da70d6>#endif</color>\n\n<color=#da70d6>#if</color> DEBUG == 1\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#358cd6>int</color> argc,<color=#358cd6>char</color>* argv<color=#ffd700>[</color><color=#ffd700>]</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6>int</color> x = 3,y = 4;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d%d%d\"</color>,x,y,ADD<color=#ffd700>(</color>x,y<color=#ffd700>)</color><color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>\n<color=#da70d6>#endif</color>",
+    "output": "???",
+    "choice": [
+        "7",
+        "14",
+        "11",
+        "347"
+    ],
+    "answer" :4,
+    "exp":80,
+    "point":2,
+    "rank":4
+}
