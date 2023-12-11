@@ -1,0 +1,17 @@
+{
+    "id": 11511,
+    "title": "文字列展開1",
+    "question": "???に入るのはなに",
+    "source":"<color=#da70d6>#define</color> <color=#ce9178>STRCAT<color=#ffd700>(</color>a,b<color=#ffd700>)</color> a##b</color>\n<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#358cd6>int</color> argc,<color=#358cd6>char</color>* argv<color=#ffd700>[</color><color=#ffd700>]</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6>char</color>* str1 = <color=#ce9178>\"Hello, world\"</color>;\n  <color=#358cd6>char</color>* str2 = <color=#ce9178>\"HELLO, WORLD\"</color>;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%s\"</color>,STRCAT<color=#ffd700>(</color><color=#ff0000>???</color><color=#ffd700>)</color><color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "output": "Hello, world",
+    "choice": [
+        "str,1",
+        "str,2",
+        "str1",
+        "str2"
+    ],
+    "answer" :1,
+    "exp":190,
+    "point":2,
+    "rank":5
+}
