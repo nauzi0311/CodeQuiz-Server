@@ -95,8 +95,10 @@ function GetQuestion(course, times) {
   if (times == 10 || times == 12 ||
     times == 24 || times == 27){
     var extra_question_number = course_id + ((times + 2)*100 + Math.floor(Math.random() * next_max + 1)).toString();
-  }else{
+  }else if(times != 15){
     var extra_question_number = course_id + ((times + 1)*100 + Math.floor(Math.random() * next_max + 1)).toString();
+  }else{
+    var extra_question_number = '2' + (100 + Math.floor(Math.random() * next_max + 1)).toString();
   }
   const extra_question = ReadJSONFile(next_course_dir + '/' + extra_question_number + '.json');
   question_number.push(extra_question);

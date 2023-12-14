@@ -5,6 +5,7 @@ const fs = require('fs');
 const child_process = require("child_process");
 const { WriteAddFile, GenerateTimestamp, GetSchoolNum, ReadJSONFile, GetCourseDir } = require('../library');
 const { GetCourseText } = require('./constValue');
+const { log } = require('console');
 const log_file = "./log/"+ GetCourseText() +"/log.txt";
 
 /* POST users listing. */
@@ -19,6 +20,7 @@ router.post('/', function (req, res, next) {
   var res_quest_id = [];
 
   response = GetQuestionAndReview(course, times);
+  log(response)
   for (i = 0; i < response.length; i++) {
     res_quest_id[i] = response[i].id;
   }
@@ -61,7 +63,7 @@ function GetQuestion(course, times) {
   var used_ranks = [0,0,0,0,0,0];
   const needs_rank = [2,2,4,2,2,1];
   const course_id = GetCourseIDFromTimes(times); 
-  const course_dir = GetCourseDir(course) + times;
+  const course_dir = GetCourseDir(course) + times;  
   let next_course_dir;
 
   if (times == 10 || times == 12 ||
@@ -93,8 +95,10 @@ function GetQuestion(course, times) {
   if (times == 10 || times == 12 ||
     times == 24 || times == 27){
     var extra_question_number = course_id + ((times + 2)*100 + Math.floor(Math.random() * next_max + 1)).toString();
-  }else{
+  }else if(times != 15){
     var extra_question_number = course_id + ((times + 1)*100 + Math.floor(Math.random() * next_max + 1)).toString();
+  }else{
+    var extra_question_number = '2' + (100 + Math.floor(Math.random() * next_max + 1)).toString();
   }
   const extra_question = ReadJSONFile(next_course_dir + '/' + extra_question_number + '.json');
   question_number.push(extra_question);
