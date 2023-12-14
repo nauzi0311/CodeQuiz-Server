@@ -78,7 +78,6 @@ function GetQuestion(course, times) {
 
   const timesForID = (times > 15 ? times - 15 : times)
   while(question_number.length < 12){
-    
     while (true) {
       var tmp = course_id + (timesForID * 100 + Math.floor(Math.random() * max + 1)).toString();
       if (!question_number.includes(tmp)) {

@@ -2,15 +2,15 @@
     "id": 1903,
     "title": "ポインタ5",
     "question": "???に入るのはなに",
-    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n\t<color=#358cd6>long</color> <color=#358cd6>long</color> ll = 2e9;\n\t<color=#358cd6>long</color> <color=#358cd6>long</color> *pll = &ll;\n\tprintf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,<color=#ff0000>???</color><color=#ffd700>)</color>;\n\t<color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
+    "source":"<color=#da70d6>#include</color> <color=#ce9178><stdio.h></color>\n<color=#358cd6>int</color> main<color=#ffd700>(</color><color=#ffd700>)</color><color=#ffd700>{</color>\n  <color=#358cd6>long</color> <color=#358cd6>long</color> ll = 2e9;\n  <color=#358cd6>long</color> <color=#358cd6>long</color> *pll = &ll;\n  printf<color=#ffd700>(</color><color=#ce9178>\"%d\"</color>,<color=#ff0000>???</color><color=#ffd700>)</color>;\n  <color=#c586c0>return</color> 0;\n<color=#ffd700>}</color>",
     "output": "a",
     "choice": [
-        "pc",
-        "&c",
-        "*c",
-        "*pc"
+        "pll",
+        "*pll",
+        "&pll",
+        "*ll"
     ],
-    "answer" : 4,
+    "answer" : 2,
     "exp":100,
     "point":2,
     "rank":2
